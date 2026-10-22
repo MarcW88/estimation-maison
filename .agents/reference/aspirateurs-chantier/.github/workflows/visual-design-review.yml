@@ -1,0 +1,67 @@
+name: Visual design review — brands
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "marques/**"
+      - "style.css"
+      - "brand-pages.css"
+      - "brand-pages.js"
+      - "DESIGN.md"
+      - ".agents/skills/site-design-review/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/visual-design-review.yml"
+  pull_request:
+    paths:
+      - "marques/**"
+      - "style.css"
+      - "brand-pages.css"
+      - "brand-pages.js"
+      - "DESIGN.md"
+      - ".agents/skills/site-design-review/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/visual-design-review.yml"
+
+jobs:
+  visual-brands:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install chromium
+
+      - name: Capture brand pages
+        run: >-
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs
+          --scope brands
+          --output .artifacts/design-review/brands
+
+      - name: Validate visual regressions
+        run: >-
+          node .agents/skills/site-design-review/scripts/validate-brand-visual-report.mjs
+          .artifacts/design-review/brands/report.json
+
+      - name: Upload brand visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brand-design-review
+          path: .artifacts/design-review/brands/
+          if-no-files-found: warn
+          retention-days: 14

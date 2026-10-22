@@ -1,0 +1,68 @@
+name: Regenerate comparison cluster
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "comparison_products.py"
+      - "comparison_pages.py"
+      - "comparison_bespoke_output.py"
+      - "comparison_bespoke_priority_20260909.py"
+      - "comparison_bespoke_remaining_20260909.py"
+      - "comparison_content.py"
+      - "comparison_publication.py"
+      - "apply_comparison_content.py"
+      - "apply_comparison_indexation.py"
+      - "generate_comparison_metadata.py"
+      - "validate_comparisons.py"
+      - ".agents/skills/comparison-content-workflow/**"
+      - ".agents/skills/comparison-analysis-workflow/**"
+      - ".agents/skills/seo-keyword/**"
+      - ".agents/skills/seo-content-audit/**"
+      - ".agents/skills/seo-onpage/**"
+      - ".agents/skills/content-brief-authoring/**"
+      - ".agents/skills/content-and-copy/**"
+      - ".agents/skills/jobs-to-be-done/**"
+      - ".agents/skills/evidence-based-reviews/**"
+      - ".agents/skills/fact-check/**"
+      - ".agents/skills/affiliate-value/**"
+      - ".agents/skills/humanizer/**"
+      - ".agents/skills/general-writing/**"
+      - ".agents/skills/anti-ai-slop/**"
+      - ".agents/skills/editorial-qa/**"
+      - ".agents/skills/seo-technical/**"
+      - "comparison-workflow.config.yaml"
+      - ".github/workflows/regenerate-comparisons.yml"
+      - "_generate.py"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply comparison content
+        run: python apply_comparison_content.py
+      - name: Apply approved comparison product modules
+        run: python apply_product_cards.py comparisons
+      - name: Generate comparison methodology files
+        run: python generate_comparison_metadata.py
+      - name: Apply approved comparison indexation
+        run: python apply_comparison_indexation.py
+      - name: Validate comparison product modules
+        run: python validate_product_cards.py comparisons
+      - name: Validate comparison cluster
+        run: python validate_comparisons.py
+      - name: Commit generated comparison pages
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comparatifs .content/comparisons .content/reviews
+          git commit -m "content: regenerate comparison pages"
+          git push

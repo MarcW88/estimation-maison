@@ -1,0 +1,53 @@
+name: Regenerate deal pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - add-deal-content-workflow
+    paths:
+      - '.content/deals/**'
+      - '.agents/skills/deal-content-workflow/**'
+      - 'deal_content.py'
+      - 'apply_deal_content.py'
+      - 'validate_deal_workflow.py'
+      - 'deal-workflow.config.yaml'
+      - '.github/workflows/regenerate-deals.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply deal content
+        run: python apply_deal_content.py
+
+      - name: Apply approved Deal indexation
+        run: python apply_section_indexation.py deals
+
+      - name: Validate deal pages
+        run: python validate_deal_workflow.py
+
+      - name: Commit generated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _generate.py AGENTS.md bons-plans sitemap.xml robots.txt
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "content: apply verified deal workflow"
+          git push

@@ -1,0 +1,72 @@
+name: Maintain live indexation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/index.html'
+      - 'scripts/publish_indexation.py'
+      - 'robots.txt'
+      - 'sitemap.xml'
+  workflow_run:
+    workflows:
+      - 'Generate brand content'
+      - 'Generate comparison content'
+      - 'Generate guide content'
+      - 'Generate usage content'
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-indexation-maintenance
+  cancel-in-progress: false
+
+jobs:
+  maintain:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Maintain live indexation and discovery files
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          git reset --hard HEAD
+          git pull --rebase origin main
+          python scripts/publish_indexation.py
+          python scripts/publish_indexation.py --check
+          git add robots.txt sitemap.xml '**/index.html'
+
+          if git diff --cached --quiet; then
+            echo 'Indexation state already current.'
+            exit 0
+          fi
+
+          git commit -m 'chore(seo): maintain live indexation'
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+
+          echo 'main moved during indexation maintenance; reapplying on latest main'
+          git fetch origin main
+          git reset --hard origin/main
+          python scripts/publish_indexation.py
+          python scripts/publish_indexation.py --check
+          git add robots.txt sitemap.xml '**/index.html'
+          if git diff --cached --quiet; then
+            echo 'Latest main is already compliant.'
+            exit 0
+          fi
+          git commit -m 'chore(seo): maintain live indexation'
+          git push origin HEAD:main

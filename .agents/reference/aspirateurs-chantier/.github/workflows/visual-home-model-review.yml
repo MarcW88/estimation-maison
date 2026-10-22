@@ -1,0 +1,57 @@
+name: Visual design review — home and models
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "modeles/**"
+      - "style.css"
+      - "design-v2.css"
+      - "design-v2-rollout.css"
+      - "home-model-polish.css"
+      - "model-pages-v3.css"
+      - "scripts/apply_home_model_review.py"
+      - "_apply_design_v2.py"
+      - ".agents/skills/site-design-review/**"
+      - ".github/workflows/visual-home-model-review.yml"
+  workflow_dispatch:
+
+jobs:
+  visual-home-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install chromium
+
+      - name: Capture home and representative model pages
+        run: >-
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs
+          --route /
+          --route /modeles/bosch-advancedvac-20/
+          --route /modeles/bosch-gas-18v-10-l/
+          --route /modeles/bosch-gas-35-m-afc/
+          --route /modeles/karcher-wd6/
+          --route /modeles/makita-vc4210mx/
+          --output .artifacts/design-review/home-models
+
+      - name: Upload visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: home-model-design-review
+          path: .artifacts/design-review/home-models/
+          if-no-files-found: warn
+          retention-days: 14

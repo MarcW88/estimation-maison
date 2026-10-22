@@ -1,0 +1,91 @@
+project:
+  name: "aspirateurs-chantier.fr"
+  domain: "https://aspirateurs-chantier.fr"
+  language: "fr"
+
+content:
+  scope:
+    - "/guides/"
+  records_dir: ".content/guides"
+  authored_v2_dir: ".content/guides/v2"
+  draft_robots: "index, follow"
+  require_human_validation_before_indexation: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false
+
+guide:
+  analysis_workflow: ".agents/skills/guide-analysis-workflow/SKILL.md"
+  content_workflow: ".agents/skills/guide-content-workflow/SKILL.md"
+  skill_stack: ".agents/skills/guide-skill-stack.json"
+  machine_workflow_validator: "validate_guide_workflow.py"
+  machine_quality_validator: "validate_guide_quality.py"
+  canonical_generator: "_generate_guide_content.py"
+  shell_generator: "_generate.py"
+  baseline_editorial_generator: "_generate_guides.py"
+  authored_v2_materializer: "_materialize_guides_v2.py"
+  supplemental_generators:
+    - "_guide_classes_lmh_pilot.py"
+    - "_normalize_guide_answers.py"
+  deprecated_length_patch: "_guide_quality_supplements.py"
+  deprecated_length_patch_must_not_run: true
+  allowed_decisions:
+    - KEEP
+    - LIGHT_UPDATE
+    - DEEP_REWRITE
+    - MERGE
+    - NOINDEX
+  allowed_types:
+    - CHOICE
+    - EXPLAINER
+    - HOW_TO
+    - HYBRID
+  prohibit_product_ranking: true
+  prohibit_fixed_guide_template: true
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_link_quotas: true
+  prohibit_source_count_quotas: true
+
+cluster:
+  routes:
+    - "/guides/capacite-cuve/"
+    - "/guides/classes-l-m-h/"
+    - "/guides/comment-choisir-aspirateur-de-chantier/"
+    - "/guides/debit-air-aspirateur/"
+    - "/guides/decolmatage-automatique/"
+    - "/guides/depression-kpa-mbar-air-watt/"
+    - "/guides/entretien-aspirateur-chantier/"
+    - "/guides/filtre-hepa-aspirateur/"
+    - "/guides/prise-asservie/"
+    - "/guides/puissance-aspiration/"
+    - "/guides/sac-ou-sans-sac/"
+  compare_against:
+    - "/usages/"
+    - "/comparatifs/"
+    - "/marques/"
+
+vacuum_claim_safety:
+  class_lmh_must_be_explicitly_sourced: true
+  prohibit_inferring_dust_class_from_hepa_power_airflow_pressure_or_filter_cleaning: true
+  filter_class_does_not_equal_machine_certification: true
+  hepa_does_not_equal_class_h: true
+  wet_dry_does_not_equal_hazardous_dust_certification: true
+  acd_does_not_equal_atex_zone_22: true
+  airflow_pressure_and_motor_power_are_distinct_metrics: true
+  airflow_and_vacuum_pressure_require_measurement_context_for_cross_brand_comparison: true
+  distinguish_gross_net_dust_and_water_capacity_when_used: true
+  distinguish_manual_semi_auto_and_automatic_filter_cleaning: true
+  distinguish_power_socket_and_wireless_tool_trigger: true
+  battery_tool_hose_filter_bag_and_consumable_compatibility_must_be_verified_when_decision_relevant: true
+  high_risk_dust_requires_cautious_prescription_aware_language: true
+
+boundaries:
+  guide_question: "Comment comprendre ou appliquer ce critère, cette technologie, ce risque, cet arbitrage ou cette procédure autonome ?"
+  usage_question: "Dans ce travail précis, quelles contraintes et frictions changent le système d'aspiration à prévoir ?"
+  comparison_question: "Quels modèles choisir entre eux une fois les contraintes connues ?"
+  brand_question: "Comment se structure la gamme ou l'écosystème d'une marque ?"
+
+publish_review:
+  exact_pass: "PASS — READY_FOR_HUMAN_VALIDATION"
+  exact_fail: "FAIL — KEEP_NOINDEX"
+  pass_does_not_authorize_indexation: true

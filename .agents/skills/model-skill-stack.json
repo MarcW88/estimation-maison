@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "purpose": "model workflow shared-vs-custom governance",
+  "governance": {
+    "ratio_basis": "workflow_responsibilities",
+    "target_shared_ratio_min": 0.8,
+    "target_custom_ratio_max": 0.2,
+    "require_external_provenance_for_shared_skills": true,
+    "require_run_evidence_before_publish_review_pass": true,
+    "shared_responsibilities": [
+      "search_intent",
+      "content_audit",
+      "content_refresh_when_needed",
+      "fact_check_pre_draft",
+      "evidence_based_reviews_when_judgmental",
+      "affiliate_value",
+      "content_brief_authoring",
+      "evidence_bound_writing",
+      "fact_check_post_draft",
+      "humanizer_and_general_writing",
+      "anti_ai_slop",
+      "internal_linking_audit",
+      "seo_technical_and_best_practices",
+      "editorial_qa"
+    ],
+    "custom_responsibilities": [
+      "vacuum_model_domain_and_reference_constraints",
+      "cross_model_distinctiveness_cannibalization_and_publish_gate"
+    ]
+  },
+  "shared": [
+    {"name":"content-recovery-and-production-workflow","source":"existing shared workflow in this repository"},
+    {"name":"search-intent","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"c1f347fbbfbad33b7abbde4e6b86e087bc919aff"},
+    {"name":"content-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"1316a54fbd73849d3a68b3ea04f36f1fd48ade6c"},
+    {"name":"content-refresh","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"8bad3c8958bdfd452dda9adbd61d2214026c4fc1"},
+    {"name":"affiliate-value","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"03c140e8077238d2aa8ba9e371265aea4182aff3"},
+    {"name":"fact-check","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6e0b591fc55cd8075960f7525e3045576bde4d89"},
+    {"name":"evidence-based-reviews","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"fbca80971748a44876afdd94c915ddce6cfd8f2a","upstream":"rampstackco/claude-skills/skills/evidence-based-reviews"},
+    {"name":"content-brief-authoring","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"861de637874253aa2302d1ad43fb20b9b01572cf","upstream":"https://github.com/rampstackco/claude-skills/tree/main/skills/content-brief-authoring"},
+    {"name":"content-and-copy","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6fbe38f95618d6462c95f19967fa7f66235546c8","upstream":"https://github.com/rampstackco/claude-skills/tree/main/skills/content-and-copy"},
+    {"name":"internal-linking-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"98d75a089bb2d0c143ca5f824533abbdda333b8e"},
+    {"name":"humanizer","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"accad07f498f5f57e0b6460e74591d057bd96b2b"},
+    {"name":"general-writing","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"9ae8219798fcc0565f891cd4bd650e911903ca27"},
+    {"name":"better-usage","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"cced376ef937f77f5d7855543c8a59af354cd556"},
+    {"name":"academic-voice","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"d6f005227761c0e4e5f862d6a89ff66a66fb5942"},
+    {"name":"writing-cadence","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"fad25b2e40960539a868ae63e923961fe613cfb9"},
+    {"name":"non-autoregressive-writing-pass","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"312e1aca34e8cf7e967cf7f82edf87fd351f932e"},
+    {"name":"anti-ai-slop","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"a0ae97dc8814bf450847eb2b7653ab64fbdf0ee0"},
+    {"name":"seo-technical","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"74efb8d4209b2b3119cd9fe7e208394c5360e0a4"},
+    {"name":"seo-best-practices","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"19f1fa2da56ec71ecf1b2df9854397ac50ccbc24"},
+    {"name":"editorial-qa","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"f4aacedf5380b40054105bfd15feed060f8438a9"}
+  ],
+  "custom": [
+    {"name":"model-content-workflow","scope":"aspirateurs-chantier.fr orchestration plus model-reference vacuum-domain constraints only"},
+    {"name":"model-analysis-workflow","scope":"aspirateurs-chantier.fr cross-model distinctiveness, cannibalization and publish decision only"}
+  ]
+}

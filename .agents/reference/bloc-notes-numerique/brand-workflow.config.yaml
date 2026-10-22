@@ -1,0 +1,120 @@
+project:
+  name: "bloc-notes-numeriques.fr"
+  domain: "https://bloc-notes-numeriques.fr"
+  language: "fr"
+
+content:
+  scope:
+    - "/marques/"
+  source_of_truth:
+    - "brand_data.py"
+    - "brand_publication.py"
+    - "brand_render_common.py"
+    - "brand_render_pages.py"
+    - "brand_pages.py"
+    - "brand_reviewed_output.py"
+    - "brand_enriched_output.py"
+    - "brand_bespoke_output.py"
+    - "brand_hub_bespoke_output.py"
+    - "brand_light_update_output.py"
+  mode: "recovery"
+
+quality:
+  quality_reference: "/guides/prix-bloc-notes-numerique/"
+  draft_robots: "noindex,follow"
+  publish_robots: "index,follow"
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_internal_link_quotas: true
+  prohibit_page_type_templates: true
+  require_cluster_structure_review: true
+
+routing:
+  page_types:
+    - DIRECTORY
+    - BRAND_HUB
+    - PRODUCT
+    - REVIEW
+    - SERVICE
+    - ACCESSORY_HUB
+    - ALTERNATIVES
+  page_type_defines_structure: false
+
+entities:
+  require_entity_map_when_relevant: true
+  require_current_range_when_relevant: true
+  require_ecosystem_map_when_relevant: true
+  require_brand_positioning_when_relevant: true
+
+evidence:
+  prefer_primary_sources: true
+  verified_at: "2026-09-09"
+  statuses:
+    - VERIFIED
+    - SUPPORTED
+    - INFERRED
+    - UNKNOWN
+    - OUTDATED
+    - CONTRADICTED
+  review_skill: ".agents/skills/evidence-based-reviews/SKILL.md"
+  prohibit_model_memory_gap_filling: true
+  prohibit_fake_hands_on: true
+
+internal_linking:
+  policy: "contextual_only"
+  required_destinations_when_relevant:
+    - "/comparatifs/"
+    - "/guides/"
+    - "/usages/"
+
+workflow:
+  brands_dir: ".content/brands"
+  reviews_dir: ".content/reviews"
+  content_workflow: ".agents/skills/brand-content-workflow/SKILL.md"
+  analysis_workflow: ".agents/skills/brand-analysis-workflow/SKILL.md"
+  final_review_mode: "PUBLISH_REVIEW"
+  apply_script: "apply_brand_content.py"
+  audit_script: "generate_brand_metadata.py"
+  machine_validator: "validate_brands.py"
+  require_analysis_pass_before_human_validation: true
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false
+
+publication:
+  state_file: "brand_publication.py"
+  scope: "/marques/"
+  status: "PUBLISHED_HUMAN_VALIDATED"
+  human_validated_at: "2026-09-09"
+  explicit_indexation_approved_at: "2026-09-09"
+
+editorial_chain:
+  - brand_analysis_audit_for_existing_page
+  - search_intent
+  - content_audit_and_refresh_when_needed
+  - evidence_brief_and_fact_check
+  - evidence_based_reviews_when_needed
+  - original_affiliate_value
+  - bespoke_outline_from_intent_and_evidence
+  - evidence_bound_writing
+  - post_draft_fact_check
+  - humanizer_and_general_writing
+  - anti_ai_slop
+  - internal_linking_audit
+  - seo_editorial_and_technical
+  - editorial_qa
+  - machine_validation
+  - brand_analysis_publish_review
+  - human_validation
+
+quality_gate:
+  require_sources_for_factual_claims: true
+  require_limitations_when_decision_relevant: true
+  require_choose_avoid_when_decision_relevant: true
+  require_noindex_in_draft: true
+  prohibit_fake_test_language: true
+  prohibit_editor_facing_metadiscourse: true
+  prohibit_merchant_rewrite_without_original_value: true
+  prohibit_high_severity_ai_slop: true
+  prohibit_unresolved_cannibalization: true
+  prohibit_unjustified_structural_cloning: true

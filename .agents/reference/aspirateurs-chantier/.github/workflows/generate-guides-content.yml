@@ -1,0 +1,104 @@
+name: Generate guide content
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '_generate_guide_content.py'
+      - '_generate_guides.py'
+      - '_normalize_guide_answers.py'
+      - '_guide_classes_lmh_pilot.py'
+      - '_materialize_guides_v2.py'
+      - '_apply_design_v2.py'
+      - 'design-v2.css'
+      - 'design-v2-rollout.css'
+      - 'design-v2.js'
+      - 'validate_guide_workflow.py'
+      - 'validate_guide_quality.py'
+      - 'guide-workflow.config.yaml'
+      - 'scripts/generate_bfl_images.py'
+      - 'scripts/restore_editorial_images.py'
+      - '.content/guides/**'
+      - '.agents/skills/guide-*/**'
+      - '.agents/skills/guide-skill-stack.json'
+      - 'guides/**'
+      - '.github/workflows/generate-guides-content.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile Guide v2 pipeline
+        run: python -m py_compile _generate_guide_content.py _materialize_guides_v2.py _apply_design_v2.py validate_guide_workflow.py validate_guide_quality.py scripts/generate_bfl_images.py scripts/restore_editorial_images.py
+
+      - name: Generate canonical Guide content
+        run: |
+          python _generate_guide_content.py
+          python _apply_design_v2.py
+
+      - name: Verify live robots directive remains present
+        shell: bash
+        run: |
+          failures=0
+          for page in guides/*/index.html; do
+            if ! grep -Eq '<meta name="robots" content="index, ?follow">' "$page"; then
+              echo "Missing index,follow: $page"
+              failures=1
+            fi
+          done
+          exit "$failures"
+
+      - name: Verify canonical generation is idempotent
+        shell: bash
+        run: |
+          git diff -- guides > /tmp/guide-first.diff || true
+          python _generate_guide_content.py
+          python _apply_design_v2.py >/tmp/guide-design.log
+          git diff -- guides > /tmp/guide-second.diff || true
+          if ! cmp -s /tmp/guide-first.diff /tmp/guide-second.diff; then
+            echo "Guide generation is not idempotent"
+            diff -u /tmp/guide-first.diff /tmp/guide-second.diff || true
+            exit 1
+          fi
+
+      - name: Reapply approved product modules
+        run: |
+          if [ -f .content/products/placements.json ]; then
+            python apply_product_cards.py guides
+            python validate_product_cards.py guides
+          fi
+
+      - name: Restore generated editorial images
+        run: python scripts/restore_editorial_images.py --scope guides
+
+      - name: HTML whitespace check
+        run: git diff --check
+
+      - name: Commit generated Guide HTML
+        shell: bash
+        run: |
+          if git diff --quiet -- guides; then
+            echo "Guide HTML already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guides
+          git commit -m "content: regenerate Guides with evidence-led workflow"
+          git pull --rebase origin main
+          git push origin HEAD:main

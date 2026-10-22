@@ -1,0 +1,59 @@
+name: Regenerate brand cluster
+
+on:
+  push:
+    branches: [brand-content-all-pages, main]
+    paths:
+      - "brand_data.py"
+      - "brand_publication.py"
+      - "brand_render_common.py"
+      - "brand_render_pages.py"
+      - "brand_pages.py"
+      - "brand_reviewed_output.py"
+      - "brand_enriched_output.py"
+      - "brand_bespoke_output.py"
+      - "brand_hub_bespoke_output.py"
+      - "brand_light_update_output.py"
+      - "apply_brand_content.py"
+      - "generate_brand_metadata.py"
+      - "validate_brands.py"
+      - "brand-workflow.config.yaml"
+      - ".agents/skills/brand-content-workflow/**"
+      - ".agents/skills/brand-analysis-workflow/**"
+      - ".agents/skills/content-audit/**"
+      - ".agents/skills/evidence-based-reviews/**"
+      - ".github/workflows/regenerate-brands.yml"
+      - "_generate.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply brand content
+        run: python apply_brand_content.py
+      - name: Generate brand audit files
+        run: python generate_brand_metadata.py
+      - name: Validate brand cluster
+        run: python validate_brands.py 2>&1 | tee brand-validation.log
+      - name: Upload validation failure log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brand-validation-log
+          path: brand-validation.log
+      - name: Commit generated brand pages
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add marques .content/brands .content/reviews
+          git commit -m "content: regenerate brand pages"
+          git push

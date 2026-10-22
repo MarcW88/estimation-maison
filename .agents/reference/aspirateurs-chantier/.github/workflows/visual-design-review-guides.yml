@@ -1,0 +1,89 @@
+name: Visual design review — guides
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "guides/**"
+      - "style.css"
+      - "DESIGN.md"
+      - ".agents/skills/site-design-review/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/visual-design-review-guides.yml"
+
+jobs:
+  visual-guides:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install chromium
+
+      - name: Capture Guide pages
+        run: >-
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs
+          --route /guides/
+          --route /guides/comment-choisir-aspirateur-de-chantier/
+          --route /guides/classes-l-m-h/
+          --route /guides/decolmatage-automatique/
+          --route /guides/prise-asservie/
+          --route /guides/puissance-aspiration/
+          --route /guides/depression-kpa-mbar-air-watt/
+          --route /guides/debit-air-aspirateur/
+          --route /guides/capacite-cuve/
+          --route /guides/filtre-hepa-aspirateur/
+          --route /guides/sac-ou-sans-sac/
+          --route /guides/entretien-aspirateur-chantier/
+          --output .artifacts/design-review/guides
+
+      - name: Validate Guide visual regressions
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const report = JSON.parse(fs.readFileSync('.artifacts/design-review/guides/report.json', 'utf8'));
+          const errors = [];
+          if (report.pages.length !== 24) errors.push(`expected 24 viewport captures, got ${report.pages.length}`);
+          for (const page of report.pages) {
+            const label = `${page.route} (${page.viewport})`;
+            if (page.httpStatus !== 200) errors.push(`${label}: HTTP ${page.httpStatus}`);
+            if (page.horizontalOverflow) errors.push(`${label}: horizontal overflow`);
+            if (page.h1Count !== 1) errors.push(`${label}: H1 count ${page.h1Count}`);
+            if ((page.missingHeadingIds || []).length) errors.push(`${label}: headings without id`);
+            if ((page.brokenTocTargets || []).length) errors.push(`${label}: broken TOC targets ${page.brokenTocTargets.join(', ')}`);
+            if ((page.consoleErrors || []).length) errors.push(`${label}: console errors`);
+            if ((page.pageErrors || []).length) errors.push(`${label}: page errors`);
+            for (const table of page.tables || []) {
+              if (!table.hasExpectedWrapper) errors.push(`${label}: table ${table.index} missing responsive wrapper`);
+            }
+          }
+          if (errors.length) {
+            console.error('GUIDE_VISUAL_REVIEW: FAIL');
+            for (const error of errors) console.error(` - ${error}`);
+            process.exit(1);
+          }
+          console.log('GUIDE_VISUAL_REVIEW: PASS');
+          console.log(` - ${report.pages.length} desktop/mobile captures checked`);
+          NODE
+
+      - name: Upload Guide visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: guide-design-review
+          path: .artifacts/design-review/guides/
+          if-no-files-found: warn
+          retention-days: 14

@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name": "Dageno AI",
+    "domain": "https://dageno.ai",
+    "sitemap": "https://dageno.ai/sitemap.xml",
+    "locale": "en-US"
+  },
+  "crawl_mode": "basic",
+  "priority_pages": [
+    "/academy/geo-vs-seo",
+    "/solution/smb-aeo-teams",
+    "/platform/content-optimization"
+  ],
+  "candidate_links": [
+    {
+      "source": "/academy/geo-vs-seo",
+      "target": "/platform/content-optimization",
+      "priority": "P1",
+      "anchor": "AI-readable content optimization",
+      "placement": "section about structure, entity clarity, and AI parsing",
+      "reason": "The source article explains GEO foundations and the target page handles content optimization execution."
+    },
+    {
+      "source": "/solution/smb-aeo-teams",
+      "target": "/platform/content-optimization",
+      "priority": "P1",
+      "anchor": "AI content optimization for small teams",
+      "placement": "section about improving pages without a large team",
+      "reason": "SMB visitors need a direct workflow for improving content visibility."
+    },
+    {
+      "source": "/platform/content-optimization",
+      "target": "/academy/best-seo-content-optimization-tools",
+      "priority": "P1",
+      "anchor": "AI content optimization process",
+      "placement": "feature explanation around improving content for AI search answers",
+      "reason": "The product page benefits from a supporting education link."
+    }
+  ]
+}

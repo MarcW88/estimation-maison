@@ -1,0 +1,34 @@
+name: Validate global navigation
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '_generate.py'
+      - '_remove_brand_tiers.py'
+      - '**/*.html'
+      - '.github/workflows/validate-global-navigation.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '_generate.py'
+      - '_remove_brand_tiers.py'
+      - '**/*.html'
+      - '.github/workflows/validate-global-navigation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reject unsupported brand tier labels
+        run: python _remove_brand_tiers.py --check

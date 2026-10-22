@@ -1,0 +1,61 @@
+# Optional support file. Keep only fields actually used by the comparison.
+
+slug: "meilleur-produit"
+url: "/comparatifs/meilleur-produit/"
+updated_at: "YYYY-MM-DD"
+
+intent:
+  query: "meilleur produit"
+  type: "BEST_OVERALL" # BEST_OVERALL | USE_CASE | BUDGET | FEATURE_SPECIFIC | HEAD_TO_HEAD
+  decision: ""
+  user_job: "" # optional
+  primary_constraint: ""
+
+scope:
+  candidates:
+    - id: "product-a"
+      name: "Product A"
+      status: "ELIGIBLE"
+    - id: "product-b"
+      name: "Product B"
+      status: "ELIGIBLE"
+  major_exclusions: []
+
+criteria:
+  - id: "criterion-1"
+    label: "Criterion 1"
+    rationale: "Why this changes the decision"
+  - id: "criterion-2"
+    label: "Criterion 2"
+    rationale: "Why this changes the decision"
+
+# Evidence should concentrate on facts and judgments that can change the recommendation.
+evidence:
+  - product: "product-a"
+    criterion: "criterion-1"
+    claim: ""
+    value: ""
+    source: ""
+    source_date: ""
+    evidence_class: "VERIFIED" # VERIFIED | SUPPORTED | INFERRED | USER_PATTERN | FIRST_HAND | UNKNOWN
+
+recommendation_logic:
+  default_choice: ""
+  choose_alternative_when: []
+  decisive_tradeoffs: []
+
+measurement_notes: []
+price_configuration_notes: []
+
+# Optional. Add only if the brief explicitly justifies numeric scoring.
+# weights:
+#   criterion-1: 60
+#   criterion-2: 40
+# scores: {}
+# ranking: []
+
+notes:
+  affiliate_commission_used_in_ranking: false
+  desk_research_only: true
+
+status: "DRAFT_NOINDEX"

@@ -1,0 +1,96 @@
+name: Generate brand content
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_generate_brand_content.py"
+      - "_generate_brands.py"
+      - "_generate_bosch.py"
+      - "_generate_karcher.py"
+      - "_generate_makita.py"
+      - "_generate_parkside.py"
+      - "_generate_nilfisk.py"
+      - "_generate_brand_overrides.py"
+      - "_brand_rollout_polish.py"
+      - "_apply_cluster_audit_metadata.py"
+      - "_apply_brand_design_fixes.py"
+      - "_apply_design_v2.py"
+      - "design-v2.css"
+      - "design-v2-rollout.css"
+      - "design-v2.js"
+      - "enforce_brand_review_state.py"
+      - "_validate_brands.py"
+      - "validate_brand_skill_stack.py"
+      - "validate_brand_run_evidence.py"
+      - "brand-workflow.config.yaml"
+      - ".content/brands/**"
+      - ".agents/skills/brand-*/**"
+      - ".agents/skills/brand-skill-stack.json"
+      - ".github/workflows/generate-brand-content.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-brand-content-main
+  cancel-in-progress: false
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate shared/custom governance and provenance
+        run: python validate_brand_skill_stack.py
+
+      - name: Generate canonically and enforce evidence-gated review state
+        run: |
+          python _generate_brand_content.py
+          python _apply_design_v2.py
+
+      - name: Validate machine integrity and anti-template gates
+        run: python _validate_brands.py
+
+      - name: Validate persistent run evidence state
+        run: python validate_brand_run_evidence.py
+
+      - name: Check canonical generation idempotence
+        run: |
+          before=$(find marques/karcher marques/bosch marques/makita marques/festool marques/dewalt marques/parkside marques/nilfisk marques/mirka .content/brands -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)
+          python _generate_brand_content.py >/tmp/brand-regenerate.log
+          python _apply_design_v2.py >/tmp/brand-design.log
+          python _validate_brands.py >/tmp/brand-validate.log
+          after=$(find marques/karcher marques/bosch marques/makita marques/festool marques/dewalt marques/parkside marques/nilfisk marques/mirka .content/brands -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)
+          test "$before" = "$after"
+
+      - name: Preserve live indexation
+        run: |
+          for f in marques/karcher/index.html marques/bosch/index.html marques/makita/index.html marques/festool/index.html marques/dewalt/index.html marques/parkside/index.html marques/nilfisk/index.html marques/mirka/index.html; do
+            grep -q '<meta name="robots" content="index, follow">' "$f"
+          done
+
+      - name: Whitespace check
+        run: git diff --check
+
+      - name: Commit generated brand artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add marques .content/brands
+          if git diff --cached --quiet; then
+            echo "No generated brand changes to commit."
+          else
+            git commit -m "content: regenerate brands with evidence-gated workflow"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

@@ -1,0 +1,126 @@
+version: 2
+site: bloc-notes-numeriques.fr
+route_root: /usages/
+source_of_truth: .content/usages
+record_template: .content/usages/_template.json
+quality_reference: /guides/prix-bloc-notes-numerique/
+
+rendering:
+  legacy_content_source: usage_content.py
+  reviewed_content_source: usage_bespoke_output.py
+  apply_script: apply_usage_content.py
+  reviewed_overrides_win: true
+  merged_routes:
+    /usages/annotation-pdf/: /guides/annoter-pdf-tablette-e-ink/
+
+workflows:
+  analysis: .agents/skills/usage-analysis-workflow/SKILL.md
+  content: .agents/skills/usage-content-workflow/SKILL.md
+  audit_modes:
+    - AUDIT
+    - CLUSTER_AUDIT
+    - PUBLISH_REVIEW
+  audit_decisions:
+    - KEEP
+    - LIGHT_UPDATE
+    - DEEP_REWRITE
+    - MERGE
+    - NOINDEX
+  publish_pass: "PASS — READY_FOR_HUMAN_VALIDATION"
+  publish_fail: "FAIL — KEEP_NOINDEX"
+  require_audit_before_existing_page_correction: true
+  require_publish_review_after_content_workflow: true
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false
+
+boundaries:
+  usage: "Comprendre un job, ses circonstances, ses frictions, son workflow, ses critères et les familles de solutions pertinentes."
+  comparison: "Comparer, évaluer et choisir entre des produits."
+  guide: "Expliquer principalement une technologie, un critère ou une procédure."
+  brand: "Documenter une marque, un écosystème, une gamme, un produit ou un service."
+
+rules:
+  preserve_noindex_until_human_approval: true
+  product_ranking_allowed: false
+  require_jtbd_before_draft: true
+  require_contraindications_when_decision_relevant: true
+  require_non_eink_alternatives_considered_when_plausible: true
+  require_hypothesis_labels: true
+  require_persistent_usage_record: true
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_internal_link_quotas: true
+  prohibit_fixed_usage_page_templates: true
+  require_cluster_structure_review: true
+  preserve_existing_value_on_update: true
+
+reuse_policy:
+  target_existing_skill_share: ">=80%"
+  custom_share_target: "<=20%"
+  custom_allowed_for:
+    - orchestration
+    - usage_vs_comparison_vs_guide_role_separation
+    - job_to_page_fit
+    - workflow_to_criteria_coherence
+    - cross_page_structural_similarity
+  custom_must_not_replace_existing_skill: true
+
+upstream_skill_chain:
+  - "content-audit | shared site/recovery skill"
+  - "search-intent | shared SEO intent skill"
+  - "jobs-to-be-done | wondelai/skills"
+  - "content-refresh | shared site/recovery skill"
+  - "fact-check | shared site/recovery skill"
+  - "evidence-based-reviews | rampstackco/claude-skills | conditional"
+  - "affiliate-value | shared affiliate recovery skill | when purchase-influencing"
+  - "content-brief-authoring | rampstackco/claude-skills"
+  - "content-and-copy | rampstackco/claude-skills"
+  - "internal-linking-audit | shared SEO skill"
+  - "humanizer | external GitHub skill already vendored"
+  - "general-writing | msimchowitz/writing-skills"
+  - "anti-ai-slop | external GitHub skill already vendored"
+  - "seo-onpage / seo-technical / seo-best-practices | shared external SEO skills"
+  - "editorial-qa | shared site/recovery skill"
+
+analysis_chain:
+  - content_audit
+  - search_intent
+  - jobs_to_be_done
+  - content_refresh_when_update
+  - affiliate_value_when_relevant
+  - fact_check
+  - evidence_based_reviews_when_experiential_claims
+  - internal_linking_audit
+  - anti_ai_slop
+  - seo_technical_and_best_practices
+  - editorial_qa
+  - usage_specific_role_and_cluster_checks
+
+production_chain:
+  - consume_usage_audit_for_existing_page
+  - search_intent
+  - jobs_to_be_done
+  - workflow_and_friction_mapping
+  - fact_check_and_evidence
+  - affiliate_value_when_relevant
+  - content_brief_authoring
+  - content_and_copy
+  - post_draft_fact_check
+  - internal_linking_audit
+  - humanizer
+  - general_writing
+  - anti_ai_slop
+  - seo_onpage_and_technical
+  - editorial_qa
+  - usage_analysis_publish_review
+  - human_validation
+
+current_routes:
+  - /usages/prise-de-notes-professionnelle/
+  - /usages/prise-de-notes-etudiant/
+  - /usages/prise-de-notes-reunion/
+  - /usages/annotation-pdf/ # merged redirect retained for continuity
+  - /usages/lecture-et-prise-de-notes/
+  - /usages/dessin/
+  - /usages/remplacer-cahiers-papier/

@@ -1,0 +1,28 @@
+name: Validate live indexation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate public robots directives and discovery files
+        run: |
+          python -m py_compile scripts/publish_indexation.py
+          python scripts/publish_indexation.py --check
+      - name: Parse sitemap XML
+        run: |
+          python -c "import xml.etree.ElementTree as ET; ET.parse('sitemap.xml'); print('SITEMAP_XML PASS')"
+      - name: Whitespace check
+        run: git diff --check

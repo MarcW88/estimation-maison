@@ -1,0 +1,111 @@
+name: Visual design review — models
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "modeles/**"
+      - "guides/**"
+      - "comparatifs/**"
+      - "style.css"
+      - "design-v2.css"
+      - "design-v2-rollout.css"
+      - "home-model-polish.css"
+      - "model-pages-v3.css"
+      - "_apply_design_v2.py"
+      - "design-v2.js"
+      - ".agents/skills/site-design-review/**"
+      - ".github/workflows/visual-model-design-review.yml"
+  workflow_dispatch:
+
+jobs:
+  visual-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install chromium
+
+      - name: Enforce model stylesheet ownership
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const failures = [];
+          const legacy = fs.readFileSync('home-model-polish.css', 'utf8');
+          const model = fs.readFileSync('model-pages-v3.css', 'utf8');
+
+          if (/\.design-v2\.design-model/.test(legacy)) {
+            failures.push('home-model-polish.css still contains model selectors; model-specific styling must live in model-pages-v3.css only');
+          }
+          if (/\.content-main\s+h2\s*\{/.test(model)) {
+            failures.push('model-pages-v3.css must not redefine shared article H2 styling');
+          }
+          if (/\.content-main\s+p\s*\{/.test(model)) {
+            failures.push('model-pages-v3.css must not redefine shared paragraph rhythm');
+          }
+
+          if (failures.length) {
+            console.error('Model stylesheet ownership failed:\n- ' + failures.join('\n- '));
+            process.exit(1);
+          }
+          console.log('Model styling ownership is clean: shared article rhythm comes from the common design layer.');
+          NODE
+
+      - name: Capture model pages with site references
+        run: >-
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs
+          --route /guides/classes-l-m-h/
+          --route /comparatifs/aspirateur-classe-m/
+          --route /modeles/bosch-advancedvac-20/
+          --route /modeles/bosch-gas-18v-10-l/
+          --route /modeles/bosch-gas-35-m-afc/
+          --route /modeles/karcher-wd6/
+          --route /modeles/karcher-nt-30-1-tact/
+          --route /modeles/makita-vc4210mx/
+          --route /modeles/festool-ctl-midi/
+          --output .artifacts/design-review/models-v3
+
+      - name: Enforce model content alignment
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const report = JSON.parse(fs.readFileSync('.artifacts/design-review/models-v3/report.json', 'utf8'));
+          const failures = [];
+
+          for (const page of report.pages.filter(page => page.route.startsWith('/modeles/'))) {
+            if (page.horizontalOverflow) failures.push(`${page.route} ${page.viewport}: global horizontal overflow`);
+            for (const table of page.tables || []) {
+              if (table.parentWidth && table.width + 2 < table.parentWidth) {
+                failures.push(`${page.route} ${page.viewport}: content table ${table.index} is ${table.width}px inside ${table.parentWidth}px parent`);
+              }
+            }
+          }
+
+          if (failures.length) {
+            console.error('Model alignment validation failed:\n- ' + failures.join('\n- '));
+            process.exit(1);
+          }
+          console.log('Model content tables fill their wrappers and no model page creates global overflow.');
+          NODE
+
+      - name: Upload model visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-design-review-v3
+          path: .artifacts/design-review/models-v3/
+          if-no-files-found: warn
+          retention-days: 14

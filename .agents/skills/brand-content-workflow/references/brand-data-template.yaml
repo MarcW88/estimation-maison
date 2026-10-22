@@ -1,0 +1,82 @@
+brand:
+  id: "example-brand"
+  name: "Example Brand"
+  canonical_url: "/marques/example-brand/"
+  updated_at: "YYYY-MM-DD"
+
+entity_map:
+  products:
+    - "Product A"
+  services:
+    - "Service A"
+  software:
+    - "OS A"
+  technologies:
+    - "Technology A"
+  accessories:
+    - "Accessory A"
+  integrations:
+    - "Google Drive"
+  formats:
+    - "PDF"
+  use_cases:
+    - "prise de notes"
+  competitors:
+    - "Competitor A"
+
+brand_positioning:
+  statement: ""
+  evidence:
+    - ""
+
+product_range:
+  - id: "product-a"
+    name: "Product A"
+    status: "CURRENT"
+    generation: ""
+    size: ""
+    technology: ""
+    positioning: ""
+    main_limit: ""
+    source: ""
+    verified_at: ""
+
+ecosystem:
+  hardware:
+    - ""
+  stylus:
+    - ""
+  os:
+    - ""
+  notes:
+    - ""
+  pdf:
+    - ""
+  ocr:
+    - ""
+  cloud:
+    - ""
+  export:
+    - ""
+  third_party:
+    - ""
+
+evidence:
+  - entity: "Example Brand"
+    claim: ""
+    source: ""
+    verified_at: ""
+    status: "VERIFIED"
+    freshness: "high"
+
+internal_links:
+  products:
+    - ""
+  comparisons:
+    - ""
+  guides:
+    - ""
+  usages:
+    - ""
+  services:
+    - ""

@@ -1,0 +1,38 @@
+project:
+  name: "example-site"
+  domain: "https://example.com"
+  language: "fr"
+
+content:
+  scope:
+    - "/comparatifs/"
+  source_of_truth: "comparison_content.py"
+  content_type: "affiliate-comparison"
+  mode: "auto"
+
+quality:
+  quality_reference: "/comparatifs/reference/"
+  draft_robots: "noindex,follow"
+
+comparison:
+  score_scale_max: 10
+  require_weights_sum_100: true
+  enable_confidence_adjustment: true
+  require_hard_gates: true
+  require_total_solution_cost_when_relevant: true
+
+evidence:
+  classes:
+    VERIFIED: 1.00
+    SUPPORTED: 0.95
+    INFERRED: 0.85
+    USER_PATTERN: 0.80
+    FIRST_HAND: 1.00
+  prohibit_unknown_for_scored_criteria: true
+
+workflow:
+  comparisons_dir: ".content/comparisons"
+  briefs_dir: ".content/briefs"
+  reviews_dir: ".content/reviews"
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false

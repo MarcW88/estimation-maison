@@ -1,0 +1,85 @@
+name: Generate usage content
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_generate_usage_overrides.py"
+      - "_materialize_usage_v2.py"
+      - "_apply_design_v2.py"
+      - "design-v2.css"
+      - "design-v2-rollout.css"
+      - "design-v2.js"
+      - "validate_usage_workflow.py"
+      - "usage-workflow.config.yaml"
+      - "scripts/generate_bfl_images.py"
+      - "scripts/restore_editorial_images.py"
+      - ".content/usages/**"
+      - ".agents/skills/usage-*/**"
+      - ".agents/skills/usage-skill-stack.json"
+      - ".github/workflows/generate-usage-content.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate 80/20 governance, records and live safety
+        run: python validate_usage_workflow.py
+
+      - name: Generate base usage shells
+        run: python _generate_usage_overrides.py
+
+      - name: Materialize authored usage v2 content
+        run: |
+          python _materialize_usage_v2.py
+          python _apply_design_v2.py
+
+      - name: Revalidate usage workflow contract
+        run: python validate_usage_workflow.py
+
+      - name: Preserve live indexation
+        run: |
+          for f in usages/*/index.html; do
+            grep -q '<meta name="robots" content="index, follow">' "$f"
+          done
+
+      - name: Reapply approved product modules
+        run: |
+          if [ -f .content/products/placements.json ]; then
+            python apply_product_cards.py usages
+            python validate_product_cards.py usages
+          fi
+
+      - name: Restore generated editorial images
+        run: |
+          python -m py_compile scripts/generate_bfl_images.py scripts/restore_editorial_images.py
+          python scripts/restore_editorial_images.py --scope usages
+
+      - name: Whitespace check
+        run: git diff --check
+
+      - name: Commit generated usage artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add usages
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "content: materialize evidence-gated usage drafts"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

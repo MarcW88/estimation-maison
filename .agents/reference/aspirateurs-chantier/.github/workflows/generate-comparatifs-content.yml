@@ -1,0 +1,96 @@
+name: Generate comparison content
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "_generate_comparison_content.py"
+      - "_materialize_comparison_v2.py"
+      - "_generate_professional_comparison_override.py"
+      - "_generate_comparison_overrides.py"
+      - "_polish_comparison_rollout.py"
+      - "_normalize_comparatifs.py"
+      - "_apply_comparison_design.py"
+      - "_apply_design_v2.py"
+      - "design-v2.css"
+      - "design-v2-rollout.css"
+      - "design-v2.js"
+      - "_validate_comparatifs.py"
+      - "_validate_comparison_rollout.py"
+      - "validate_comparison_skill_stack.py"
+      - "validate_comparison_run_evidence.py"
+      - "enforce_comparison_review_state.py"
+      - "comparison-workflow.config.yaml"
+      - "comparison-pages.css"
+      - "comparison-pages.js"
+      - ".content/comparisons/**"
+      - ".agents/skills/comparison-*/**"
+      - ".github/workflows/generate-comparatifs-content.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate 80/20 governance and provenance
+        run: python validate_comparison_skill_stack.py
+
+      - name: Materialize canonical comparison drafts
+        run: |
+          python _generate_comparison_content.py
+          python _apply_design_v2.py
+
+      - name: Validate persisted run-evidence state
+        run: python validate_comparison_run_evidence.py
+
+      - name: Validate comparison data present
+        run: |
+          for f in .content/comparisons/*.json; do
+            python .agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py "$f"
+          done
+
+      - name: Structural and semantic safety gates
+        run: |
+          python _validate_comparatifs.py
+          python _validate_comparison_rollout.py
+
+      - name: Preserve live indexation
+        run: |
+          for f in comparatifs/*/index.html; do
+            grep -q '<meta name="robots" content="index, follow">' "$f"
+          done
+
+      - name: Reapply approved product modules
+        run: |
+          if [ -f .content/products/placements.json ]; then
+            python apply_product_cards.py comparisons
+            python validate_product_cards.py comparisons
+          fi
+
+      - name: Whitespace check
+        run: git diff --check
+
+      - name: Commit generated comparison artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comparatifs .content/comparisons
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "content: materialize evidence-gated comparison drafts"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

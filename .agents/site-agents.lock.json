@@ -1,0 +1,3337 @@
+{
+  "schema": 1,
+  "canonical": "MarcW88/bloc-notes-numerique@5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+  "complement": "MarcW88/aspirateurs-chantier@b11401c1e78ec1da7d90238fc1b903b48cca4933",
+  "files": {
+    ".agents/reference/bloc-notes-numerique/.agents/skills/academic-voice/SKILL.md": {
+      "sha256": "8696023f2d243a620122716fbefc394d2aae17dffd7c77c17983e24960eac82c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/academic-voice/SKILL.md"
+    },
+    ".agents/skills/academic-voice/SKILL.md": {
+      "sha256": "8696023f2d243a620122716fbefc394d2aae17dffd7c77c17983e24960eac82c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/academic-voice/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/affiliate-value/SKILL.md": {
+      "sha256": "76af854baeffce394ff2f5567acd24f4b7d19cda972861850695063eaa37d795",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/affiliate-value/SKILL.md"
+    },
+    ".agents/skills/affiliate-value/SKILL.md": {
+      "sha256": "76af854baeffce394ff2f5567acd24f4b7d19cda972861850695063eaa37d795",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/affiliate-value/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/SKILL.md": {
+      "sha256": "e14be589c34e7c6498546a7b070f6f732a6d6f1aaf6e2c816121473fc14eef51",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/SKILL.md"
+    },
+    ".agents/skills/anti-ai-slop/SKILL.md": {
+      "sha256": "e14be589c34e7c6498546a7b070f6f732a6d6f1aaf6e2c816121473fc14eef51",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/checklists/global_ai_smell_checklist.md": {
+      "sha256": "c12949d407cba3c889926a5be322bf96e9869ee750bb0b817e5658208101584d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/checklists/global_ai_smell_checklist.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/global_ai_smell_checklist.md": {
+      "sha256": "c12949d407cba3c889926a5be322bf96e9869ee750bb0b817e5658208101584d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/checklists/global_ai_smell_checklist.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/checklists/remediation_patterns.md": {
+      "sha256": "b1827514becf5598049ebbbfb1c596de68d6f72dd66034d7df106e6713bd0405",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/checklists/remediation_patterns.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/remediation_patterns.md": {
+      "sha256": "b1827514becf5598049ebbbfb1c596de68d6f72dd66034d7df106e6713bd0405",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/checklists/remediation_patterns.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/dimensions/writing_information.md": {
+      "sha256": "399c856e74d6dd9a0c0ea3f05a3428a1774b6228321f5ed05624685fd8181c0e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/dimensions/writing_information.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/writing_information.md": {
+      "sha256": "399c856e74d6dd9a0c0ea3f05a3428a1774b6228321f5ed05624685fd8181c0e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/dimensions/writing_information.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/protocols/finding_format.md": {
+      "sha256": "c13c459c083e4974b6631c69aba9004db6712713824a63f2e20e0f6b02aa4632",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/protocols/finding_format.md"
+    },
+    ".agents/skills/anti-ai-slop/protocols/finding_format.md": {
+      "sha256": "c13c459c083e4974b6631c69aba9004db6712713824a63f2e20e0f6b02aa4632",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/protocols/finding_format.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/protocols/output_design_review_gate.md": {
+      "sha256": "9c38334247f198d5d4d181edc7f6ad74d82290e4b52a65d16c919cdeb395bdde",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/protocols/output_design_review_gate.md"
+    },
+    ".agents/skills/anti-ai-slop/protocols/output_design_review_gate.md": {
+      "sha256": "9c38334247f198d5d4d181edc7f6ad74d82290e4b52a65d16c919cdeb395bdde",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/protocols/output_design_review_gate.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/protocols/review_workflow.md": {
+      "sha256": "9ea7094f59b1743e5ecfecb6f40c26c937dca31bb913561b48a3f871c0b8c495",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/protocols/review_workflow.md"
+    },
+    ".agents/skills/anti-ai-slop/protocols/review_workflow.md": {
+      "sha256": "9ea7094f59b1743e5ecfecb6f40c26c937dca31bb913561b48a3f871c0b8c495",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/protocols/review_workflow.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/taxonomies/task_purpose_matrix.md": {
+      "sha256": "f087a1f8351138677cc5664e4663593b47e5f3f62e9841076e6a490207bb953b",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/taxonomies/task_purpose_matrix.md"
+    },
+    ".agents/skills/anti-ai-slop/taxonomies/task_purpose_matrix.md": {
+      "sha256": "f087a1f8351138677cc5664e4663593b47e5f3f62e9841076e6a490207bb953b",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/taxonomies/task_purpose_matrix.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/anti-ai-slop/templates/review_report_template.md": {
+      "sha256": "b59fa42f35133fa36330aa628048e1cff386f414116573464ecb5e3adec4ddd8",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/templates/review_report_template.md"
+    },
+    ".agents/skills/anti-ai-slop/templates/review_report_template.md": {
+      "sha256": "b59fa42f35133fa36330aa628048e1cff386f414116573464ecb5e3adec4ddd8",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/anti-ai-slop/templates/review_report_template.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/better-usage/SKILL.md": {
+      "sha256": "236d2a1c1012fa67a2fad3cd1af30d30a71939f5d3e51de21c269d565960170e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/better-usage/SKILL.md"
+    },
+    ".agents/skills/better-usage/SKILL.md": {
+      "sha256": "236d2a1c1012fa67a2fad3cd1af30d30a71939f5d3e51de21c269d565960170e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/better-usage/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/brand-analysis-workflow/SKILL.md": {
+      "sha256": "95dfc3381ec152ed14adb06001136d8cdec088a1483c2509cd301b75cba791a5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/brand-analysis-workflow/SKILL.md"
+    },
+    ".agents/skills/brand-analysis-workflow/SKILL.md": {
+      "sha256": "95dfc3381ec152ed14adb06001136d8cdec088a1483c2509cd301b75cba791a5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/brand-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/brand-content-workflow/SKILL.md": {
+      "sha256": "2e841521209864526a5713e36828921f451ebb2bd8d290be06df897035070387",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/brand-content-workflow/SKILL.md"
+    },
+    ".agents/skills/brand-content-workflow/SKILL.md": {
+      "sha256": "2e841521209864526a5713e36828921f451ebb2bd8d290be06df897035070387",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/brand-content-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-analysis-workflow/SKILL.md": {
+      "sha256": "b81b59ef1852ccb4017907f756b15c68d533a6ba9c9a7091991128efc031769a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-analysis-workflow/SKILL.md"
+    },
+    ".agents/skills/comparison-analysis-workflow/SKILL.md": {
+      "sha256": "b81b59ef1852ccb4017907f756b15c68d533a6ba9c9a7091991128efc031769a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/README.md": {
+      "sha256": "eccc70fd530fc0cfc33a95fe4036dac114f981342e347e9d9580efb8cb99fc45",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/README.md"
+    },
+    ".agents/skills/comparison-content-workflow/README.md": {
+      "sha256": "eccc70fd530fc0cfc33a95fe4036dac114f981342e347e9d9580efb8cb99fc45",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/README.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/SKILL.md": {
+      "sha256": "33a1ab536b52bc215873db25d21b439757fc03c512d1a9eb89572a77a0f74464",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/SKILL.md"
+    },
+    ".agents/skills/comparison-content-workflow/SKILL.md": {
+      "sha256": "33a1ab536b52bc215873db25d21b439757fc03c512d1a9eb89572a77a0f74464",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/comparison-workflow.config.example.yaml": {
+      "sha256": "56f53591116e2f41938fce0eadb70812e4f5bfc80139eebcd933b6e4ba7f329f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/comparison-workflow.config.example.yaml"
+    },
+    ".agents/skills/comparison-content-workflow/comparison-workflow.config.example.yaml": {
+      "sha256": "56f53591116e2f41938fce0eadb70812e4f5bfc80139eebcd933b6e4ba7f329f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/comparison-workflow.config.example.yaml"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/references/comparison-brief-template.md": {
+      "sha256": "2503d5672873a2954599514266efb8ae0aa8552f656d89513df4e8852c63fff9",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-brief-template.md"
+    },
+    ".agents/skills/comparison-content-workflow/references/comparison-brief-template.md": {
+      "sha256": "2503d5672873a2954599514266efb8ae0aa8552f656d89513df4e8852c63fff9",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-brief-template.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/references/comparison-data-template.yaml": {
+      "sha256": "28d0fce7cfa1a1f6d15a911af03b34ac0ae99ab2d9fda69add41b484da08f975",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-data-template.yaml"
+    },
+    ".agents/skills/comparison-content-workflow/references/comparison-data-template.yaml": {
+      "sha256": "28d0fce7cfa1a1f6d15a911af03b34ac0ae99ab2d9fda69add41b484da08f975",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-data-template.yaml"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/references/comparison-publish-gate-template.md": {
+      "sha256": "5cee66f6cbf34893997faeda381f8c524e5278a83baa73931b53d1d726b09d5c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-publish-gate-template.md"
+    },
+    ".agents/skills/comparison-content-workflow/references/comparison-publish-gate-template.md": {
+      "sha256": "5cee66f6cbf34893997faeda381f8c524e5278a83baa73931b53d1d726b09d5c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-publish-gate-template.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/scripts/score_comparison.py": {
+      "sha256": "313ddd60512576fe33d1d4433a6d9492ff61251a9058702d0ff03fbc31e17a89",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/scripts/score_comparison.py"
+    },
+    ".agents/skills/comparison-content-workflow/scripts/score_comparison.py": {
+      "sha256": "313ddd60512576fe33d1d4433a6d9492ff61251a9058702d0ff03fbc31e17a89",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/scripts/score_comparison.py"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py": {
+      "sha256": "033508c517f89370d54979022c3c0bfa113d2c40cfb1668053b456f692a26a33",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py"
+    },
+    ".agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py": {
+      "sha256": "033508c517f89370d54979022c3c0bfa113d2c40cfb1668053b456f692a26a33",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/content-and-copy/SKILL.md": {
+      "sha256": "23eb88b4a3ad3fc8b97f1dd211f184be0e0756449190ee947bc21fa7e5e7e9ea",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-and-copy/SKILL.md"
+    },
+    ".agents/skills/content-and-copy/SKILL.md": {
+      "sha256": "23eb88b4a3ad3fc8b97f1dd211f184be0e0756449190ee947bc21fa7e5e7e9ea",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-and-copy/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/content-audit/SKILL.md": {
+      "sha256": "d4b507fe8ac82d7a99b23e3eee401d38c2c14ead17cf28ef73da11e90a0be9fa",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-audit/SKILL.md"
+    },
+    ".agents/skills/content-audit/SKILL.md": {
+      "sha256": "d4b507fe8ac82d7a99b23e3eee401d38c2c14ead17cf28ef73da11e90a0be9fa",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-audit/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/content-brief-authoring/SKILL.md": {
+      "sha256": "9f16db0e227c8af60ce841d99c4288ae20c00a7e5fb2a6abcab84f164e3b611c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-brief-authoring/SKILL.md"
+    },
+    ".agents/skills/content-brief-authoring/SKILL.md": {
+      "sha256": "9f16db0e227c8af60ce841d99c4288ae20c00a7e5fb2a6abcab84f164e3b611c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-brief-authoring/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/content-refresh/SKILL.md": {
+      "sha256": "4e8906ff55d39405845e9c723890624c3b269b7bef3c8fcb7267eac243f03c83",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-refresh/SKILL.md"
+    },
+    ".agents/skills/content-refresh/SKILL.md": {
+      "sha256": "4e8906ff55d39405845e9c723890624c3b269b7bef3c8fcb7267eac243f03c83",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/content-refresh/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/deal-analysis-workflow/SKILL.md": {
+      "sha256": "7e906387901fd7fe815e32a357a1cff2325b167d1231ba0ea43156e4933eb2cb",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-analysis-workflow/SKILL.md"
+    },
+    ".agents/skills/deal-analysis-workflow/SKILL.md": {
+      "sha256": "7e906387901fd7fe815e32a357a1cff2325b167d1231ba0ea43156e4933eb2cb",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/deal-content-workflow/README.md": {
+      "sha256": "cfd7be869472c09c14df527fcf1ecd468d1d852b9d60d180970eb3e2c8cfb2ad",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/README.md"
+    },
+    ".agents/skills/deal-content-workflow/README.md": {
+      "sha256": "cfd7be869472c09c14df527fcf1ecd468d1d852b9d60d180970eb3e2c8cfb2ad",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/README.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/deal-content-workflow/SKILL.md": {
+      "sha256": "59c1eecf752e5b22e8105e996f6c312ada6ed8e801430d3e79c2cda42428021d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/SKILL.md"
+    },
+    ".agents/skills/deal-content-workflow/SKILL.md": {
+      "sha256": "59c1eecf752e5b22e8105e996f6c312ada6ed8e801430d3e79c2cda42428021d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/deal-content-workflow/THIRD_PARTY_NOTICES.md": {
+      "sha256": "6a28ea37ffc43231d41a699710f042d1ac9efdb20b0b9d4b478967263060bf29",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/THIRD_PARTY_NOTICES.md"
+    },
+    ".agents/skills/deal-content-workflow/THIRD_PARTY_NOTICES.md": {
+      "sha256": "6a28ea37ffc43231d41a699710f042d1ac9efdb20b0b9d4b478967263060bf29",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/THIRD_PARTY_NOTICES.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/deal-content-workflow/references/promo-evidence.md": {
+      "sha256": "71466a766c6267dc130ef49ca7090ba7ec6872ca38e6bb7180da98cea3628599",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/references/promo-evidence.md"
+    },
+    ".agents/skills/deal-content-workflow/references/promo-evidence.md": {
+      "sha256": "71466a766c6267dc130ef49ca7090ba7ec6872ca38e6bb7180da98cea3628599",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/deal-content-workflow/references/promo-evidence.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/editorial-image-planner/SKILL.md": {
+      "sha256": "8c1fd58afc175bf681e89552d6ee2bbe2b1eda4795234c9e2e9455e5efbb4633",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/editorial-image-planner/SKILL.md"
+    },
+    ".agents/skills/editorial-image-planner/SKILL.md": {
+      "sha256": "8c1fd58afc175bf681e89552d6ee2bbe2b1eda4795234c9e2e9455e5efbb4633",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/editorial-image-planner/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/editorial-qa/SKILL.md": {
+      "sha256": "7e266dfaa0dcbb9150deb6860eff05b1e9617f66750f69ce50e7edca221067b5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/editorial-qa/SKILL.md"
+    },
+    ".agents/skills/editorial-qa/SKILL.md": {
+      "sha256": "7e266dfaa0dcbb9150deb6860eff05b1e9617f66750f69ce50e7edca221067b5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/editorial-qa/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/evidence-based-reviews/SKILL.md": {
+      "sha256": "341c016069ef45303f0cb29daadc84a37b3cc7573934da9fe097941971d6154a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/evidence-based-reviews/SKILL.md"
+    },
+    ".agents/skills/evidence-based-reviews/SKILL.md": {
+      "sha256": "341c016069ef45303f0cb29daadc84a37b3cc7573934da9fe097941971d6154a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/evidence-based-reviews/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/fact-check/SKILL.md": {
+      "sha256": "cb8c928bdd611d5b497d575adc9d8dc79fed70aa2e2df7176978d60c29a80e5b",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/fact-check/SKILL.md"
+    },
+    ".agents/skills/fact-check/SKILL.md": {
+      "sha256": "cb8c928bdd611d5b497d575adc9d8dc79fed70aa2e2df7176978d60c29a80e5b",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/fact-check/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/general-writing/SKILL.md": {
+      "sha256": "78ed812a03f8ebf4a3de4bf7d999bbd846aafc21263df1fc4348c6617b9e131f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/general-writing/SKILL.md"
+    },
+    ".agents/skills/general-writing/SKILL.md": {
+      "sha256": "78ed812a03f8ebf4a3de4bf7d999bbd846aafc21263df1fc4348c6617b9e131f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/general-writing/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/general-writing/references/eval.md": {
+      "sha256": "cf0deb331f3906c68519b5ba892f591f937352694c88d39721dcc6f218581022",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/general-writing/references/eval.md"
+    },
+    ".agents/skills/general-writing/references/eval.md": {
+      "sha256": "cf0deb331f3906c68519b5ba892f591f937352694c88d39721dcc6f218581022",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/general-writing/references/eval.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/guide-analysis-workflow/SKILL.md": {
+      "sha256": "5b40e316a1f2f9c3b9f5fdb059a6487ee6982150850989fb603d8c23402be8c3",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-analysis-workflow/SKILL.md"
+    },
+    ".agents/skills/guide-analysis-workflow/SKILL.md": {
+      "sha256": "5b40e316a1f2f9c3b9f5fdb059a6487ee6982150850989fb603d8c23402be8c3",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/guide-content-workflow/SKILL.md": {
+      "sha256": "2973d59077560e7c3fa9262845be0a3cbe98f420b4d23ea73ae52cf92354c886",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/SKILL.md"
+    },
+    ".agents/skills/guide-content-workflow/SKILL.md": {
+      "sha256": "2973d59077560e7c3fa9262845be0a3cbe98f420b4d23ea73ae52cf92354c886",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/guide-content-workflow/references/brief-template.md": {
+      "sha256": "6cf56bb761bf783bc562c9da9df125a17fb116fcc1aadfcc3004178240cad989",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/brief-template.md"
+    },
+    ".agents/skills/guide-content-workflow/references/brief-template.md": {
+      "sha256": "6cf56bb761bf783bc562c9da9df125a17fb116fcc1aadfcc3004178240cad989",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/brief-template.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/guide-content-workflow/references/choice-guide.md": {
+      "sha256": "5a83f614af01346884ac6ad1b633954179997250406a2a7cc2283f5dce2991a0",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/choice-guide.md"
+    },
+    ".agents/skills/guide-content-workflow/references/choice-guide.md": {
+      "sha256": "5a83f614af01346884ac6ad1b633954179997250406a2a7cc2283f5dce2991a0",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/choice-guide.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/guide-content-workflow/references/explainer-guide.md": {
+      "sha256": "7ab84294cbcc7c75bb640c4982bc6385d5a5e73eec492b692ad54379226689ab",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/explainer-guide.md"
+    },
+    ".agents/skills/guide-content-workflow/references/explainer-guide.md": {
+      "sha256": "7ab84294cbcc7c75bb640c4982bc6385d5a5e73eec492b692ad54379226689ab",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/explainer-guide.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/guide-content-workflow/references/how-to-guide.md": {
+      "sha256": "bb47a1d5015e4473cc6a1b1a7a89b9e5093dc70bedabc70f0e895e7d15c88ed7",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/how-to-guide.md"
+    },
+    ".agents/skills/guide-content-workflow/references/how-to-guide.md": {
+      "sha256": "bb47a1d5015e4473cc6a1b1a7a89b9e5093dc70bedabc70f0e895e7d15c88ed7",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/how-to-guide.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/guide-content-workflow/references/publish-gate-template.md": {
+      "sha256": "9222ccfb1a7c5ce1c7c621676400339b2eacca19ac9156fa5483565ecb0445f0",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/publish-gate-template.md"
+    },
+    ".agents/skills/guide-content-workflow/references/publish-gate-template.md": {
+      "sha256": "9222ccfb1a7c5ce1c7c621676400339b2eacca19ac9156fa5483565ecb0445f0",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/guide-content-workflow/references/publish-gate-template.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/humanizer/SKILL.md": {
+      "sha256": "e1f4dd89ccb7e381cfc162ac07a71a8cf635a44338fc864bf4cbef20d499421c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/humanizer/SKILL.md"
+    },
+    ".agents/skills/humanizer/SKILL.md": {
+      "sha256": "e1f4dd89ccb7e381cfc162ac07a71a8cf635a44338fc864bf4cbef20d499421c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/humanizer/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/internal-linking-audit/SKILL.md": {
+      "sha256": "6f25453c9a122704886d137d8db80f027f85c2d208b1620f4fc0557f44b92be5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/internal-linking-audit/SKILL.md"
+    },
+    ".agents/skills/internal-linking-audit/SKILL.md": {
+      "sha256": "6f25453c9a122704886d137d8db80f027f85c2d208b1620f4fc0557f44b92be5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/internal-linking-audit/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/jobs-to-be-done/LICENSE": {
+      "sha256": "4c210ae9ca68b482f500b34bf6d0f86911d89b09db4b07df2452d0056ac594ce",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/jobs-to-be-done/LICENSE"
+    },
+    ".agents/skills/jobs-to-be-done/LICENSE": {
+      "sha256": "4c210ae9ca68b482f500b34bf6d0f86911d89b09db4b07df2452d0056ac594ce",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/jobs-to-be-done/LICENSE"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/jobs-to-be-done/SKILL.md": {
+      "sha256": "a383be06c6011a9dad5e6c349c0d0bf79d0641879d61752b8fb8a9b1785b43ef",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/jobs-to-be-done/SKILL.md"
+    },
+    ".agents/skills/jobs-to-be-done/SKILL.md": {
+      "sha256": "a383be06c6011a9dad5e6c349c0d0bf79d0641879d61752b8fb8a9b1785b43ef",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/jobs-to-be-done/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/natural-writing/SKILL.md": {
+      "sha256": "b92999453e5a855a011a2cc67397fc3886102d69d0086577fed36b27493f01cf",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/natural-writing/SKILL.md"
+    },
+    ".agents/skills/natural-writing/SKILL.md": {
+      "sha256": "b92999453e5a855a011a2cc67397fc3886102d69d0086577fed36b27493f01cf",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/natural-writing/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/non-autoregressive-writing-pass/SKILL.md": {
+      "sha256": "297012f7f9f96026022e1d14d3234b577c22ead3f6b9f1722a30eb24b2567139",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/non-autoregressive-writing-pass/SKILL.md"
+    },
+    ".agents/skills/non-autoregressive-writing-pass/SKILL.md": {
+      "sha256": "297012f7f9f96026022e1d14d3234b577c22ead3f6b9f1722a30eb24b2567139",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/non-autoregressive-writing-pass/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/search-intent/SKILL.md": {
+      "sha256": "b021fd42db1b7b10137ba20cd46719e38d72f3e18a998868864e57739e78d705",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/search-intent/SKILL.md"
+    },
+    ".agents/skills/search-intent/SKILL.md": {
+      "sha256": "b021fd42db1b7b10137ba20cd46719e38d72f3e18a998868864e57739e78d705",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/search-intent/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/seo-best-practices/SKILL.md": {
+      "sha256": "0f68b8390813543e44daadcf269ebecd6256f9c75196402a4e913f337b12827d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-best-practices/SKILL.md"
+    },
+    ".agents/skills/seo-best-practices/SKILL.md": {
+      "sha256": "0f68b8390813543e44daadcf269ebecd6256f9c75196402a4e913f337b12827d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-best-practices/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/seo-content-audit/SKILL.md": {
+      "sha256": "8db5a8393dff31e2898ef03f8ffd8bce227a6f641259b161120ac41393c594fd",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-content-audit/SKILL.md"
+    },
+    ".agents/skills/seo-content-audit/SKILL.md": {
+      "sha256": "8db5a8393dff31e2898ef03f8ffd8bce227a6f641259b161120ac41393c594fd",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-content-audit/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/seo-drift/SKILL.md": {
+      "sha256": "bb0ef10b00969ee9783fade14d312b4453639e175c969fcbbc4af57876df8418",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-drift/SKILL.md"
+    },
+    ".agents/skills/seo-drift/SKILL.md": {
+      "sha256": "bb0ef10b00969ee9783fade14d312b4453639e175c969fcbbc4af57876df8418",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-drift/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/seo-keyword/SKILL.md": {
+      "sha256": "cea8e419a454ce8b5430a7bdfbf9334b1f217e4265c870b9b359d36c7e7775c7",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-keyword/SKILL.md"
+    },
+    ".agents/skills/seo-keyword/SKILL.md": {
+      "sha256": "cea8e419a454ce8b5430a7bdfbf9334b1f217e4265c870b9b359d36c7e7775c7",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-keyword/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/seo-onpage/SKILL.md": {
+      "sha256": "5a646de27274b9bd19d7c1ab758e89d684b1ac40c76f9718b357a6d0e756a60d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-onpage/SKILL.md"
+    },
+    ".agents/skills/seo-onpage/SKILL.md": {
+      "sha256": "5a646de27274b9bd19d7c1ab758e89d684b1ac40c76f9718b357a6d0e756a60d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-onpage/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/seo-technical/SKILL.md": {
+      "sha256": "d1f314820d266791473f5427b8a8821c2d01c9944cb0527f40941c469aad0518",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-technical/SKILL.md"
+    },
+    ".agents/skills/seo-technical/SKILL.md": {
+      "sha256": "d1f314820d266791473f5427b8a8821c2d01c9944cb0527f40941c469aad0518",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/seo-technical/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/site-design-review/SKILL.md": {
+      "sha256": "2ae888449b5b6b7e2ca43699d56ad672d0266fc70bb02174da967c806acdda9a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/site-design-review/SKILL.md"
+    },
+    ".agents/skills/site-design-review/SKILL.md": {
+      "sha256": "2ae888449b5b6b7e2ca43699d56ad672d0266fc70bb02174da967c806acdda9a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/site-design-review/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/site-design-review/references/playwright-visual-check.md": {
+      "sha256": "07ab7e593d9ce8334b913bd4813427741a08231555efeba3e0e9c41cacda0b7d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/site-design-review/references/playwright-visual-check.md"
+    },
+    ".agents/skills/site-design-review/references/playwright-visual-check.md": {
+      "sha256": "07ab7e593d9ce8334b913bd4813427741a08231555efeba3e0e9c41cacda0b7d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/site-design-review/references/playwright-visual-check.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/site-design-review/scripts/run-visual-review.mjs": {
+      "sha256": "db210beca7d16bdb4715a8a8ae080c3baf7789358e46a132748d813cf93a62aa",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/site-design-review/scripts/run-visual-review.mjs"
+    },
+    ".agents/skills/site-design-review/scripts/run-visual-review.mjs": {
+      "sha256": "db210beca7d16bdb4715a8a8ae080c3baf7789358e46a132748d813cf93a62aa",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/site-design-review/scripts/run-visual-review.mjs"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/trust-content-workflow/SKILL.md": {
+      "sha256": "393b060cc9a4f01a2a1367ff4020ef26c8a9877d63f68e35676ea7a3eed340f0",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/trust-content-workflow/SKILL.md"
+    },
+    ".agents/skills/trust-content-workflow/SKILL.md": {
+      "sha256": "393b060cc9a4f01a2a1367ff4020ef26c8a9877d63f68e35676ea7a3eed340f0",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/trust-content-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/trust-content-workflow/references/truth-claims.md": {
+      "sha256": "80ed44e4fa9a8bf1b08011077e99838e626c9126464b5fea8ef8137cd678f70e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/trust-content-workflow/references/truth-claims.md"
+    },
+    ".agents/skills/trust-content-workflow/references/truth-claims.md": {
+      "sha256": "80ed44e4fa9a8bf1b08011077e99838e626c9126464b5fea8ef8137cd678f70e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/trust-content-workflow/references/truth-claims.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/usage-analysis-workflow/SKILL.md": {
+      "sha256": "06e8ed033f20cb70deb32987c183c7fb858c736e167d527ac2f93f13867cdcfe",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/usage-analysis-workflow/SKILL.md"
+    },
+    ".agents/skills/usage-analysis-workflow/SKILL.md": {
+      "sha256": "06e8ed033f20cb70deb32987c183c7fb858c736e167d527ac2f93f13867cdcfe",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/usage-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/usage-content-workflow/SKILL.md": {
+      "sha256": "98839649af3e8149f1689cbdd16999777f9ba8c9ea454cc12d98b509b68c9c4f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/usage-content-workflow/SKILL.md"
+    },
+    ".agents/skills/usage-content-workflow/SKILL.md": {
+      "sha256": "98839649af3e8149f1689cbdd16999777f9ba8c9ea454cc12d98b509b68c9c4f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/usage-content-workflow/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.agents/skills/writing-cadence/SKILL.md": {
+      "sha256": "f6fcebf01935741e8cba7299eeaac4b8727af8eaa4120c7d1ae148cb15284bb6",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/writing-cadence/SKILL.md"
+    },
+    ".agents/skills/writing-cadence/SKILL.md": {
+      "sha256": "f6fcebf01935741e8cba7299eeaac4b8727af8eaa4120c7d1ae148cb15284bb6",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".agents/skills/writing-cadence/SKILL.md"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/apply-product-modules.yml": {
+      "sha256": "94d535162d86920064fdc1d389d9bbbced4afd94ab3d2f156c08137ddb4fabcd",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/apply-product-modules.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/generate-editorial-images.yml": {
+      "sha256": "ec934e03abb33905ba53236d163d0f1287251d1fa47e10350a0a2a1e9f333de5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/generate-editorial-images.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/global-hreflang.yml": {
+      "sha256": "ecfa6b59dcb889e2d1b748516efd8cc3119a844ea212e802a34e33c60f79e541",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/global-hreflang.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/maintain-inline-affiliate-links.yml": {
+      "sha256": "c9ad966eb261c5b05afc37831d8ef2cc93a5e1b1ce40a0f89053195b30c53890",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/maintain-inline-affiliate-links.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/monthly-content-maintenance.yml": {
+      "sha256": "e3b37d020ac42738ceada43974fd18dce27783b725343ab1939ccecd09e6fa38",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/monthly-content-maintenance.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/regenerate-brands.yml": {
+      "sha256": "740f12fd77c29900e38c54b66b3f2d04b6647710adf0e6ce074ff85e138ab352",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/regenerate-brands.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/regenerate-comparisons.yml": {
+      "sha256": "3b2a634b5a167c441dbee783db8ddd003a2a8efe0bc42fa4ded659f2a825c598",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/regenerate-comparisons.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/regenerate-deals.yml": {
+      "sha256": "82c3ccd9a052e11590c5957381abbdf229d388af5fe5863ccf1640daaa35861f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/regenerate-deals.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/regenerate-guides.yml": {
+      "sha256": "9de9baaf8f57ff3d09fc5853c0f6293af78ad4f9272375b95024a791096216cf",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/regenerate-guides.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/regenerate-trust.yml": {
+      "sha256": "92818f0553b4dc01f69950b972cb2e9200e450c9e78fcea155f885f5e4659f5b",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/regenerate-trust.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/regenerate-usages.yml": {
+      "sha256": "73d0bca4050f18bbece03b6b0bf7edb30e1cad3385559b3a011d55ac2ff2f927",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/regenerate-usages.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/validate-deal-workflow.yml": {
+      "sha256": "a5c22fb6af0dfe7a82aaa8c6d9feb259c0a81a48de92d3acb662a98a750e3c04",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/validate-deal-workflow.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/validate-guide-workflow.yml": {
+      "sha256": "2b203d768443e661555b79bc80f2bff83ef6ea2abf75dee75a9bd45903f2472a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/validate-guide-workflow.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/validate-publication-indexation.yml": {
+      "sha256": "ba9ee3e047e9ac735541e2042848da80156176e30820f32dbeeff62e508c52b3",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/validate-publication-indexation.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/validate-trust-workflow.yml": {
+      "sha256": "cdcf8ddbd024395de29f8914ccf2d4f1b8dd9205df6b13a5543b77cf4b09c5fb",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/validate-trust-workflow.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/validate-usage-workflow.yml": {
+      "sha256": "aaccc49e87378342017141d1fcd7ada8d0a7ae508bb9547b583378a34cfb2cdf",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/validate-usage-workflow.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/.github/workflows/visual-design-review.yml": {
+      "sha256": "d5c230d074cfa2ae3b6c80e3c587d13caea621b6d7f2d43443e002a89f5ed0c2",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": ".github/workflows/visual-design-review.yml"
+    },
+    ".agents/reference/bloc-notes-numerique/AGENTS.md": {
+      "sha256": "b1f4b33cf4e2326941b581ec8bf5a29b84ae64cbf66651690b9dab67879cf1d6",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "AGENTS.md"
+    },
+    ".agents/reference/bloc-notes-numerique/DESIGN.md": {
+      "sha256": "16a1068da427f8bf323702e118cda9dd19932bb06465befe89612d662671daac",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "DESIGN.md"
+    },
+    ".agents/reference/bloc-notes-numerique/_generate.py": {
+      "sha256": "402b0e6b167120c92306e40f9880124019fb902878c331dcc0e2f326b10ba28e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "_generate.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_brand_content.py": {
+      "sha256": "7974ca35c2d2b04d3e4493c21377e39237c12254b2ddb272233d3d84b9f5f052",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_brand_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_comparison_content.py": {
+      "sha256": "e7745f4e21cc1033e4a7ea2c00340a9cabfd4f8f52932b0742cbda87b1823146",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_comparison_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_comparison_indexation.py": {
+      "sha256": "f9120f895955152d20aab7f66189d38a2aaafd2986ada65fb8f2e79b4d12b14f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_comparison_indexation.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_deal_content.py": {
+      "sha256": "e4029983f220f5b30c85cd808655f40d3662a40c0bf044a69edc30fd09491df7",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_deal_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_hreflang.py": {
+      "sha256": "7b007eb408b0699a7e3e4df627d8d7f55b5110355eb1f011e52787771cc56a86",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_hreflang.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_inline_affiliate_links.py": {
+      "sha256": "7143a3203b35334bc2936103d0dbcef6dd772daf750801a4cc6b06b120c5e5ec",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_inline_affiliate_links.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_product_cards.py": {
+      "sha256": "2804ebc6ab17ea4bc3101624dee48be829cbe9e93c4bb8f926a3140466bae4a9",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_product_cards.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_section_indexation.py": {
+      "sha256": "a2c9cd51d68463ce565a2196d6a280e8f75c93707357bc7dfd20e353076b5574",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_section_indexation.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_trust_content.py": {
+      "sha256": "2cf68413f8cc9a870837b319b87f8cf6d9401215566a1709edc0d7d361164b57",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_trust_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/apply_usage_content.py": {
+      "sha256": "5d87fa570e6eeb6e04b8f22729570a167b9a6603da6dfb9c79a66c007d6280a7",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "apply_usage_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand-workflow.config.yaml": {
+      "sha256": "23b646e1516679870e7572b93fdc2635e4fac99f7bfe14fc05cfff4171811f10",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand-workflow.config.yaml"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_bespoke_output.py": {
+      "sha256": "015ee4207447a9adc70bcca7e92b658773868bd360dfeeae131bc6655503d37a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_bespoke_output.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_data.py": {
+      "sha256": "eed6253b982fc35337d236e870357b64f629c93dab7ac102e06e3628845c311c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_data.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_enriched_output.py": {
+      "sha256": "fa3b8dc109498c888c373fe0653272d818d40436ee76730f8258675c61e036df",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_enriched_output.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_hub_bespoke_output.py": {
+      "sha256": "fbff89e820bd11e0788385b2df3ae7b8c5f174e24d11a70d11430497b74c5073",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_hub_bespoke_output.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_light_update_output.py": {
+      "sha256": "fe581f55ef34608486589576c4fe9e2ed31a5825f16564eb76b3e61abe96fd03",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_light_update_output.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_pages.py": {
+      "sha256": "5ab5f432d4b96bed1ff18f297828d29b0ac2cab0917349d19069607cacf7ab76",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_pages.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_publication.py": {
+      "sha256": "4562ef60964e824af32bcd502aa25e4fec8b2688c41e8716309dfc5cc4087359",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_publication.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_render_common.py": {
+      "sha256": "38236d80101f8af7ab685a2aa6ca969bfd1ea1e16cf548556cd25b7edd43dce9",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_render_common.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_render_pages.py": {
+      "sha256": "403a1d7733be9a45dcd3bcdcb71f3ea49b43a9701db9e27b152d404010f2905f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_render_pages.py"
+    },
+    ".agents/reference/bloc-notes-numerique/brand_reviewed_output.py": {
+      "sha256": "ca142cc1c24cf98d5bdfa53f52a7ad5b17e446969c89d21db2c29a53b77fc6ea",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "brand_reviewed_output.py"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison-workflow.config.yaml": {
+      "sha256": "d62045f4e62cab2ecfd8df8ddbe8172b88a6afffd6f196180a7717eca5fb1b30",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison-workflow.config.yaml"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison_bespoke_output.py": {
+      "sha256": "cc0a2df9c8a144e89084c029e0eea3d5923cd4aea00e25b7227eeb2690fcaddb",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison_bespoke_output.py"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison_bespoke_priority_20260909.py": {
+      "sha256": "5e4d6e71731a0cae3f9ef04027e5823fb812e88f2caacb64314eaf1b131639b3",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison_bespoke_priority_20260909.py"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison_bespoke_remaining_20260909.py": {
+      "sha256": "646a95c535e9e702d64fe1c8c1d668deb9a8f615c5e71d4e8b0e9694119a44c5",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison_bespoke_remaining_20260909.py"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison_content.py": {
+      "sha256": "8f475cd7a5580335f83399052d533c2f7cb23d3883cad2351ddf12cb2575df6c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison_pages.py": {
+      "sha256": "7acefce1314a061c6bf088669f9de63e79bafd593e890ab74b01390b227d1c8c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison_pages.py"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison_products.py": {
+      "sha256": "f6c049ff579e47c5d896d76a8fca4b9cd04270c215fcd485adccd4c106366c0c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison_products.py"
+    },
+    ".agents/reference/bloc-notes-numerique/comparison_publication.py": {
+      "sha256": "39d72c758ab9143e5c6e9e058b35c6a3d20a0bf9154e73fe1fe08b6770efc61c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "comparison_publication.py"
+    },
+    ".agents/reference/bloc-notes-numerique/deal-workflow.config.yaml": {
+      "sha256": "60a1380fda706fb69a946f38fb65fa306dc67772962757c50f99d8c69bbc30fa",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "deal-workflow.config.yaml"
+    },
+    ".agents/reference/bloc-notes-numerique/deal_content.py": {
+      "sha256": "c8348f957e46d95c5e0e216213ba923cd4568706462f3568469d3d7ebe499169",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "deal_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/docs/content-maintenance.md": {
+      "sha256": "329025c5390388ed3de93480d25bc19fe6672bca4033dccc561b07c9196d8d11",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "docs/content-maintenance.md"
+    },
+    ".agents/reference/bloc-notes-numerique/generate_brand_metadata.py": {
+      "sha256": "4c15400b6695bda8506f6e6ed567aadd5a16b49d5062ae410dac18d22d3106bd",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "generate_brand_metadata.py"
+    },
+    ".agents/reference/bloc-notes-numerique/generate_comparison_metadata.py": {
+      "sha256": "2b357e5d4b4c7c4c4cc4efce7ae059959b0313a0e98b9b3c984a0773ca78cf7e",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "generate_comparison_metadata.py"
+    },
+    ".agents/reference/bloc-notes-numerique/generate_guide_metadata.py": {
+      "sha256": "8f5483821226447dde9a84bc4e8f17f5d188a83b358a3f13eb3f3d3943ea6b37",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "generate_guide_metadata.py"
+    },
+    ".agents/reference/bloc-notes-numerique/guide_content_bespoke.py": {
+      "sha256": "f705d4f021dcb9ea2cbd6eac58a024b98289f082d07123e9db2550c25a1e6ced",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "guide_content_bespoke.py"
+    },
+    ".agents/reference/bloc-notes-numerique/guide_content_extra.py": {
+      "sha256": "7ec81256d28d52591b9a3028acfef180f86f4140509d123ce2b1b5a0fb4723f2",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "guide_content_extra.py"
+    },
+    ".agents/reference/bloc-notes-numerique/guide_content_quality_choice.py": {
+      "sha256": "3f347ebde45843f437d34ae11f66272f7170a87b887d2354b8326ba0dee16b47",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "guide_content_quality_choice.py"
+    },
+    ".agents/reference/bloc-notes-numerique/guide_content_quality_cloud.py": {
+      "sha256": "967c255adb1029bff33577c7bffb5232890d11e5f86f8ecb20303d62c9503af1",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "guide_content_quality_cloud.py"
+    },
+    ".agents/reference/bloc-notes-numerique/guide_content_quality_tech.py": {
+      "sha256": "b236f1a16c25e6cf446367e932903daf09de274b25c3eed9670bafa52fc1876b",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "guide_content_quality_tech.py"
+    },
+    ".agents/reference/bloc-notes-numerique/guide_content_quality_workflows.py": {
+      "sha256": "92916f597efb11be422da4ef533a2766b7730de69f43186f4c09880b8ac7aee2",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "guide_content_quality_workflows.py"
+    },
+    ".agents/reference/bloc-notes-numerique/maintenance.config.json": {
+      "sha256": "0d1d6313d39d4d86b6ea29952c2d6348e04b0182fe001a0ebe6504d5fbeed895",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "maintenance.config.json"
+    },
+    ".agents/reference/bloc-notes-numerique/package-lock.json": {
+      "sha256": "ced12b67002f256b245b26b0fbab84de9baa650df7c1103c3dd3c53a44db196c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "package-lock.json"
+    },
+    ".agents/reference/bloc-notes-numerique/package.json": {
+      "sha256": "2693b52b43dba0c1f18b5bb5b901171f3643d1030c3d9561a23475f4949e89ef",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "package.json"
+    },
+    ".agents/reference/bloc-notes-numerique/product_cards.py": {
+      "sha256": "db2e63b340106831a1bcf9acb422465957a3ad86d2c2ec7b672fb38226fe5fc4",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "product_cards.py"
+    },
+    ".agents/reference/bloc-notes-numerique/publication_indexation.py": {
+      "sha256": "4fabcd905ddd39ec824b3f59fb55fc5a10af165b43268901497135687f8b05cc",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "publication_indexation.py"
+    },
+    ".agents/reference/bloc-notes-numerique/scripts/generate_bfl_images.py": {
+      "sha256": "3097936f7e93f82636eab32912cb6737bedd279d62a9fa1d87026a4f6aa2b88d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "scripts/generate_bfl_images.py"
+    },
+    ".agents/reference/bloc-notes-numerique/scripts/maintenance_orchestrator.py": {
+      "sha256": "0bd750aa0e92c3e2dbb54625a01c02b1442af489711c680f09293e761ef3b2cb",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "scripts/maintenance_orchestrator.py"
+    },
+    ".agents/reference/bloc-notes-numerique/shop_content.py": {
+      "sha256": "b836e418961a91a643c28224183f19dc574425bb187aaad5d787dd32f020aaa1",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "shop_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/trust-workflow.config.yaml": {
+      "sha256": "02bb6ce24f6427f702056bee8b17cfe7b2af508457908660b62981a14b078df3",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "trust-workflow.config.yaml"
+    },
+    ".agents/reference/bloc-notes-numerique/trust_content.py": {
+      "sha256": "37acae416338cb1148d838bc19efd881a000563acc828dab653057de8d8ab781",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "trust_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/usage-workflow.config.yaml": {
+      "sha256": "fd19534991d6b6fe364f664d04fc86b1279845650569b2c44af11dbde446d838",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "usage-workflow.config.yaml"
+    },
+    ".agents/reference/bloc-notes-numerique/usage_bespoke_output.py": {
+      "sha256": "f8a924469520e31993cceb643215764e43117310159fce7b7e1d4419c6f80ff2",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "usage_bespoke_output.py"
+    },
+    ".agents/reference/bloc-notes-numerique/usage_content.py": {
+      "sha256": "c6b0aaebbf5b065c6664e87fb21fb25addd713b0704772b7603686443cc9cdca",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "usage_content.py"
+    },
+    ".agents/reference/bloc-notes-numerique/usage_presentation_patch.py": {
+      "sha256": "11a122bbf371e4af2f4b7b64e1c16319f8b2bd1878c535017065104ad6af7e6f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "usage_presentation_patch.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_brands.py": {
+      "sha256": "8552001e978659a80403090e1aa31a5971b2de408520a94fe93139c9e848c153",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_brands.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_comparisons.py": {
+      "sha256": "5095c57090514513eb4ad32b5b52b93f0002ebe68582f12e734c87639990d57a",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_comparisons.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_deal_workflow.py": {
+      "sha256": "368f394b7ba32559603ea252196c0eb1342b24e8fe54d83d8fcf7c431f331ade",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_deal_workflow.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_guide_quality.py": {
+      "sha256": "7b09c27329fd746af8a33ea92113403f492cf2b27c707fe403bacf430e850fb7",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_guide_quality.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_hreflang.py": {
+      "sha256": "3f768a35aca3f112f75a4c4180b13ba566c3673f8c72979d569e041f2b1d765d",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_hreflang.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_inline_affiliate_links.py": {
+      "sha256": "80e7c08f9892c8f8495e3421d31f676742588607c173ed2a912aa067598fc96f",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_inline_affiliate_links.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_product_cards.py": {
+      "sha256": "1cd1922c14d81dbde3abfee368362674462fceac70d4033d5e3afcf253cb6821",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_product_cards.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_publication_indexation.py": {
+      "sha256": "07593068faac799606ec7fa53dded20895f7369501a3fd42b12e440b255fd8bc",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_publication_indexation.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_trust_workflow.py": {
+      "sha256": "5f611ac6e23bf1b32c1f1937855874930106b24e4e4a5ad28c2f8a416c107704",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_trust_workflow.py"
+    },
+    ".agents/reference/bloc-notes-numerique/validate_usage_workflow.py": {
+      "sha256": "70bb2d0e3b0539e620fd5a451bbefdb825fb1a8cc514f6f38b36f353da87526c",
+      "repository": "MarcW88/bloc-notes-numerique",
+      "commit": "5b798c38648fdc32a9bbb0f2f6742b2dca9b7951",
+      "source_path": "validate_usage_workflow.py"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/academic-voice/SKILL.md": {
+      "sha256": "2cbee097cf3e428175f4e314e396da8643c0a9f84bef3251caf4da75dbdf0640",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/academic-voice/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/affiliate-value/SKILL.md": {
+      "sha256": "6e21f9a1b06ae6f531a59bbb7744b8c9a632bd30f2926df68942eb01c443c20c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/affiliate-value/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/anti-ai-slop/SKILL.md": {
+      "sha256": "4bd6e45b2cf6801f456fd519a0215a7066f4d0b13a558771e5b7faea03327db4",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/anti-ai-slop/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/better-usage/SKILL.md": {
+      "sha256": "789c1b3e5d14b24cc786f1e21aa34502bcb54281a949169cb186475fd9979608",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/better-usage/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-analysis-workflow/SKILL.md": {
+      "sha256": "25427d51b3a3b8706b5bc7731b373bf09fb9241e2e688fa94d605e4e6d0faaaa",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-content-workflow/README.md": {
+      "sha256": "bf84f03be29f552227076bc36c060a72922c9969d51f054b49fde1ce9f2045ef",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/README.md"
+    },
+    ".agents/skills/brand-content-workflow/README.md": {
+      "sha256": "bf84f03be29f552227076bc36c060a72922c9969d51f054b49fde1ce9f2045ef",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/README.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-content-workflow/SKILL.md": {
+      "sha256": "9c868c59a08b5b59166d83e738b94b458c8ec295c6b9462f27555b558ab9beeb",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-content-workflow/brand-workflow.config.example.yaml": {
+      "sha256": "94c1a6a0fd1bf409a65faeb22fbbae98e398bc9fe3ef762c3a0cceeb883afff3",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/brand-workflow.config.example.yaml"
+    },
+    ".agents/skills/brand-content-workflow/brand-workflow.config.example.yaml": {
+      "sha256": "94c1a6a0fd1bf409a65faeb22fbbae98e398bc9fe3ef762c3a0cceeb883afff3",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/brand-workflow.config.example.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-content-workflow/references/brand-brief-template.md": {
+      "sha256": "f93add7c4d6abf53cdff91bfd44b16f6b87bda21252b1a984e0c0911bcd8da1f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/references/brand-brief-template.md"
+    },
+    ".agents/skills/brand-content-workflow/references/brand-brief-template.md": {
+      "sha256": "f93add7c4d6abf53cdff91bfd44b16f6b87bda21252b1a984e0c0911bcd8da1f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/references/brand-brief-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-content-workflow/references/brand-data-template.yaml": {
+      "sha256": "7ee5ac86e5b55275a0d79f2d34cec5db11f1e72a6bfe3dcc10bcde2f96fe2dfe",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/references/brand-data-template.yaml"
+    },
+    ".agents/skills/brand-content-workflow/references/brand-data-template.yaml": {
+      "sha256": "7ee5ac86e5b55275a0d79f2d34cec5db11f1e72a6bfe3dcc10bcde2f96fe2dfe",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/references/brand-data-template.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-content-workflow/references/brand-publish-gate-template.md": {
+      "sha256": "776833f32e0971bfec862d9f4704a86e5403d6a9d84c0051d95c5d1e56cee48a",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/references/brand-publish-gate-template.md"
+    },
+    ".agents/skills/brand-content-workflow/references/brand-publish-gate-template.md": {
+      "sha256": "776833f32e0971bfec862d9f4704a86e5403d6a9d84c0051d95c5d1e56cee48a",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/references/brand-publish-gate-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-content-workflow/scripts/validate_brand_quality.py": {
+      "sha256": "2f523fdc04e90937e0e1c10b4fe934640209a0a45f7aaa661ef9d32a402be292",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/scripts/validate_brand_quality.py"
+    },
+    ".agents/skills/brand-content-workflow/scripts/validate_brand_quality.py": {
+      "sha256": "2f523fdc04e90937e0e1c10b4fe934640209a0a45f7aaa661ef9d32a402be292",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-content-workflow/scripts/validate_brand_quality.py"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/brand-skill-stack.json": {
+      "sha256": "f0d2cec192e00beedf20de251bf57aee1243b5f9b9ab3e4bd0bb81573f63e348",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-skill-stack.json"
+    },
+    ".agents/skills/brand-skill-stack.json": {
+      "sha256": "f0d2cec192e00beedf20de251bf57aee1243b5f9b9ab3e4bd0bb81573f63e348",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/brand-skill-stack.json"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-analysis-workflow/README.md": {
+      "sha256": "e26de6d046dd3827c8e7c2f7e07735000450c7a75d720b5a99fa6c75b2f71c6f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-analysis-workflow/README.md"
+    },
+    ".agents/skills/comparison-analysis-workflow/README.md": {
+      "sha256": "e26de6d046dd3827c8e7c2f7e07735000450c7a75d720b5a99fa6c75b2f71c6f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-analysis-workflow/README.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-analysis-workflow/SKILL.md": {
+      "sha256": "ec8b0b3b325f808ba2bf94e8ff53f6a587a221bfee2e396c92845962d2883b20",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/README.md": {
+      "sha256": "963f18ffd4192486379e8b74ead6b5ee1810bb592bf37d79ac1437e4baa30b87",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/README.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/SKILL.md": {
+      "sha256": "7b18b5b8e1dd6436a5bb704ba20743d56abda788343d8f99dd018e4f4f8ab138",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/comparison-workflow.config.example.yaml": {
+      "sha256": "e5b6de30dc0c71b34baf0c4f001f8f43b8c96c0a34db0b390c19bdfaa50ceac9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/comparison-workflow.config.example.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/references/README.md": {
+      "sha256": "1bfada9203053574e3c79ef5f6d7af12ac65adebae0f4117d58a80f25cde233f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/references/README.md"
+    },
+    ".agents/skills/comparison-content-workflow/references/README.md": {
+      "sha256": "1bfada9203053574e3c79ef5f6d7af12ac65adebae0f4117d58a80f25cde233f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/references/README.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/references/comparison-brief-template.md": {
+      "sha256": "2f44d9252775c1bcc13638fc95865e7a9d76e296b0ba9cd367980ff2a3649844",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-brief-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/references/comparison-data-template.yaml": {
+      "sha256": "57967826f51c845dcfec6e93b86d1bb06d65a7ddb38f7a8bc46092e3025be3ce",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-data-template.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/references/comparison-publish-gate-template.md": {
+      "sha256": "eae603718b27911fa71d488b695934ee79d1941b68293bd9b843fb11bd1a40b9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/references/comparison-publish-gate-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/scripts/score_comparison.py": {
+      "sha256": "f4413cfae7d73a853ec64a739082fb451fa083bc11477e0bd903433613b4cdee",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/scripts/score_comparison.py"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py": {
+      "sha256": "fddb5067bc59a5c84c3f35be6e2b774ba44a71a6c83c186ff514d82d300bed4c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/comparison-skill-stack.json": {
+      "sha256": "2f64aa1475c6062bd295d9f3ed7fefb9b6e9398cb367850f0a6f601e87f2005c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-skill-stack.json"
+    },
+    ".agents/skills/comparison-skill-stack.json": {
+      "sha256": "2f64aa1475c6062bd295d9f3ed7fefb9b6e9398cb367850f0a6f601e87f2005c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/comparison-skill-stack.json"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-and-copy/SKILL.md": {
+      "sha256": "932bb0f63b3bb9af740a4c9cbd6544dc20a786d538edcf223278c1dcc7a0f150",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-and-copy/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-audit/SKILL.md": {
+      "sha256": "9aaf77b0af0a5a36211a54a8ce0821ac613cf92438ae572a32556ebcb1836327",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-audit/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-brief-authoring/SKILL.md": {
+      "sha256": "116367ca409875cd314cc7d607af085dca2b21cc63ff134e6d31118aba5387ac",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-brief-authoring/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-recovery-and-production-workflow/README.md": {
+      "sha256": "1811a259959abfdc1aa086902737291743ff1e492e84d757d47687cca7f5ee72",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/README.md"
+    },
+    ".agents/skills/content-recovery-and-production-workflow/README.md": {
+      "sha256": "1811a259959abfdc1aa086902737291743ff1e492e84d757d47687cca7f5ee72",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/README.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-recovery-and-production-workflow/SKILL.md": {
+      "sha256": "41146bd36cf5554aaf59ad2d48780c73d56a48a75701efb3edf750c74ba21609",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/SKILL.md"
+    },
+    ".agents/skills/content-recovery-and-production-workflow/SKILL.md": {
+      "sha256": "41146bd36cf5554aaf59ad2d48780c73d56a48a75701efb3edf750c74ba21609",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-recovery-and-production-workflow/content-workflow.config.example.yaml": {
+      "sha256": "a8456b42cf6b5148715b404efe3dced2e8fe53407d90350bb118d8160e245450",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/content-workflow.config.example.yaml"
+    },
+    ".agents/skills/content-recovery-and-production-workflow/content-workflow.config.example.yaml": {
+      "sha256": "a8456b42cf6b5148715b404efe3dced2e8fe53407d90350bb118d8160e245450",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/content-workflow.config.example.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-recovery-and-production-workflow/references/brief-template.md": {
+      "sha256": "b59fdb4a59c8274a75c60c1a90b5a013218dc1d544a0569edf0b0677a066894e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/references/brief-template.md"
+    },
+    ".agents/skills/content-recovery-and-production-workflow/references/brief-template.md": {
+      "sha256": "b59fdb4a59c8274a75c60c1a90b5a013218dc1d544a0569edf0b0677a066894e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/references/brief-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-recovery-and-production-workflow/references/publish-gate-template.md": {
+      "sha256": "b9630b1ba36fdebb9b06550f5b87b8cd7f7073723f614adb7f86c12096d289ac",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/references/publish-gate-template.md"
+    },
+    ".agents/skills/content-recovery-and-production-workflow/references/publish-gate-template.md": {
+      "sha256": "b9630b1ba36fdebb9b06550f5b87b8cd7f7073723f614adb7f86c12096d289ac",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/references/publish-gate-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-recovery-and-production-workflow/scripts/validate_content_quality.py": {
+      "sha256": "ef239cdc8e8448714f49d401f64bc693c2c2765ff1c37a97e4f159f941bc1d6e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/scripts/validate_content_quality.py"
+    },
+    ".agents/skills/content-recovery-and-production-workflow/scripts/validate_content_quality.py": {
+      "sha256": "ef239cdc8e8448714f49d401f64bc693c2c2765ff1c37a97e4f159f941bc1d6e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-recovery-and-production-workflow/scripts/validate_content_quality.py"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/content-refresh/SKILL.md": {
+      "sha256": "13d4cdd2e56635bf0a263dd050aae8db2b55d7fbb8ac26577581fc0d560ed8fa",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/content-refresh/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/editorial-image-planner/SKILL.md": {
+      "sha256": "6cb22c594efcc99fdad010cb808c5d7082caa1c5ecb4f404ab15fd1585bf3ee9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/editorial-image-planner/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/editorial-qa/SKILL.md": {
+      "sha256": "d37dfc7f00b7e00d5ba0ec2e0f698065f0d7a93b5a334cd24fd6a38b5eae9f49",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/editorial-qa/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/evidence-based-reviews/SKILL.md": {
+      "sha256": "48c6fcd49b4b8cf47b63f209082722d13f4be0c0deef9e4b7a74589ef277c469",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/evidence-based-reviews/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/fact-check/SKILL.md": {
+      "sha256": "d56d1532704e986ade097dd8d95df07675553e353babeff0ced1aa98a5b389e6",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/fact-check/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/general-writing/SKILL.md": {
+      "sha256": "f1499106e754668337784a4df2e9a1808cf7553a383474e32113c1fadfd8ce41",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/general-writing/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-analysis-workflow/SKILL.md": {
+      "sha256": "040c853b073bbc8abdabd912b77772f4f4dbaf62fbe56a4d2bb910e7b30b5bb5",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-content-workflow/SKILL.md": {
+      "sha256": "d68662d11bd08e4bda6436b5cd9d02ae9fe48ab5d6577c7d01eb7c1c5d418cee",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-content-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-content-workflow/references/brief-template.md": {
+      "sha256": "8f63d6b382b342bd013f1cc0891b2a2fafb66e6f53908a782d66efcb772a6a00",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-content-workflow/references/brief-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-content-workflow/references/choice-guide.md": {
+      "sha256": "8075f6f9fb9186cd1cfc1fd8f9810869f470daecfce610baaa61ab0457364954",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-content-workflow/references/choice-guide.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-content-workflow/references/explainer-guide.md": {
+      "sha256": "c2b7a4369533fec06fc7275048deefe1888a1fe391f9b7485cc1570be4f93f99",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-content-workflow/references/explainer-guide.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-content-workflow/references/how-to-guide.md": {
+      "sha256": "2ff02d58bf3024395a2179411c19d6509173f12cea684e6b20e59a29dafccc7e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-content-workflow/references/how-to-guide.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-content-workflow/references/publish-gate-template.md": {
+      "sha256": "3a959152004538fac2253a2baf498eb8e47af499c8e774660d17a8f05bfef8b2",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-content-workflow/references/publish-gate-template.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/guide-skill-stack.json": {
+      "sha256": "357f95b5fe25b6ad6bd62ee4e613f4b270d6b7dca40dc47034874e0c46773031",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-skill-stack.json"
+    },
+    ".agents/skills/guide-skill-stack.json": {
+      "sha256": "357f95b5fe25b6ad6bd62ee4e613f4b270d6b7dca40dc47034874e0c46773031",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/guide-skill-stack.json"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/humanizer/SKILL.md": {
+      "sha256": "88f6165bc2457f2e6e16bf7c74a1e97708fc6028fdbfe6526f9b0ab75410328c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/humanizer/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/internal-linking-audit/SKILL.md": {
+      "sha256": "5ba5440f5e0e3bd5b20d1944d7f86ce64c94d7d019be7a00606126056c0c472d",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/internal-linking-audit/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/jobs-to-be-done/SKILL.md": {
+      "sha256": "ab3865163eabd169dc2e369b02e3003359748e3e26bf6f38ca5edf3e664a66d5",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/jobs-to-be-done/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/model-analysis-workflow/SKILL.md": {
+      "sha256": "8fe6ac47474b2020dfef2788b97cb26e1cb0684bde065e46d7b7f0720cd752d7",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/model-analysis-workflow/SKILL.md"
+    },
+    ".agents/skills/model-analysis-workflow/SKILL.md": {
+      "sha256": "8fe6ac47474b2020dfef2788b97cb26e1cb0684bde065e46d7b7f0720cd752d7",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/model-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/model-content-workflow/SKILL.md": {
+      "sha256": "0748879782093897cbd09129815cf6a63432c9d774c0900e2b0e4f09d24cc3c2",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/model-content-workflow/SKILL.md"
+    },
+    ".agents/skills/model-content-workflow/SKILL.md": {
+      "sha256": "0748879782093897cbd09129815cf6a63432c9d774c0900e2b0e4f09d24cc3c2",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/model-content-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/model-skill-stack.json": {
+      "sha256": "b302e02751557a1c8724713ead86f89b5429bf1695a2ef222daa20097a1f20bd",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/model-skill-stack.json"
+    },
+    ".agents/skills/model-skill-stack.json": {
+      "sha256": "b302e02751557a1c8724713ead86f89b5429bf1695a2ef222daa20097a1f20bd",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/model-skill-stack.json"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/non-autoregressive-writing-pass/SKILL.md": {
+      "sha256": "82bad00a4339e387be659801f04db22d3a12cb64ed9ad795d453389fb0325aa4",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/non-autoregressive-writing-pass/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/search-intent/SKILL.md": {
+      "sha256": "f5e39e798d4b1c44ba8484b3276c59fdb494728897af64c974b8517c1eeb9215",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/search-intent/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/seo-best-practices/SKILL.md": {
+      "sha256": "cdb27d7b26846b9f187755ddf69890bdc217ab3f0631595aa0d36ce001e94962",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/seo-best-practices/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/seo-content-audit/SKILL.md": {
+      "sha256": "ef4770f5020cacd50e50739191e18e5d462fb247deb671a942209d041f7c90eb",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/seo-content-audit/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/seo-drift/SKILL.md": {
+      "sha256": "fbe3fde73066829a8e56a8481459fa2d92aeb6f0049a68ee2b49e3a679dd2711",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/seo-drift/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/seo-keyword/SKILL.md": {
+      "sha256": "ecf2a58f5573d88e9ff9bfa025fabc307808c589912047092d20a66f22f843c9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/seo-keyword/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/seo-onpage/SKILL.md": {
+      "sha256": "ef369032bd4e4c9540a14318e1e38e28fc198f60bfd77b07ef2c412be59ae83f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/seo-onpage/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/seo-technical/SKILL.md": {
+      "sha256": "ddd4b4ed1c31380466ac9735ee58ddf0c0aa8c50de6b37212e96faf287cf2e2a",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/seo-technical/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/site-design-review/SKILL.md": {
+      "sha256": "0a2cb97f9747d77b5e86b11272d9e170917ba7ff95a8dcaeee210cdd94cdf8b4",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/site-design-review/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/site-design-review/references/playwright-visual-check.md": {
+      "sha256": "eb54011486f8abc3a8b9e27233c4a051468bf6245823a89e61b19ffbd444db34",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/site-design-review/references/playwright-visual-check.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/site-design-review/scripts/run-visual-review.mjs": {
+      "sha256": "ea1308d7812e0be8e0aee503d501c2164d75b7cf14580d3aeb7aca178748a339",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/site-design-review/scripts/run-visual-review.mjs"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/site-design-review/scripts/validate-brand-visual-report.mjs": {
+      "sha256": "c63247fada93312f0bdae0b175865f1d8b79f88a9a89542159ee8abff03ba247",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/site-design-review/scripts/validate-brand-visual-report.mjs"
+    },
+    ".agents/skills/site-design-review/scripts/validate-brand-visual-report.mjs": {
+      "sha256": "c63247fada93312f0bdae0b175865f1d8b79f88a9a89542159ee8abff03ba247",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/site-design-review/scripts/validate-brand-visual-report.mjs"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/site-design-review/scripts/validate-comparison-visual-report.mjs": {
+      "sha256": "dc80a58df50e6282367a3aa3449686ba4b7a63fed2d96958cada60918309521e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/site-design-review/scripts/validate-comparison-visual-report.mjs"
+    },
+    ".agents/skills/site-design-review/scripts/validate-comparison-visual-report.mjs": {
+      "sha256": "dc80a58df50e6282367a3aa3449686ba4b7a63fed2d96958cada60918309521e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/site-design-review/scripts/validate-comparison-visual-report.mjs"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/usage-analysis-workflow/SKILL.md": {
+      "sha256": "fbfe852140148c1d9bde250cef053c255ca53a3115092fc5cfd167cbc5c29e90",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/usage-analysis-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/usage-content-workflow/SKILL.md": {
+      "sha256": "c89eb1854e811f9b7a9eee4b0802b8ba91480d361c0c84601ca0f35ef11dc794",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/usage-content-workflow/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/usage-skill-stack.json": {
+      "sha256": "39108bbbf540ecfbe3735d3e8f6a7e2069007a2f872babe3a840d8accf8d31d8",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/usage-skill-stack.json"
+    },
+    ".agents/skills/usage-skill-stack.json": {
+      "sha256": "39108bbbf540ecfbe3735d3e8f6a7e2069007a2f872babe3a840d8accf8d31d8",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/usage-skill-stack.json"
+    },
+    ".agents/reference/aspirateurs-chantier/.agents/skills/writing-cadence/SKILL.md": {
+      "sha256": "3475d7806e1f4e567805ee08c41f1f2ddedb0442ba1d1336b91f8a859c897952",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".agents/skills/writing-cadence/SKILL.md"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/apply-product-modules.yml": {
+      "sha256": "475439e97ce47392bf7fa22e978f4c2090d55ae927572de6166884ccee030a35",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/apply-product-modules.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/generate-brand-content.yml": {
+      "sha256": "ce7126470f2351f9b6a117b6665109a63bb82bcb70859ce9f5525e50320cf95c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/generate-brand-content.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/generate-comparatifs-content.yml": {
+      "sha256": "6c40914f55dac2fe44a010a55cd8c68557776e78f477cc58c80d02c409cbf476",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/generate-comparatifs-content.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/generate-editorial-images.yml": {
+      "sha256": "335154691a45109a13ece6cb432e8a1c45bdb0aa940635bc459a00edd847a296",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/generate-editorial-images.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/generate-guides-content.yml": {
+      "sha256": "b136841eb4949c5ede865ae72a586cb820877258d8e1b3baf40bb4a39fc70a7c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/generate-guides-content.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/generate-usage-content.yml": {
+      "sha256": "18863ae2ec1e6109f23928fdb17be8cab229405f81e5b0ca6fd66bd332aef507",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/generate-usage-content.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/maintain-inline-affiliate-links.yml": {
+      "sha256": "30f75563ec959dc16aed679e003c0c687ca28bbbf163eb348c671e60a05afd6f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/maintain-inline-affiliate-links.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/maintain-live-indexation.yml": {
+      "sha256": "fb42e46f196304a09d718a5f3213540d6303ff2355ea6c5c47b459338db38f8b",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/maintain-live-indexation.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/monthly-content-maintenance.yml": {
+      "sha256": "e3b37d020ac42738ceada43974fd18dce27783b725343ab1939ccecd09e6fa38",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/monthly-content-maintenance.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-brand-generation.yml": {
+      "sha256": "23908f47fe41084da361e48c690542d9bee46cda3f32aad45fdfc64c7b5909ac",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-brand-generation.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-brand-skill-stack.yml": {
+      "sha256": "bedb20392b8f0194c96bde80a8a9da6556607b8904868954bf7e30425c1418f4",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-brand-skill-stack.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-cluster-content.yml": {
+      "sha256": "b093a31f5ed01c7daa64e1a8ec75fb27db58ddc73da322c92f1d1e87f7b5a4b9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-cluster-content.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-comparison-skill-stack.yml": {
+      "sha256": "2468d1ceb2e64ef4e3b8a2743904c7291b09904c7b7b9717c350abd441901fc8",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-comparison-skill-stack.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-content-maintenance.yml": {
+      "sha256": "75bfc55e74d87a4299bcba1b7200d28be483caad0df384e413fd60c5320379c0",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-content-maintenance.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-design-v2.yml": {
+      "sha256": "9654239319409c135a8b9fae83cf2ed2bc1aee801bc5a0ac58e9f4581cdd66c6",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-design-v2.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-global-navigation.yml": {
+      "sha256": "57b4d98097b933ad38908d8760bb47463bded5827c793e53fc38780966242dc3",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-global-navigation.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-guide-methodology-pilot.yml": {
+      "sha256": "702f10569de36e4ed8d5921a103090ac9b3a3419f481fd40f4cf6160810a03d9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-guide-methodology-pilot.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-guide-workflow.yml": {
+      "sha256": "818596082fcafa2a4ee40b5bd0403229402ac72239e9d316a0f093c0e24af875",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-guide-workflow.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-indexation.yml": {
+      "sha256": "92b98e9c5bc49b46a5639bd05da2504808f988c35544ae1889ea50e2d7668a9f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-indexation.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-model-workflow.yml": {
+      "sha256": "14695685db240f8c6c69d21709c56aa0ff270858506c9253b0b3a32a619c838d",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-model-workflow.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-product-workflow.yml": {
+      "sha256": "8d82c28b07670865a36c6ec568aa48f869c144556d43d7e03caadcf84d2ee28e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-product-workflow.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/validate-usage-workflow.yml": {
+      "sha256": "b91d96e910642716eec397e9184297b465afbf26286e4add921dd1dcb8c2be95",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/validate-usage-workflow.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/visual-design-review-comparisons.yml": {
+      "sha256": "b450759e699eab6d35097e7187992b547a14bddc1dce83b9dfb94e56651bf867",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/visual-design-review-comparisons.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/visual-design-review-guides.yml": {
+      "sha256": "fe3ba881bef899a64946a4189bc866873e4d8789d9cbc3fa9cb370f2ba1135de",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/visual-design-review-guides.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/visual-design-review-usages.yml": {
+      "sha256": "0358cb6b986768eb2ec450d284ee4e4e44c6b9ae660c4dab29cc2abccf6602c6",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/visual-design-review-usages.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/visual-design-review.yml": {
+      "sha256": "027464747921dc831e77712276e00ed067192585601ad9b3962a0051889d45bf",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/visual-design-review.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/visual-home-model-review.yml": {
+      "sha256": "944c0e4b1e18f7074316237460d843dcfafa90c635fe41f6d9f9a5102e13624f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/visual-home-model-review.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/.github/workflows/visual-model-design-review.yml": {
+      "sha256": "5762f46fdb0daa009eb51fd3110799db40c67a82ac55d01c58baaf96903f6169",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": ".github/workflows/visual-model-design-review.yml"
+    },
+    ".agents/reference/aspirateurs-chantier/AGENTS.md": {
+      "sha256": "0f83c693af0f320c1c3d3cc70a219a3364b2eaf2415623a4730333bd46d2a4ea",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "AGENTS.md"
+    },
+    ".agents/reference/aspirateurs-chantier/DESIGN.md": {
+      "sha256": "6ec459bc320d48d0114b2e27d1621dd1d4af0857fc2e15fab18719e5f13dd9f0",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "DESIGN.md"
+    },
+    ".agents/reference/aspirateurs-chantier/_apply_brand_design_fixes.py": {
+      "sha256": "a81066777c9c2ab535685a554257506770c1f903a45f04fc9b1a3a15059cb070",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_apply_brand_design_fixes.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_apply_cluster_audit_metadata.py": {
+      "sha256": "8ff936cae1edc187859b09f76853a9d889ef749796a5e51b619cbafa9e648b0c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_apply_cluster_audit_metadata.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_apply_comparison_design.py": {
+      "sha256": "0ab7b368260cacf0bcdaf84fdfafcaf3c25aa7961019c661d8fa590a5fef9ea9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_apply_comparison_design.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_apply_design_v2.py": {
+      "sha256": "84fc2dc892b280fcd40f923a927acecf1b8edf6cca3f5c9844c0c86a872b70c9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_apply_design_v2.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_brand_rollout_polish.py": {
+      "sha256": "414a92f3f6eac93ba74bdda2141fc8fbc7a4d9c7a50bf6352af1b8eacb414659",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_brand_rollout_polish.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_build_css.py": {
+      "sha256": "081714e0bb3fe4d93a4c43b9bf9aacdb58ecf0d011c5b5f30d3b5df54d382f26",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_build_css.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate.py": {
+      "sha256": "9e4389e2e58c079a180d3e7ae8d7d8d3fa71fb47dc97ec8f15b7701b0d22abb8",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_bosch.py": {
+      "sha256": "21fddd13895405dd2282c5944ed894c5a7022d67737cc15b35617eac53642b96",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_bosch.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_brand_content.py": {
+      "sha256": "b2bc95c6e0bfa7b95a6d60b1c2f97560d6ed36076b0d7870006acc08c7db241c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_brand_content.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_brand_hub_index.py": {
+      "sha256": "63a4cd82eeb958e074d4d9e32783c360415392aef7a09934ceb17a2568fc394e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_brand_hub_index.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_brand_overrides.py": {
+      "sha256": "15d60a905014372d1d2f5b8d84b2245717e0a87473cb66b8b31ac07fc8cb9da1",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_brand_overrides.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_brands.py": {
+      "sha256": "28b145a00beaf8938b9c1a6d63c8f14a3ef8f3203f7b02c8ec951ef01c690861",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_brands.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_cluster_content.py": {
+      "sha256": "4b3d90a74830d4ad24160e5e530ae5e8694ee32b337f6c45ea45d448e7f5d546",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_cluster_content.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_comparatifs.py": {
+      "sha256": "8469f7b8ecb8fa2b26dab37ae9b93fdb9697eabd7bfb0f1fc4783ee1d980ff3a",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_comparatifs.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_comparison_content.py": {
+      "sha256": "ccb2a013bf93758dca82800352e6cc18a65fe3a92b96621da9a24fed3cee253b",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_comparison_content.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_comparison_overrides.py": {
+      "sha256": "93064243ff77fb11ad3d1bc79ae13044e7b191feaad886e2418c2a77c10e767b",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_comparison_overrides.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_guide_content.py": {
+      "sha256": "73a27283da1acc9a534b8c2a5a935a3801bc9c54f59d3b39097661ad6f32ceba",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_guide_content.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_guides.py": {
+      "sha256": "001a2ca271efaf00c0d6a11effeef0f24b8802489480d20fb73e48e8d36522b3",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_guides.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_karcher.py": {
+      "sha256": "b551d99b951be27486c4e71af7cc2da335ddc86936d4e213ce21290c90251001",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_karcher.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_makita.py": {
+      "sha256": "4f3cc9437e5d8f78191e784509ccc0293eb83e4af09c561553f2ec255e2eb203",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_makita.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_model_overrides.py": {
+      "sha256": "f7e933ebbc3370ebcbb7ec06d1df4f11126e9c2709cd0a9d2b56534bc77468ca",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_model_overrides.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_nilfisk.py": {
+      "sha256": "e513dc2d3dde8f0955b7c8664a7453783b0038c8dc720a5a3b31f3364cc09731",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_nilfisk.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_parkside.py": {
+      "sha256": "83b806a9f978745070b358cd2f68c7645d2cfb3856987b577bb3ab8197ff1463",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_parkside.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_professional_comparison_override.py": {
+      "sha256": "44cce794c2cd4b3122a2cbfed19a6aeed38787b40a3b5cf29a8cfa8fc3aa94d9",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_professional_comparison_override.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_generate_usage_overrides.py": {
+      "sha256": "098930b68d49d7f99c706ef50338b50b6703500db85fbe07603c38a117e40660",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_generate_usage_overrides.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_guide_classes_lmh_pilot.py": {
+      "sha256": "4cdc144e42b4114bc5c9a001c2f035d040837cdb9470a21ccb40b1b8bcfa46af",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_guide_classes_lmh_pilot.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_guide_quality_supplements.py": {
+      "sha256": "61b3fa43cf41a0aee8b4bb224b4a00b2648be5bebc1c6d7ded9d6398a18259e4",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_guide_quality_supplements.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_materialize_comparison_v2.py": {
+      "sha256": "5335a8f596473ac91620a0e7cfc4c38db90b78901a69add93292909796d2b58c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_materialize_comparison_v2.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_materialize_guides_v2.py": {
+      "sha256": "93aaf69b02f942f51f99285944a4701cc02c438490685a2c9329c319c1867ec2",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_materialize_guides_v2.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_materialize_usage_v2.py": {
+      "sha256": "19f6da58dac29597c8ffd73486e8f4ae3a264e83ac74b0292156daed1e0dad13",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_materialize_usage_v2.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_normalize_comparatifs.py": {
+      "sha256": "314f43efe3fa62d73b7ba0ecf616892b593a1aeaebe917e966cd5b404f7c0d77",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_normalize_comparatifs.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_normalize_guide_answers.py": {
+      "sha256": "e4ef693df4267ea91ab922c4728d173719950a4a1287e68dd7223cd10872fac6",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_normalize_guide_answers.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_polish_comparison_rollout.py": {
+      "sha256": "6dd4e49211c42c693f5057b37d9fcdf6d98710f7e149ef8d90906ca453a43393",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_polish_comparison_rollout.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_remove_brand_tiers.py": {
+      "sha256": "f42b47c4fadd33947e8c483e00864a9db99a3ba960a7dbc0bddface1e5f2325e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_remove_brand_tiers.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_validate_brands.py": {
+      "sha256": "7412c5da64b268be3f93eb614cabbdb34855cd24be2f0d3bb63b89f3b66f73e5",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_validate_brands.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_validate_cluster_rollout.py": {
+      "sha256": "ed7169c807215e9abe99f68db94d7048aac33778e8ebdaee3c8a5a8223917aff",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_validate_cluster_rollout.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_validate_comparatifs.py": {
+      "sha256": "bfd068baa77b3b85e038fd64f7dc07f3a67bd7e4c95b3dd090690e8a2f8dbb2e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_validate_comparatifs.py"
+    },
+    ".agents/reference/aspirateurs-chantier/_validate_comparison_rollout.py": {
+      "sha256": "50f02b5a6b4a149c9d341c628d8736888ef0fac519dacd27d084a5c56458e881",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "_validate_comparison_rollout.py"
+    },
+    ".agents/reference/aspirateurs-chantier/apply_inline_affiliate_links.py": {
+      "sha256": "b8628a7908591059d7235db167f2f3247a1d8e816f8528186305f1da8cfe467f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "apply_inline_affiliate_links.py"
+    },
+    ".agents/reference/aspirateurs-chantier/apply_product_cards.py": {
+      "sha256": "01cbd4c57ecb8b0bdce5b9ae45ed162205bcc566c86de0344cfd75949a37a502",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "apply_product_cards.py"
+    },
+    ".agents/reference/aspirateurs-chantier/brand-workflow.config.yaml": {
+      "sha256": "8fe690a981c24a4f85dcb7bd4d08e4c640a82a4a9f5631abfba8e65051f7b1bc",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "brand-workflow.config.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/comparison-workflow.config.yaml": {
+      "sha256": "88a49e055dc403cce4461b8570c8855e39f540f64e06c8758160214e9c9bc51f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "comparison-workflow.config.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/content-workflow.config.yaml": {
+      "sha256": "748e5586b1c954f15e6b8373fac288e5a3a972f5d22ce311a6d97e9a9e6fda80",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "content-workflow.config.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/docs/content-maintenance.md": {
+      "sha256": "3788b4652458838bc2248a513b6e10c5d66081aa44a944ea2510a5815a4fb7e2",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "docs/content-maintenance.md"
+    },
+    ".agents/reference/aspirateurs-chantier/enforce_brand_review_state.py": {
+      "sha256": "5ad323cc07c0bc04f849051bc74255d7b018a6e995bec5030dbce657e4492e07",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "enforce_brand_review_state.py"
+    },
+    ".agents/reference/aspirateurs-chantier/enforce_comparison_review_state.py": {
+      "sha256": "7c24e2011b9f6bcdc1034bd366ab8fbd2e9b6a613484338e70e3d93f528c4dc6",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "enforce_comparison_review_state.py"
+    },
+    ".agents/reference/aspirateurs-chantier/guide-workflow.config.yaml": {
+      "sha256": "56c42ff6edd207f25cad287ddb1ab8050f9e324dc06571c8aa495378a46251fa",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "guide-workflow.config.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/maintenance.config.json": {
+      "sha256": "e4729965a2fb230b8489fb5148231dc5337423b720b2167938b2f6cd44d655e0",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "maintenance.config.json"
+    },
+    ".agents/reference/aspirateurs-chantier/model-workflow.config.yaml": {
+      "sha256": "eba7ac05a6d1d5f1f7576181dcb82adb6b251412f458f0e56e52e2f6a029fb6e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "model-workflow.config.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/package-lock.json": {
+      "sha256": "36c5d11efced0b5b1094ec343242d9807a89b40c17be1850dbfdc200ec124ce7",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "package-lock.json"
+    },
+    ".agents/reference/aspirateurs-chantier/package.json": {
+      "sha256": "16bf187c0ae0edcca51e25330c8adf4cc3cff63d211293af5692f42bbb7255f7",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "package.json"
+    },
+    ".agents/reference/aspirateurs-chantier/product_cards.py": {
+      "sha256": "5d79c578ec1a04ca91b24fcb24ebe55811843a393e949b5fa36049e53371e18a",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "product_cards.py"
+    },
+    ".agents/reference/aspirateurs-chantier/scripts/apply_home_model_review.py": {
+      "sha256": "31c80e9215c09351a4938a0685f66046b70ca2071cb2d9ea79795b4aa14046a0",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "scripts/apply_home_model_review.py"
+    },
+    ".agents/reference/aspirateurs-chantier/scripts/generate_bfl_images.py": {
+      "sha256": "7839ceae089d9aad6165e266f3196c2a3efdfdb9b718f6444748bdf71a916892",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "scripts/generate_bfl_images.py"
+    },
+    ".agents/reference/aspirateurs-chantier/scripts/maintenance_orchestrator.py": {
+      "sha256": "8ee747851dbca725cea95ae01aa11e40d52ae320e9114ea4990067ac3e4a7477",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "scripts/maintenance_orchestrator.py"
+    },
+    ".agents/reference/aspirateurs-chantier/scripts/publish_indexation.py": {
+      "sha256": "9fbf37da1a1256e83c5393e8a3fa67058bbfcf718a9c8b195c4ee8a3a4f6ba73",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "scripts/publish_indexation.py"
+    },
+    ".agents/reference/aspirateurs-chantier/scripts/restore_editorial_images.py": {
+      "sha256": "d81e4ac66c6a9424cd27c669ed535bd70dfab9e9ed5b1808a7b9016efa990e9f",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "scripts/restore_editorial_images.py"
+    },
+    ".agents/reference/aspirateurs-chantier/usage-workflow.config.yaml": {
+      "sha256": "251528b494408feeb8ec176a0d2f0d482916e75f6919edbeabc3701151600256",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "usage-workflow.config.yaml"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_brand_run_evidence.py": {
+      "sha256": "840f3a2ccef6771023f19bdc84d193ab84bca77d1d97dd8e9c52f1ae592eb9b2",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_brand_run_evidence.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_brand_skill_stack.py": {
+      "sha256": "c5227b1a2cd84b40e75072ca21cb323becfd26ae6ae475c2750f66f75d5a1fbd",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_brand_skill_stack.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_comparison_run_evidence.py": {
+      "sha256": "28798eb854d6ef0ff2e4a3e1a74fac7a4ac2eda4766ae53092e40050200b435b",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_comparison_run_evidence.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_comparison_skill_stack.py": {
+      "sha256": "7a21d1afdf1795fc520c6ae234728d8adb00f5b006be5c5434bc4575fd58599e",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_comparison_skill_stack.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_design_v2.py": {
+      "sha256": "8c9e4acdb142963d243867342fe1e971a0aad2f48f9bf4719c0b60f519d84be6",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_design_v2.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_guide_quality.py": {
+      "sha256": "a6507e41f3ad2b1d2a6b35a2211afeb075f679830e783d3f266f73d45d3c7b08",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_guide_quality.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_guide_workflow.py": {
+      "sha256": "069596a1f723c4b6fc267c48e13c17198022d44b3d2e2374e85eb4782e66e22a",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_guide_workflow.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_inline_affiliate_links.py": {
+      "sha256": "c4ed501d596b57d9a53ee81845892fb1e5d130e0751abd0a5f7f5d26b00d997c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_inline_affiliate_links.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_model_run_evidence.py": {
+      "sha256": "0311259dec54b4fe5ad7a34d479697fbd08c07b4e64be43141928ef7d66e434d",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_model_run_evidence.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_model_skill_stack.py": {
+      "sha256": "b6cf041565b3c92b484525a7fc7463985779d3ef9812000e19e75a6335c9ea86",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_model_skill_stack.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_product_cards.py": {
+      "sha256": "665ae27072f479b196f857550db36cdcbe0ad7b58f1619e1c9a29458bb77b2b4",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_product_cards.py"
+    },
+    ".agents/reference/aspirateurs-chantier/validate_usage_workflow.py": {
+      "sha256": "98c784cc3151c902aea9de4005eed7d1f13500b3521e1b90769cbefcfea7154c",
+      "repository": "MarcW88/aspirateurs-chantier",
+      "commit": "b11401c1e78ec1da7d90238fc1b903b48cca4933",
+      "source_path": "validate_usage_workflow.py"
+    },
+    ".agents/skills/internal-linking-audit/LICENSE": {
+      "sha256": "dcb8beed7068ac1ab086fe39fc9d117820e4b952d2b94315b8e66d43b2c21d49",
+      "repository": "dageno-agents/internal-linking-audit",
+      "commit": "5cb949f5d1eb8210505b6d34ca943a6851f9c220",
+      "source_path": "LICENSE"
+    },
+    ".agents/skills/internal-linking-audit/references/example-config.json": {
+      "sha256": "49b965b0b8195d9def80a49b7faa787f73b5b41e1b42705338490f253adc5d42",
+      "repository": "dageno-agents/internal-linking-audit",
+      "commit": "5cb949f5d1eb8210505b6d34ca943a6851f9c220",
+      "source_path": "references/example-config.json"
+    },
+    ".agents/skills/internal-linking-audit/references/firecrawl.md": {
+      "sha256": "73d6a930fc5fab9ba9fc3174ba624318a2972c67a37cf65d685609da76a83ad1",
+      "repository": "dageno-agents/internal-linking-audit",
+      "commit": "5cb949f5d1eb8210505b6d34ca943a6851f9c220",
+      "source_path": "references/firecrawl.md"
+    },
+    ".agents/skills/internal-linking-audit/references/internal-linking-rules.md": {
+      "sha256": "210e39d8f38ffa501785b9cd762ff6134cf4873034deaab49660aab9d6f5d01a",
+      "repository": "dageno-agents/internal-linking-audit",
+      "commit": "5cb949f5d1eb8210505b6d34ca943a6851f9c220",
+      "source_path": "references/internal-linking-rules.md"
+    },
+    ".agents/skills/internal-linking-audit/scripts/internal_link_audit.py": {
+      "sha256": "6a15525f8e126c8abe95042c2596719afe09cd8f04a4dfa67142e410bdb44e53",
+      "repository": "dageno-agents/internal-linking-audit",
+      "commit": "5cb949f5d1eb8210505b6d34ca943a6851f9c220",
+      "source_path": "scripts/internal_link_audit.py"
+    },
+    ".agents/skills/anti-ai-slop/.agents/skills/coherence-reviewer/SKILL.md": {
+      "sha256": "62bf2889ac79cfbe19efce96c3e9a640146fd4f74d68927147b2b1fc12672c62",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".agents/skills/coherence-reviewer/SKILL.md"
+    },
+    ".agents/skills/anti-ai-slop/.agents/skills/spec-first-anti-slop/SKILL.md": {
+      "sha256": "8c1f3cb4f93aa0ae6445ac21936bb5cb382249a343d2fce7c1cf43cb5b92a9d2",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".agents/skills/spec-first-anti-slop/SKILL.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/memory/architecture-principles.md": {
+      "sha256": "9c8c4eaf0d32f848e9f1aa3e640fe83f500ae1300d523d19a3906e6eaa9ea2e9",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/memory/architecture-principles.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/memory/constitution.md": {
+      "sha256": "d80de6a3b91c4bdb72a6553c852ccde08de148c31e0665830a4769edf7203304",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/memory/constitution.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/memory/glossary.md": {
+      "sha256": "b80d1955b075d0a08ec52101bd48c3229180bf6036d2642bb83c48d52e25d128",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/memory/glossary.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/memory/product-principles.md": {
+      "sha256": "d983d1a483680d3847982fe22f1ae28bf641aef37eb76914063f4044f17a550c",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/memory/product-principles.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/templates/overrides/checklist-template.md": {
+      "sha256": "775f4182a92756c82d779f4daf61d8bcb2021659e0451d5d61000268bdbb4fdd",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/templates/overrides/checklist-template.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/templates/overrides/plan-template.md": {
+      "sha256": "5f09ed4f96bf05c784438e30a43da2972b952cf5bc5de92ceeeb4cab6d8e1244",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/templates/overrides/plan-template.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/templates/overrides/spec-template.md": {
+      "sha256": "97befb9269535b88e855dccf6a4b65e253177d138fffd9b4c18b3871b3d0b72a",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/templates/overrides/spec-template.md"
+    },
+    ".agents/skills/anti-ai-slop/.specify/templates/overrides/tasks-template.md": {
+      "sha256": "1b7982ec96a9ee5d319c4d84ba25a60e3432d54b69c08ed25766bb787587bcca",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".specify/templates/overrides/tasks-template.md"
+    },
+    ".agents/skills/anti-ai-slop/AGENTS.md": {
+      "sha256": "a3971b2b6bbf5b8b3662946f439b73aea7d53408a07e70f8425e133f34c3fd3b",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "AGENTS.md"
+    },
+    ".agents/skills/anti-ai-slop/CHANGELOG.md": {
+      "sha256": "87903df7c23df462bbd3c0f10fdbe0fdcd265de3de5f152c21d8b1628940c1e2",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "CHANGELOG.md"
+    },
+    ".agents/skills/anti-ai-slop/CLAUDE.md": {
+      "sha256": "8f83300b5f5dc6d149a69b3c1fd61c986aa4d43390cf36c21e811284edd64cd1",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "CLAUDE.md"
+    },
+    ".agents/skills/anti-ai-slop/PROMPTS.md": {
+      "sha256": "06705f117c4cf846ac624cb379f1b06a9ffeeca7fd181a3be8358f0da40ae8f2",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "PROMPTS.md"
+    },
+    ".agents/skills/anti-ai-slop/README.md": {
+      "sha256": "c4df61ddcc573f31cfd33cd63c96699d143d07a67f1dd6962299cd22f57c00c6",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "README.md"
+    },
+    ".agents/skills/anti-ai-slop/VERSION": {
+      "sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "VERSION"
+    },
+    ".agents/skills/anti-ai-slop/assets/workflow.svg": {
+      "sha256": "8bef34bd36f0a4c6fb77091eb9b101cd7cc5522317bbc97badb90eb349a128c8",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "assets/workflow.svg"
+    },
+    ".agents/skills/anti-ai-slop/checklists/ai-slop.md": {
+      "sha256": "0e535c4932ba2be313ddbff2b1ee7cae001d5975be8c3c3fe0cbfff84aeab104",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/ai-slop.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/coherence.md": {
+      "sha256": "5c780d4dd7cbb3e26f45ec4b8e8590fabcbf4834f78b12c11188537326efd684",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/coherence.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/dependency.md": {
+      "sha256": "f6d561c0cc78ea8d69f18152d18c67105429f5880a3891705461ae4d73cb1fa8",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/dependency.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/output_design_addendum.md": {
+      "sha256": "5472cb3adb46669e4c8faaccce2835234911b10557117d822b4a1c1660c63d6c",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/output_design_addendum.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/pr-review.md": {
+      "sha256": "8ae6774ee64110de0848ecccc9a0d70ef54c4e3488863e66986d4bbbee092eb9",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/pr-review.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/release.md": {
+      "sha256": "f57fda4af4a69b18dced6f733e789b82830899faa592aeed01bef6c6d92f3081",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/release.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/requirements.md": {
+      "sha256": "57a01412a507133f3a12169cae25b36d2050a5b56551209274fa8dfa3954bc8d",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/requirements.md"
+    },
+    ".agents/skills/anti-ai-slop/checklists/security.md": {
+      "sha256": "90ed84e2fad54a34e8976ad5872bc09e995174e16cd6928d127946800b2ea101",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "checklists/security.md"
+    },
+    ".agents/skills/anti-ai-slop/codex/prompts/00-apply-pack-to-existing-repo.md": {
+      "sha256": "a2b93f8decebf1937f8d2f5d5acbc02524bd1996730d245d98c7d4c312c9b0aa",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "codex/prompts/00-apply-pack-to-existing-repo.md"
+    },
+    ".agents/skills/anti-ai-slop/codex/prompts/01-run-coherence-check.md": {
+      "sha256": "b721b6450cc6b9a8a6778d3bf617c2fe79bb8daf2044c7c2fbf98a4e98f9f6e7",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "codex/prompts/01-run-coherence-check.md"
+    },
+    ".agents/skills/anti-ai-slop/codex/prompts/02-pr-review.md": {
+      "sha256": "edb5e7b2aba55211e3b5f9d14d064059be8ba6cb2ed4ac6d372daae6e559964a",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "codex/prompts/02-pr-review.md"
+    },
+    ".agents/skills/anti-ai-slop/dependency-baseline.json": {
+      "sha256": "e0d02c265d5aed756067703a8ded6462aa450eb44d22d3cd19534c3b43ec46d9",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dependency-baseline.json"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/academic_reporting.md": {
+      "sha256": "dfcf2ecc0bbfb07d03637d2535dbebd8acfcc0627ce995c9566e589f8ad42f09",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/academic_reporting.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/code_developer_outputs.md": {
+      "sha256": "0dac5ee2120665dfd6b50c7b34f6444fc4fbe2d21006f0460665f82e6644b4ec",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/code_developer_outputs.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/data_charts_dashboards.md": {
+      "sha256": "2f318165d380c8790c216b1959726d285b671d5a3af9cc05c627804547f0a7dc",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/data_charts_dashboards.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/emotional_social.md": {
+      "sha256": "02515ce48e9f97206e922cbe6895eae9908b090203f91ebc01fbadaa827851c8",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/emotional_social.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/images_visuals.md": {
+      "sha256": "9307f9ab0ad4aba5adf5f63203be665c0d56ec845fe28b71824ac452ee959964",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/images_visuals.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/localization_register.md": {
+      "sha256": "0f568bf8115cd67e79075c685b8e311c1c6d5684677a8261a811212bb8612580",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/localization_register.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/marketing_brand.md": {
+      "sha256": "758eed6ab9028b512a8395c1a105d53f1ea47c93245f751cb3bdfe5ecabd7996",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/marketing_brand.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/operational_plans.md": {
+      "sha256": "fcaf69ec30d018d5da9b9ddbbbb3f4c29b907cc99e20f09af03434b6e8a3e9a8",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/operational_plans.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/presentation_decks.md": {
+      "sha256": "abb9ee38e95c6a21059606d218ecabab1034f06c660b17f83a0c075d92b700e6",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/presentation_decks.md"
+    },
+    ".agents/skills/anti-ai-slop/dimensions/web_ui_design.md": {
+      "sha256": "d55c3f26537b15ed546dbfae65553725ff933ab2aebc8672e459347161d4ece7",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "dimensions/web_ui_design.md"
+    },
+    ".agents/skills/anti-ai-slop/docs/assets/readme-teaser.svg": {
+      "sha256": "64fabf6cf15035600a0c7d904291b6fcdd2242321e7abbbd9b7a1d39f0540b47",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/assets/readme-teaser.svg"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-readme/accessibility-review.json": {
+      "sha256": "c22ef0d8f48889517a1000b7a6aab414e68d679a66671197499daba4eb2713a3",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-readme/accessibility-review.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-readme/citation-review.json": {
+      "sha256": "c4d6dd198ff35f3bf58705a5a0813be64fa6355691ef56e8da2725176aeb7462",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-readme/citation-review.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-readme/evidence-ledger.json": {
+      "sha256": "b3c6f0392b170f130c41f2cb943019034b5f4c0f988cbef81ee5e7444573e6d7",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-readme/evidence-ledger.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-readme/narrative-review.json": {
+      "sha256": "26b039a92cf2ceb9b2b8e23f01936aa9246b6a77cf4f536e79c3ebadea751ef3",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-readme/narrative-review.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-teaser/accessibility-review.json": {
+      "sha256": "2464908d987f3f8eaf86feb4e468d4a44864252d46e5a5d1f718858d26bef5de",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-teaser/accessibility-review.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-teaser/citation-review.json": {
+      "sha256": "c4d6dd198ff35f3bf58705a5a0813be64fa6355691ef56e8da2725176aeb7462",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-teaser/citation-review.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-teaser/evidence-ledger.json": {
+      "sha256": "b3c6f0392b170f130c41f2cb943019034b5f4c0f988cbef81ee5e7444573e6d7",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-teaser/evidence-ledger.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-teaser/narrative-review.json": {
+      "sha256": "4bc4e56a933d16369420f139a5d1298afba0d9627301a84a4dd898149e28db23",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-teaser/narrative-review.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-teaser/teaser-spec.json": {
+      "sha256": "19237aced4945ef8043765c222b4826965c056b44246bfdef92ecd838f28c961",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-teaser/teaser-spec.json"
+    },
+    ".agents/skills/anti-ai-slop/docs/mdpr-teaser/teaser.md": {
+      "sha256": "663044e3e9e10f36d56e54bcd5ccc401660ec0309d686d919ec1d523f62cc26b",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/mdpr-teaser/teaser.md"
+    },
+    ".agents/skills/anti-ai-slop/docs/process/codex-workflows.md": {
+      "sha256": "8c5f750a9fa958db862dc065c6b44b8c96104e90c7bf00043e0e03b4bfe330e7",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/process/codex-workflows.md"
+    },
+    ".agents/skills/anti-ai-slop/docs/process/implementation-stages.md": {
+      "sha256": "02c319dfc66de20fb32be222dd1eb7ef20a71a03334287d4fdd18b54c578d2c0",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/process/implementation-stages.md"
+    },
+    ".agents/skills/anti-ai-slop/docs/process/migration-guide.md": {
+      "sha256": "1ec941a15e08919a2eb7e99d15ac6535c0ee4f47dee37845b300f0b0bd94c399",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/process/migration-guide.md"
+    },
+    ".agents/skills/anti-ai-slop/docs/process/validation-ladder.md": {
+      "sha256": "1e1b3d449b65da07b160cc1495b454721af282dd6f81b2a8608010ab01e3ef4b",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/process/validation-ladder.md"
+    },
+    ".agents/skills/anti-ai-slop/docs/references/resource-catalog.yaml": {
+      "sha256": "323ca5bdd3332f8520d3426ba16bc8fa58e8c62bb919c19a1fefb63f2722a3c6",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/references/resource-catalog.yaml"
+    },
+    ".agents/skills/anti-ai-slop/docs/references/source-catalog.md": {
+      "sha256": "36af8cde1cbd37b6a8326c93091e2858849e813097982efe271e335a7c2d44c8",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "docs/references/source-catalog.md"
+    },
+    ".agents/skills/anti-ai-slop/examples/before_after_patterns.md": {
+      "sha256": "607ef1e0a4ee8e629f71f3b937bfc5f35b8b3a1c7239978a6c8e46f01f5429a7",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "examples/before_after_patterns.md"
+    },
+    ".agents/skills/anti-ai-slop/manifest.txt": {
+      "sha256": "0e6570da8dc5bbfa503c05e44cd4ed973ae0524fca3f3ed1ea46745bd13eeeea",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "manifest.txt"
+    },
+    ".agents/skills/anti-ai-slop/research/field_reported_ai_smell_patterns.md": {
+      "sha256": "2957fc79cd8ed14ddb720ee05363af938771cd916d967dc067de6afd955ca018",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "research/field_reported_ai_smell_patterns.md"
+    },
+    ".agents/skills/anti-ai-slop/specs/000-anti-ai-slop-control-plane/adrs/0001-stdlib-validator-control-plane.md": {
+      "sha256": "7c649e1df966e3c9738655798154c0b2fdec0d1e949471f3c5905c6c0f20a94d",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "specs/000-anti-ai-slop-control-plane/adrs/0001-stdlib-validator-control-plane.md"
+    },
+    ".agents/skills/anti-ai-slop/specs/000-anti-ai-slop-control-plane/plan.md": {
+      "sha256": "709cc435fbcd84094754d0e8ccfee8c14b95c1d18df13b21f85bbb61594397f7",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "specs/000-anti-ai-slop-control-plane/plan.md"
+    },
+    ".agents/skills/anti-ai-slop/specs/000-anti-ai-slop-control-plane/spec.md": {
+      "sha256": "ddbbfc401631f0790e2af217e5f3ec0817526a94be812bc59385186d3b3c051f",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "specs/000-anti-ai-slop-control-plane/spec.md"
+    },
+    ".agents/skills/anti-ai-slop/specs/000-anti-ai-slop-control-plane/tasks.md": {
+      "sha256": "80a66eb2004e694e88f45a9b042ad7f1efa126afecefd9e0cb49ae05bd9c3584",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "specs/000-anti-ai-slop-control-plane/tasks.md"
+    },
+    ".agents/skills/anti-ai-slop/specs/_meta/coherence-latest.md": {
+      "sha256": "a3ef54b74999780d9336dc2c25f602e6a21e226f738e66ccd095d652c6557e3c",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "specs/_meta/coherence-latest.md"
+    },
+    ".agents/skills/anti-ai-slop/specs/_meta/evidence/existing-code-scan.md": {
+      "sha256": "af7c72714a246296b64e77b2fa49b34e3bca1287343b67d65072f0a7d5fa5e98",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "specs/_meta/evidence/existing-code-scan.md"
+    },
+    ".agents/skills/anti-ai-slop/templates/design_review_addendum.md": {
+      "sha256": "9db80ef3efc967a772528484c584b814ca1b684e0bf7b055671b96539bb9d3be",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "templates/design_review_addendum.md"
+    },
+    ".agents/skills/anti-ai-slop/templates/rewrite_brief_template.md": {
+      "sha256": "f718251d3c7350f74f5a477e43c3106371af1a21b9da30f21ec0cdaf9c6db6ea",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "templates/rewrite_brief_template.md"
+    },
+    ".agents/skills/anti-ai-slop/tests/test_catalog_freshness.py": {
+      "sha256": "f31ab0fe0dd91374ce4c7ef4d10b0c244cf2d0c4c9abe4149307032988493c5f",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tests/test_catalog_freshness.py"
+    },
+    ".agents/skills/anti-ai-slop/tests/test_helper_tools.py": {
+      "sha256": "eb55aa7b8d854450c3b37529db5a3ac81d20bed638adf3de2e24623b929f08b5",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tests/test_helper_tools.py"
+    },
+    ".agents/skills/anti-ai-slop/tests/test_test_layout.py": {
+      "sha256": "e0b3b04ba407607fabfaf23b8818b4f2765c9c05f42c9aede10f9d6a88be72b8",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tests/test_test_layout.py"
+    },
+    ".agents/skills/anti-ai-slop/tests/test_validator_core.py": {
+      "sha256": "92ddb1aa9cbf27d72d74619a08e40991580c57da4453a46ea3f09d1acaf2c930",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tests/test_validator_core.py"
+    },
+    ".agents/skills/anti-ai-slop/tests/test_workflow_examples.py": {
+      "sha256": "aeec7cfcf1b77024f21007b6915b24da9fbe6916a590f2e7e1e338083d003c98",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tests/test_workflow_examples.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/apply_guardrails.py": {
+      "sha256": "28b56fca82450890a8cc91bdfe934b8a1220bcd583c30a9a22dd8f2337edc68b",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/apply_guardrails.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/bootstrap_feature.py": {
+      "sha256": "71842df1d68b3a3623b8c5ec04f4dd68e8829514edb53ee6eaa4aa7503c31a2f",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/bootstrap_feature.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/repo_inventory.py": {
+      "sha256": "873b3d3b0ffb43bb3fe31b19954db33820c63912935c230bd7508fc904dc51ab",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/repo_inventory.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/resource_catalog_freshness.py": {
+      "sha256": "023f72bfdbf78fce290a93864afae808594a0f38f4bdd4e7d94442fcbd768279",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/resource_catalog_freshness.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_all.py": {
+      "sha256": "ab44bde51f0041f1b66597c0e395eed7591767d1f71d8e39a30d2bed20358506",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_all.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_architecture_boundaries.py": {
+      "sha256": "d26aa9c08020618d8185f52e6e114f80205978fc547f27f20cb15043641bc736",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_architecture_boundaries.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_config_integrity.py": {
+      "sha256": "753cb26999b9fe1cf67f0f31f7e3ed425697487d9ecbf1012ad7919b5abdd499",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_config_integrity.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_dependency_justification.py": {
+      "sha256": "4710674917c98cc7b51de272bb388e264a2782b8802481ef9a8d22659e9d1af9",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_dependency_justification.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_evidence_links.py": {
+      "sha256": "fd6570698e73d0fb1b3ce61a39f0196447ecad78a9797136e1e6d3fcb982fd1b",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_evidence_links.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_glossary_terms.py": {
+      "sha256": "49d673b1f8587c709489cda61915676884dc4a0e5ec6ffcdc299f85b64977407",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_glossary_terms.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_manifest_integrity.py": {
+      "sha256": "fcbb16bb1181ba30cd6d2bee5a7b5225866b145cb0b05c58d5d98f3534099a80",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_manifest_integrity.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_placeholders.py": {
+      "sha256": "4bf64c66e1fa966eef61d4257f411ba1886868b834776a30d72771b067314f8f",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_placeholders.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_resource_catalog_freshness.py": {
+      "sha256": "694d6c123618cc8ae7f0fc350c7440cdb8c644068f28e671a045cbeab979456b",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_resource_catalog_freshness.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_spec_coverage.py": {
+      "sha256": "3f0fad6ee6012afe431c3c0ddc45b67823ad72dd9461789560825616bea07ba5",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_spec_coverage.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_task_traceability.py": {
+      "sha256": "55e19cf45485d5fd9d0e998f280812304a3a3b8b688d353564efb8a36f165137",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_task_traceability.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_template_tokens.py": {
+      "sha256": "39562566befc03258398179dfd713697292adfce5b136320fa737cf0cbe12a62",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_template_tokens.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_vague_language.py": {
+      "sha256": "9f013aa0db8c093fd3a30e6a1c32341c8a66fcec57cfa3bc923a118b9fe65562",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_vague_language.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/check_workflow_integrity.py": {
+      "sha256": "674d1219f9fd3617aa93f8b0a885c6bca74f116a8c6eb6c6abd42edad190e4e6",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/check_workflow_integrity.py"
+    },
+    ".agents/skills/anti-ai-slop/tools/validators/common.py": {
+      "sha256": "a42e32003f24ba80ff937dfd0bb0ab3950d104eaec3a208b15255d4cb3440456",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": "tools/validators/common.py"
+    },
+    ".agents/skills/seo-technical/references/audit-template.md": {
+      "sha256": "1be66990a30a44f6cfac1f6cd89494d513954375571aba48782d110cabc587a6",
+      "repository": "rampstackco/claude-skills",
+      "commit": "a67dd34c609f034c0cfd736a348659bbdf1605bf",
+      "source_path": "skills/seo-technical/references/audit-template.md"
+    },
+    ".agents/skills/seo-technical/references/migration-checklist.md": {
+      "sha256": "7f9a4dbdd9653d4a2d8a9c8795376562ac26545568db6f493a21c3f5bc485bb9",
+      "repository": "rampstackco/claude-skills",
+      "commit": "a67dd34c609f034c0cfd736a348659bbdf1605bf",
+      "source_path": "skills/seo-technical/references/migration-checklist.md"
+    },
+    ".agents/licenses/rampstack-LICENSE": {
+      "sha256": "7957f4b291988f21be7cb75637d2efb6edd0369a95d3814cac7ef931f7f10b7c",
+      "repository": "rampstackco/claude-skills",
+      "commit": "a67dd34c609f034c0cfd736a348659bbdf1605bf",
+      "source_path": "LICENSE"
+    },
+    ".agents/skills/seo-drift/references/drift-thresholds.md": {
+      "sha256": "4b90fbb0e26162f4b1c06e7856f14a943e2a94a221d5bbbb30ceac9388cdaa1d",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-drift/references/drift-thresholds.md"
+    },
+    ".agents/support/seranking/LICENSE": {
+      "sha256": "be37f39e84329222181a6d75c84b73a514e691d52da9741db864e057ce8e3eee",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "LICENSE"
+    },
+    ".agents/support/seranking/scripts/crux_history.py": {
+      "sha256": "6f7246cc31394b67f31b8b96e6a0c761e72ba623de3557e656217f2b510fb5df",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/crux_history.py"
+    },
+    ".agents/support/seranking/scripts/ga4_admin.py": {
+      "sha256": "7aba5e7e48ffae2bebf8c1be1cd28093e10842e3c63121f3f0e803a6e75a43c5",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/ga4_admin.py"
+    },
+    ".agents/support/seranking/scripts/ga4_report.py": {
+      "sha256": "9e965479a1c861510d6d35235a94fa95be13429189af5821d8d076c3e18d1cfa",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/ga4_report.py"
+    },
+    ".agents/support/seranking/scripts/google_auth.py": {
+      "sha256": "51a3ced3852a9232d5ac82e93c8aef1792363d3ae78757290bd1002e9de55bb7",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/google_auth.py"
+    },
+    ".agents/support/seranking/scripts/google_report.py": {
+      "sha256": "c8c3b2393a2e3d6e00717101b838d8a6cb9fb96a59c481b5b0e07c9e0270f146",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/google_report.py"
+    },
+    ".agents/support/seranking/scripts/gsc_inspect.py": {
+      "sha256": "151e2401c6139b5b32283fed6f48b26f9794d0f6e04da7c50fe0ea4ee8302c0a",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/gsc_inspect.py"
+    },
+    ".agents/support/seranking/scripts/gsc_query.py": {
+      "sha256": "4c1d565edaa72cada9082b97db7c288fa918c87b7eca5f703c94b61c397c4327",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/gsc_query.py"
+    },
+    ".agents/support/seranking/scripts/indexing_notify.py": {
+      "sha256": "48955eb9bd9422636e28665126ec81954244fb5e4f69adec75d3f886cca228ca",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/indexing_notify.py"
+    },
+    ".agents/support/seranking/scripts/keyword_planner.py": {
+      "sha256": "9d55eff1f4d08b15aed05d102a52c994f68bbc0e4136e974a3ec35a0f3f7f7c3",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/keyword_planner.py"
+    },
+    ".agents/support/seranking/scripts/nlp_analyze.py": {
+      "sha256": "45d0026c4022c54be969dd63c58597dc0b55edbc9dd2f0c25e7431687eeb2bec",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/nlp_analyze.py"
+    },
+    ".agents/support/seranking/scripts/pagespeed_check.py": {
+      "sha256": "24a7f080305503d0ff196fdc8b357dd5a3295fefbe3fdded6a20719ca52c2b67",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/pagespeed_check.py"
+    },
+    ".agents/support/seranking/scripts/validate_cursor_manifest.py": {
+      "sha256": "e6c3b2e4b26bf34ae9898fdc7e8985192b59f3bfc3cfb27eafa4618b93526d2b",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/validate_cursor_manifest.py"
+    },
+    ".agents/support/seranking/scripts/validate_skill_frontmatter.py": {
+      "sha256": "12478fb6ee6f96d2b253fcd50b00f5c398b52df532bb38e30dc7eb8b5586a09c",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/validate_skill_frontmatter.py"
+    },
+    ".agents/support/seranking/scripts/youtube_search.py": {
+      "sha256": "9d0ab268928bf71ec908613b7f9dbc361a74484867dbfea8ef91eb20839229d4",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "scripts/youtube_search.py"
+    },
+    ".agents/support/seranking/skills/seo-firecrawl/SKILL.md": {
+      "sha256": "a59bdf93a808f0501761d25065ea5a4345f06ba8871d097a8bec9d85fefb91dd",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-firecrawl/SKILL.md"
+    },
+    ".agents/support/seranking/skills/seo-firecrawl/references/preflight.md": {
+      "sha256": "75770e2c1ba908f490472db2c9b0e62d5ceadfab5b0a23d6b27ae9a5035bad8a",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-firecrawl/references/preflight.md"
+    },
+    ".agents/support/seranking/skills/seo-google/SKILL.md": {
+      "sha256": "b094e9ae1314317209b6118a07f7b3e22b529e249fd3bf05f5c910b72dae99cd",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/SKILL.md"
+    },
+    ".agents/support/seranking/skills/seo-google/assets/templates/cwv-audit-report.md": {
+      "sha256": "94e81dd051757c8fe588756206eb83cc2d1c3907a76610862f01a1bcd1c2ac5d",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/assets/templates/cwv-audit-report.md"
+    },
+    ".agents/support/seranking/skills/seo-google/assets/templates/gsc-performance-report.md": {
+      "sha256": "7248f2e7e20d87a863ccbf8c31eaa7af3645aa6483646cdeb1385c953c2d6738",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/assets/templates/gsc-performance-report.md"
+    },
+    ".agents/support/seranking/skills/seo-google/assets/templates/indexation-status-report.md": {
+      "sha256": "afc337905d82f83659a229382432876edba9bd9af6e589b3e4de4786974f13b3",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/assets/templates/indexation-status-report.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/auth-setup.md": {
+      "sha256": "74d90a5e9aa6b49093bc3a0aab9266736c9bc8edc80ca0ce0640cd6080b1d5a2",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/auth-setup.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/cross-skill-integration.md": {
+      "sha256": "10b8e8dc21d165141e35b419bef51c09ef2e10fdc625a6057ee60c448ce1f319",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/cross-skill-integration.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/ga4-data-api.md": {
+      "sha256": "b6c29f9d830df1a406339c5776a7aebd648c5d2fd33eb7a2689106c5b3c7bbb9",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/ga4-data-api.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/indexing-api.md": {
+      "sha256": "2c05cd03ab4e8abe255d3fed38b2638d6d38002392fc8ce6e7cbd50ebc3ec03a",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/indexing-api.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/keyword-planner-api.md": {
+      "sha256": "43962273a47273ac5b43e4451cb3facac50bc330d65397be523560959e46626f",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/keyword-planner-api.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/nlp-api.md": {
+      "sha256": "a2b2796179b929425bfe184f761bebf180f6a4f5638bed03510b3f6b15a61d48",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/nlp-api.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/pagespeed-crux-api.md": {
+      "sha256": "14d3fa5cbe7d0a82b4c2c6dee45842cf5273cda3a6b79e076da752df4530e4fe",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/pagespeed-crux-api.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/rate-limits-quotas.md": {
+      "sha256": "ad1f7d096e229526c8fe9026a98124a05221f53636eb6023f362dfd5fd3c2f96",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/rate-limits-quotas.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/search-console-api.md": {
+      "sha256": "be75b999840b60f0a0980269c31046070f0915030c638521a8df2072dfd83767",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/search-console-api.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/supplementary-apis.md": {
+      "sha256": "b8937fb31fa09b2c2a09ad2573191183cad219cebafc09136a88eac133cddbc1",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/supplementary-apis.md"
+    },
+    ".agents/support/seranking/skills/seo-google/references/youtube-api.md": {
+      "sha256": "d6c7c0ea2205ce533bfe63f277d5497bf25239c119bfea1cf093eef30a186a6a",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "skills/seo-google/references/youtube-api.md"
+    },
+    "scripts/internal_link_audit.py": {
+      "sha256": "6a15525f8e126c8abe95042c2596719afe09cd8f04a4dfa67142e410bdb44e53",
+      "repository": "dageno-agents/internal-linking-audit",
+      "commit": "5cb949f5d1eb8210505b6d34ca943a6851f9c220",
+      "source_path": "scripts/internal_link_audit.py"
+    },
+    ".agents/skills/anti-ai-slop/.gitattributes": {
+      "sha256": "92bd0682487140d39a8f20afcfdb2aefc8243e51553f7e1ba105a2a2f476329f",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".gitattributes"
+    },
+    ".agents/skills/anti-ai-slop/.github/workflows/codeql.yml": {
+      "sha256": "d2deb40198402e50df02341720fe17b7ee6ce751a0b29c15432219b790a60fef",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".github/workflows/codeql.yml"
+    },
+    ".agents/skills/anti-ai-slop/.github/workflows/gitleaks.yml": {
+      "sha256": "ba4b39fcc7a8348bec471bf05001e67f9db759b89a5a9eea03868ef7b325e204",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".github/workflows/gitleaks.yml"
+    },
+    ".agents/skills/anti-ai-slop/.github/workflows/no-ai-slop.yml": {
+      "sha256": "3f4ee57ae684d93d1ce32e92984773ff48d392a52d6869c753aba406ebcdfc51",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".github/workflows/no-ai-slop.yml"
+    },
+    ".agents/skills/anti-ai-slop/.github/workflows/osv-scanner.yml": {
+      "sha256": "c29d430d962be283be951275b571898e0d0b4b69f14410d48faa492a03838eef",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".github/workflows/osv-scanner.yml"
+    },
+    ".agents/skills/anti-ai-slop/.github/workflows/semgrep.yml": {
+      "sha256": "6692afa6d0565df6a806e0401c207466616a7f62159c09feb9215258acbe7b55",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".github/workflows/semgrep.yml"
+    },
+    ".agents/skills/anti-ai-slop/.github/workflows/spec-coherence.yml": {
+      "sha256": "6fafa324660ce46f87a784b961f3f20f88363f53b02fe032844dd5e16290eef5",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".github/workflows/spec-coherence.yml"
+    },
+    ".agents/skills/anti-ai-slop/.gitignore": {
+      "sha256": "45b36dc319bd3aa8b448c1e2c90235e343383bb10eb51d077554e9e484d7fb98",
+      "repository": "ch040602/anti-ai-slop",
+      "commit": "171db9c7daa0e4507cd22f5ad4e8771343f79e72",
+      "source_path": ".gitignore"
+    },
+    ".agents/skills/writing-cadence/references/cadence-principles.md": {
+      "sha256": "9ba532fc32e0b7090e7c4d1458cc05064f7befaddf24b962106496b0df374fe1",
+      "repository": "msimchowitz/writing-skills",
+      "commit": "214981fe02326f27b0fc8790d00eb4b731607073",
+      "source_path": "for-agents/writing-cadence/references/cadence-principles.md"
+    },
+    ".agents/skills/better-usage/references/compatibility-examples.md": {
+      "sha256": "0b39d935f043fd126053425de63fd492b3c5154795ae01aeb857829274239a08",
+      "repository": "msimchowitz/writing-skills",
+      "commit": "214981fe02326f27b0fc8790d00eb4b731607073",
+      "source_path": "for-agents/better-usage/references/compatibility-examples.md"
+    },
+    ".agents/examples/seo-drift-wix-com-20260514/compare/DRIFT-REPORT.md": {
+      "sha256": "787958606c51851ffc6d88749502a22516bff59afd4264901976cb8c0e7bb26b",
+      "repository": "seranking/seo-skills",
+      "commit": "fd6d1408f2e6a06454d81c07c29e0f04342eb9ba",
+      "source_path": "examples/seo-drift-wix-com-20260514/compare/DRIFT-REPORT.md"
+    }
+  }
+}

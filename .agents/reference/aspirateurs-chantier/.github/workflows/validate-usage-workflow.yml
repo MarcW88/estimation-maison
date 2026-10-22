@@ -1,0 +1,47 @@
+name: Validate usage workflow
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".agents/skills/usage-analysis-workflow/**"
+      - ".agents/skills/usage-content-workflow/**"
+      - ".agents/skills/usage-skill-stack.json"
+      - "usage-workflow.config.yaml"
+      - "validate_usage_workflow.py"
+      - ".content/usages/**"
+      - "usages/**"
+      - ".github/workflows/validate-usage-workflow.yml"
+  push:
+    branches: [main]
+    paths:
+      - ".agents/skills/usage-analysis-workflow/**"
+      - ".agents/skills/usage-content-workflow/**"
+      - ".agents/skills/usage-skill-stack.json"
+      - "usage-workflow.config.yaml"
+      - "validate_usage_workflow.py"
+      - ".content/usages/**"
+      - "usages/**"
+      - ".github/workflows/validate-usage-workflow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile usage validator
+        run: python -m py_compile validate_usage_workflow.py
+
+      - name: Validate usage workflow governance and draft safety
+        run: python validate_usage_workflow.py
+
+      - name: Whitespace check
+        run: git diff --check

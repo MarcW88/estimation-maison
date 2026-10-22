@@ -1,0 +1,108 @@
+name: Validate brand generation
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "_generate_brand_content.py"
+      - "_generate_brands.py"
+      - "_generate_bosch.py"
+      - "_generate_karcher.py"
+      - "_generate_makita.py"
+      - "_generate_parkside.py"
+      - "_generate_nilfisk.py"
+      - "_generate_brand_overrides.py"
+      - "_brand_rollout_polish.py"
+      - "_apply_cluster_audit_metadata.py"
+      - "_apply_brand_design_fixes.py"
+      - "enforce_brand_review_state.py"
+      - "_validate_brands.py"
+      - "validate_brand_skill_stack.py"
+      - "validate_brand_run_evidence.py"
+      - "brand-workflow.config.yaml"
+      - ".content/brands/**"
+      - "marques/**"
+      - ".agents/skills/brand-*/**"
+      - ".agents/skills/brand-skill-stack.json"
+      - ".github/workflows/validate-brand-generation.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "_generate_brand_content.py"
+      - "_generate_brands.py"
+      - "_generate_bosch.py"
+      - "_generate_karcher.py"
+      - "_generate_makita.py"
+      - "_generate_parkside.py"
+      - "_generate_nilfisk.py"
+      - "_generate_brand_overrides.py"
+      - "_brand_rollout_polish.py"
+      - "_apply_cluster_audit_metadata.py"
+      - "_apply_brand_design_fixes.py"
+      - "enforce_brand_review_state.py"
+      - "_validate_brands.py"
+      - "validate_brand_skill_stack.py"
+      - "validate_brand_run_evidence.py"
+      - "brand-workflow.config.yaml"
+      - ".content/brands/**"
+      - "marques/**"
+      - ".agents/skills/brand-*/**"
+      - ".agents/skills/brand-skill-stack.json"
+      - ".github/workflows/validate-brand-generation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate shared skill provenance and 80/20 governance
+        run: python validate_brand_skill_stack.py
+
+      - name: Regenerate all brand content canonically
+        run: python _generate_brand_content.py
+
+      - name: Validate machine integrity and anti-template gates
+        run: python _validate_brands.py
+
+      - name: Validate publish-state/run-evidence consistency
+        run: python validate_brand_run_evidence.py
+
+      - name: Preserve bespoke brand structures
+        shell: bash
+        run: |
+          declare -A checks=(
+            [bosch]='univers-bosch deux-systemes-18v'
+            [karcher]='wd-vs-nt tact-acd'
+            [festool]='logique-systeme classes-ct'
+            [makita]='matrice-makita lxt-xgt'
+            [dewalt]='systeme-chantier dcv586m'
+            [parkside]='achat-parkside pwd-pawd'
+            [nilfisk]='deux-univers infiniclean'
+            [mirka]='poncage-dabord 1217-1230'
+          )
+          for slug in "${!checks[@]}"; do
+            page="marques/$slug/index.html"
+            for id in ${checks[$slug]}; do
+              grep -q "id=\"$id\"" "$page"
+            done
+          done
+
+      - name: Check canonical generation is idempotent
+        run: |
+          before=$(find marques/karcher marques/bosch marques/makita marques/festool marques/dewalt marques/parkside marques/nilfisk marques/mirka .content/brands -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)
+          python _generate_brand_content.py >/tmp/brand-regenerate.log
+          after=$(find marques/karcher marques/bosch marques/makita marques/festool marques/dewalt marques/parkside marques/nilfisk marques/mirka .content/brands -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)
+          test "$before" = "$after"
+
+      - name: Whitespace check
+        run: git diff --check

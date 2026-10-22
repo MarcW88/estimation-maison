@@ -1,0 +1,11 @@
+{
+  "name": "aspirateurs-chantier-visual-review",
+  "private": true,
+  "scripts": {
+    "visual:install": "playwright install chromium",
+    "visual:brands": "node .agents/skills/site-design-review/scripts/run-visual-review.mjs --scope brands"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

@@ -1,0 +1,190 @@
+project:
+  name: "aspirateurs-chantier.fr"
+  domain: "https://aspirateurs-chantier.fr"
+  language: "fr"
+
+content:
+  scope:
+    - "/marques/"
+  source_of_truth:
+    editorial_method: ".agents/skills/brand-content-workflow/SKILL.md"
+    analysis_method: ".agents/skills/brand-analysis-workflow/SKILL.md"
+    evidence_ledgers: ".content/brands/<slug>.yaml"
+    run_evidence: ".content/brands/runs/<slug>.json"
+    rendered_body_overrides:
+      - "_generate_bosch.py"
+      - "_generate_brand_overrides.py"
+      - "_generate_karcher.py"
+      - "_generate_makita.py"
+    shell_generator: "_generate_brands.py"
+  rendered_output:
+    - "marques/"
+  mode: "recovery"
+
+generation:
+  canonical_command: "python _generate_brand_content.py"
+  generic_generator: "_generate_brands.py"
+  generic_generator_role: "shell_and_seed_only"
+  generic_generator_may_grant_editorial_pass: false
+  generic_generator_may_define_final_editorial_structure: false
+  bespoke_overrides:
+    bosch: "_generate_bosch.py"
+    karcher: "_generate_karcher.py"
+    makita: "_generate_makita.py"
+    others: "_generate_brand_overrides.py"
+  post_generation_review_state: "enforce_brand_review_state.py"
+  prohibit_generic_rebuild_without_overrides: true
+  require_all_brand_hubs_to_receive_bespoke_override: true
+
+skill_stack:
+  manifest: ".agents/skills/brand-skill-stack.json"
+  validator: "validate_brand_skill_stack.py"
+  ratio_basis: "workflow_responsibilities"
+  target_shared_ratio_min: 0.80
+  target_custom_ratio_max: 0.20
+  require_stack_validation_before_brand_work: true
+  require_external_provenance_for_shared_skills: true
+  shared_methodology_owner: ".agents/skills/"
+  custom_workflows:
+    - "brand-content-workflow"
+    - "brand-analysis-workflow"
+
+execution_evidence:
+  directory: ".content/brands/runs"
+  validator: "validate_brand_run_evidence.py"
+  contract_version: 2
+  required_before_publish_review_pass: true
+  allow_na_only_with_reason: true
+  require_reader_decision: true
+  require_affiliate_independent_value: true
+  require_evidence_derived_outline: true
+  prohibit_generator_from_fabricating_run_evidence: true
+
+quality:
+  editorial_reference: "/guides/comment-choisir-aspirateur-de-chantier/"
+  visual_reference: "/marques/bosch/"
+  visual_reference_is_not_structure_template: true
+  draft_robots: "index, follow"
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_internal_link_quotas: true
+  prohibit_page_type_templates: true
+  require_cluster_structure_review: true
+  fail_on_repeated_heading_signature_across_3_brands: true
+  fail_on_long_shared_paragraph_across_3_brands: true
+  preserve_site_design_system: true
+
+routing:
+  page_types:
+    - DIRECTORY
+    - BRAND_HUB
+    - PRODUCT
+    - REVIEW
+    - SERVICE
+    - ACCESSORY_HUB
+    - ALTERNATIVES
+  page_type_defines_structure: false
+  current_brand_hubs_live_under: "/marques/<slug>/"
+  product_pages_prefer: "/modeles/"
+
+vacuum_domain_checks:
+  custom_scope_only: true
+  verify_when_relevant:
+    - dust_class_L_M_H
+    - filter_vs_safety_class
+    - airflow_measurement_context
+    - vacuum_pressure_measurement_context
+    - automatic_filter_cleaning
+    - tool_triggered_start
+    - antistatic_system
+    - wet_dry_role
+    - battery_platform_compatibility
+    - tool_and_hose_compatibility
+    - bags_filters_consumables
+    - tank_gross_net_water_volume
+    - product_generation_and_status
+    - weight_mobility_tradeoff
+  prohibit_safety_class_inference_from_filter_or_power: true
+  prohibit_unqualified_cross_manufacturer_metric_comparison: true
+
+evidence:
+  prefer_primary_sources: true
+  statuses:
+    - VERIFIED
+    - SUPPORTED
+    - INFERRED
+    - UNKNOWN
+    - OUTDATED
+    - CONTRADICTED
+  prohibit_model_memory_gap_filling: true
+  prohibit_fake_hands_on: true
+  require_contradictions_to_be_preserved: true
+
+internal_linking:
+  policy: "contextual_only"
+  useful_destinations_when_relevant:
+    - "/modeles/"
+    - "/comparatifs/"
+    - "/guides/"
+    - "/usages/"
+    - "/marques/"
+
+presentation:
+  preserve_existing_components:
+    - "answer-box"
+    - "table-wrap"
+    - "related-box"
+    - "content-sidebar"
+    - "toc-list"
+  toc_policy: "reflect_actual_headings"
+  table_policy: "use_only_when_decisionally_useful"
+  visual_consistency_does_not_define_editorial_structure: true
+
+workflow:
+  brands_dir: ".content/brands"
+  runs_dir: ".content/brands/runs"
+  reviews_dir: ".content/reviews"
+  content_workflow: ".agents/skills/brand-content-workflow/SKILL.md"
+  analysis_workflow: ".agents/skills/brand-analysis-workflow/SKILL.md"
+  final_review_mode: "PUBLISH_REVIEW"
+  skill_stack_validator: "validate_brand_skill_stack.py"
+  run_evidence_validator: "validate_brand_run_evidence.py"
+  machine_validator: "_validate_brands.py"
+  canonical_generator: "_generate_brand_content.py"
+  require_analysis_pass_before_human_validation: true
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false
+
+editorial_chain:
+  shared:
+    - search_intent
+    - content_audit
+    - content_refresh_when_needed
+    - fact_check_pre_draft
+    - evidence_based_reviews_when_needed
+    - affiliate_value
+    - content_brief_authoring
+    - content_and_copy
+    - fact_check_post_draft
+    - humanizer
+    - general_writing
+    - anti_ai_slop
+    - internal_linking_audit
+    - seo_technical_and_best_practices
+    - editorial_qa
+  custom:
+    - vacuum_domain_review
+    - brand_analysis_publish_review
+
+quality_gate:
+  require_sources_for_material_factual_claims: true
+  require_limitations_when_decision_relevant: true
+  require_noindex_in_draft: false
+  require_run_evidence_for_ready_status: true
+  prohibit_fake_test_language: true
+  prohibit_editor_facing_metadiscourse: true
+  prohibit_merchant_rewrite_without_original_value: true
+  prohibit_high_severity_ai_slop: true
+  prohibit_unresolved_cannibalization: true
+  prohibit_unjustified_structural_cloning: true

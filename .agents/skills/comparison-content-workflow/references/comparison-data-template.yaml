@@ -1,0 +1,74 @@
+slug: "meilleur-produit"
+url: "/comparatifs/meilleur-produit/"
+updated_at: "YYYY-MM-DD"
+
+intent:
+  query: "meilleur produit"
+  type: "best_overall"
+  user_job: ""
+  primary_constraint: ""
+
+product_universe:
+  - id: "product-a"
+    name: "Product A"
+    status: "ELIGIBLE"
+    equivalence: "FUNCTIONALLY_COMPARABLE"
+    exclusion_reason: null
+  - id: "product-b"
+    name: "Product B"
+    status: "ELIGIBLE"
+    equivalence: "FUNCTIONALLY_COMPARABLE"
+    exclusion_reason: null
+
+criteria:
+  - id: "criterion-1"
+    label: "Criterion 1"
+    weight: 30
+    hard_gate: false
+    rationale: ""
+  - id: "criterion-2"
+    label: "Criterion 2"
+    weight: 25
+    hard_gate: false
+    rationale: ""
+  - id: "criterion-3"
+    label: "Criterion 3"
+    weight: 20
+    hard_gate: false
+    rationale: ""
+  - id: "criterion-4"
+    label: "Criterion 4"
+    weight: 15
+    hard_gate: false
+    rationale: ""
+  - id: "criterion-5"
+    label: "Criterion 5"
+    weight: 10
+    hard_gate: false
+    rationale: ""
+
+evidence:
+  - product: "product-a"
+    criterion: "criterion-1"
+    claim: ""
+    value: ""
+    source: ""
+    source_date: ""
+    evidence_class: "VERIFIED"
+
+scores:
+  product-a:
+    criterion-1:
+      score: 8
+      evidence_class: "VERIFIED"
+      justification: ""
+  product-b:
+    criterion-1:
+      score: 7
+      evidence_class: "VERIFIED"
+      justification: ""
+
+ranking: []
+notes:
+  total_solution_cost_required: false
+  affiliate_commission_used_in_ranking: false

@@ -1,0 +1,65 @@
+name: Apply guarded product modules
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.content/products/**'
+      - 'product_cards.py'
+      - 'apply_product_cards.py'
+      - 'validate_product_cards.py'
+      - 'assets/product-cards.css'
+      - 'assets/product-affiliate.js'
+      - '.github/workflows/apply-product-modules.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: amazon-product-maintenance-main
+  cancel-in-progress: false
+
+jobs:
+  apply-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply approved product modules
+        run: |
+          python -m py_compile product_cards.py apply_product_cards.py validate_product_cards.py
+          python apply_product_cards.py all
+
+      - name: Validate product modules
+        run: python validate_product_cards.py all
+
+      - name: Preserve live indexation
+        run: |
+          for f in comparatifs/*/index.html usages/*/index.html guides/*/index.html; do
+            grep -Eq '<meta name="robots" content="index, ?follow">' "$f"
+          done
+
+      - name: Commit generated modules
+        shell: bash
+        run: |
+          if git diff --quiet -- comparatifs usages guides; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comparatifs usages guides
+          git commit -m "affiliate: apply guarded product modules"
+          git pull --rebase origin main
+          if ! git push origin HEAD:main; then
+            echo "main moved during product maintenance; rebasing once and retrying"
+            sleep 2
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

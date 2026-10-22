@@ -1,0 +1,34 @@
+name: Validate brand skill stack
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "validate_brand_skill_stack.py"
+      - "brand-workflow.config.yaml"
+      - ".agents/skills/**"
+      - ".github/workflows/validate-brand-skill-stack.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "validate_brand_skill_stack.py"
+      - "brand-workflow.config.yaml"
+      - ".agents/skills/**"
+      - ".github/workflows/validate-brand-skill-stack.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate shared/custom ratio and required skills
+        run: python validate_brand_skill_stack.py

@@ -1,0 +1,70 @@
+name: Validate audited content cluster
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '_generate_model_overrides.py'
+      - '_generate_usage_overrides.py'
+      - '_materialize_usage_v2.py'
+      - 'validate_usage_workflow.py'
+      - '_generate_professional_comparison_override.py'
+      - '_generate_brand_hub_index.py'
+      - '_generate_brand_content.py'
+      - '_generate_nilfisk.py'
+      - '_generate_cluster_content.py'
+      - '_apply_cluster_audit_metadata.py'
+      - '_validate_cluster_rollout.py'
+      - '.content/models/**'
+      - '.content/usages/**'
+      - '.content/brands/**'
+      - '.content/cluster-audits/**'
+      - 'modeles/**'
+      - 'usages/**'
+      - 'marques/**'
+      - 'comparatifs/aspirateur-professionnel/**'
+      - '.github/workflows/validate-cluster-content.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '_generate_model_overrides.py'
+      - '_generate_usage_overrides.py'
+      - '_materialize_usage_v2.py'
+      - 'validate_usage_workflow.py'
+      - '_generate_professional_comparison_override.py'
+      - '_generate_brand_hub_index.py'
+      - '_generate_brand_content.py'
+      - '_generate_nilfisk.py'
+      - '_generate_cluster_content.py'
+      - '_apply_cluster_audit_metadata.py'
+      - '_validate_cluster_rollout.py'
+      - '.content/models/**'
+      - '.content/usages/**'
+      - '.content/brands/**'
+      - '.content/cluster-audits/**'
+      - 'modeles/**'
+      - 'usages/**'
+      - 'marques/**'
+      - 'comparatifs/aspirateur-professionnel/**'
+      - '.github/workflows/validate-cluster-content.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate cluster in audited order
+        run: python _generate_cluster_content.py
+      - name: Require committed cluster artifacts
+        run: git diff --exit-code -- modeles usages marques comparatifs/aspirateur-professionnel .content/usages .content/brands
+      - name: Check whitespace
+        run: git diff --check

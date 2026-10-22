@@ -1,0 +1,144 @@
+name: Visual design review
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Generate approved editorial images with BFL"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "marques/**"
+      - "comparatifs/**"
+      - "usages/**"
+      - "guides/**"
+      - "bons-plans/**"
+      - "assets/generated/**"
+      - "style.css"
+      - "comparisons.css"
+      - "usages.css"
+      - "guides-deals.css"
+      - "assets/product-cards.css"
+      - "assets/product-affiliate.js"
+      - ".content/products/**"
+      - "product_cards.py"
+      - "apply_product_cards.py"
+      - "site.js"
+      - ".agents/skills/site-design-review/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/visual-design-review.yml"
+  pull_request:
+    paths:
+      - "index.html"
+      - "marques/**"
+      - "comparatifs/**"
+      - "usages/**"
+      - "guides/**"
+      - "bons-plans/**"
+      - "assets/generated/**"
+      - "style.css"
+      - "comparisons.css"
+      - "usages.css"
+      - "guides-deals.css"
+      - "assets/product-cards.css"
+      - "assets/product-affiliate.js"
+      - ".content/products/**"
+      - "product_cards.py"
+      - "apply_product_cards.py"
+      - "site.js"
+      - ".agents/skills/site-design-review/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/visual-design-review.yml"
+
+jobs:
+  visual-pages:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       !startsWith(github.event.workflow_run.head_commit.message, 'chore(images): generate approved editorial images'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        scope: [brands, comparisons, usages, guides, deals]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Force images eager for deterministic screenshots
+        shell: bash
+        run: |
+          find marques comparatifs usages guides bons-plans -name '*.html' -type f -print0 \
+            | xargs -0 -r sed -i 's/loading="lazy"/loading="eager"/g'
+
+      - name: Capture ${{ matrix.scope }} pages
+        run: >-
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs
+          --scope ${{ matrix.scope }}
+          --output .artifacts/design-review/${{ matrix.scope }}
+
+      - name: Upload visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.scope }}-design-review
+          path: .artifacts/design-review/${{ matrix.scope }}/
+          if-no-files-found: warn
+          retention-days: 14
+
+  visual-home:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       !startsWith(github.event.workflow_run.head_commit.message, 'chore(images): generate approved editorial images'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Force homepage images eager for deterministic screenshots
+        run: sed -i 's/loading="lazy"/loading="eager"/g' index.html
+
+      - name: Capture homepage
+        run: >-
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs
+          --route /
+          --output .artifacts/design-review/home
+
+      - name: Upload homepage visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: home-design-review
+          path: .artifacts/design-review/home/
+          if-no-files-found: warn
+          retention-days: 14

@@ -1,0 +1,44 @@
+version: 1
+scope: /bons-plans/
+source_of_truth: .content/deals
+
+page_types:
+  LIVE_DEALS:
+    active_offer_ttl_hours: 48
+    page_review_ttl_hours: 168
+  BRAND_DEALS:
+    active_offer_ttl_hours: 72
+    page_review_ttl_hours: 168
+  EVENT_DEALS:
+    active_offer_ttl_hours: 24
+    page_review_ttl_hours: 336
+  SECOND_HAND:
+    active_offer_ttl_hours: 72
+    page_review_ttl_hours: 336
+
+offer_statuses:
+  - ACTIVE_VERIFIED
+  - ACTIVE_STOCK_SENSITIVE
+  - PRICE_WATCH
+  - EXPIRED
+  - SOLD_OUT
+  - UNVERIFIED
+  - NOT_STARTED
+
+evidence_classes:
+  - OFFICIAL_CURRENT
+  - OFFICIAL_HISTORICAL
+  - SPECIALIST_PRICE_TRACKER
+  - RETAILER_CURRENT
+  - EDITORIAL_REPORT
+  - HYPOTHESIS
+
+rules:
+  preserve_noindex: true
+  require_checked_at: true
+  require_source_for_active_offer: true
+  require_reference_basis_for_discount_claim: true
+  forbid_fake_countdowns: true
+  forbid_affiliate_based_ranking: true
+  affiliate_rel: sponsored
+  human_approval_before_indexation: true

@@ -1,0 +1,65 @@
+version: 1
+scope: footer_trust_pages
+source_of_truth: .content/trust
+
+pages:
+  methode-de-test:
+    path: /methode-de-test/
+    page_type: METHODOLOGY
+  comment-nous-comparons:
+    path: /comment-nous-comparons/
+    page_type: COMPARISON_POLICY
+  a-propos:
+    path: /a-propos/
+    page_type: ABOUT
+  contact:
+    path: /contact/
+    page_type: CONTACT
+  transparence-affiliation:
+    path: /transparence-affiliation/
+    page_type: AFFILIATE_DISCLOSURE
+  mentions-legales:
+    path: /mentions-legales/
+    page_type: LEGAL_PENDING
+
+allowed_evidence_levels:
+  - DIRECT_OBSERVATION
+  - REPO_EVIDENCE
+  - OFFICIAL_SOURCE
+  - OWNER_CONFIRMED
+  - EDITORIAL_INFERENCE
+  - UNKNOWN
+
+allowed_statuses:
+  - READY_FOR_DRAFT
+  - NEEDS_OWNER_INPUT
+  - DRAFT_READY
+  - HUMAN_APPROVED
+  - LEGAL_PENDING
+
+blocked_claim_patterns:
+  physical_test:
+    - "nous avons testé"
+    - "lors de nos tests"
+    - "après plusieurs semaines d'utilisation"
+  team:
+    - "notre équipe"
+    - "nos experts"
+    - "notre rédaction"
+    - "notre laboratoire"
+  absolute_independence:
+    - "100 % indépendant"
+    - "totalement indépendant"
+  affiliate_absolutes:
+    - "cela ne vous coûte rien"
+    - "même prix garanti"
+
+rules:
+  preserve_noindex: true
+  require_claim_registry: true
+  forbid_unverified_physical_test_claims: true
+  forbid_fictional_team: true
+  forbid_invented_legal_data: true
+  commissions_must_not_affect_ranking: true
+  affiliate_links_use_sponsored_when_applicable: true
+  human_approval_before_indexation: true

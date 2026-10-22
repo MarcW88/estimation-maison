@@ -1,0 +1,71 @@
+name: Regenerate trust pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - add-trust-content-workflow
+    paths:
+      - '.content/trust/**'
+      - '.agents/skills/trust-content-workflow/**'
+      - 'trust_content.py'
+      - 'apply_trust_content.py'
+      - 'validate_trust_workflow.py'
+      - 'trust-workflow.config.yaml'
+      - '.github/workflows/regenerate-trust.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply trust content
+        run: python apply_trust_content.py
+
+      - name: Validate trust pages
+        run: python validate_trust_workflow.py
+
+      - name: Ensure unresolved pages remain untouched and noindex is preserved
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          drafted = ['methode-de-test', 'comment-nous-comparons', 'transparence-affiliation']
+          pending = ['a-propos', 'contact', 'mentions-legales']
+          for slug in drafted + pending:
+              text = Path(slug, 'index.html').read_text(encoding='utf-8')
+              assert '<meta name="robots" content="noindex,follow">' in text, slug
+          for slug in drafted:
+              text = Path(slug, 'index.html').read_text(encoding='utf-8')
+              assert '<!-- Contenu à rédiger -->' not in text, slug
+              assert 'Contenu en préparation' not in text, slug
+          for slug in pending:
+              text = Path(slug, 'index.html').read_text(encoding='utf-8')
+              assert '<!-- Contenu à rédiger -->' in text, f'{slug} should remain pending'
+          about = Path('a-propos', 'index.html').read_text(encoding='utf-8')
+          assert 'Notre équipe et notre engagement pour des tests indépendants' not in about
+          print('PASS: 3 trust pages drafted; 3 unresolved pages remain pending; noindex preserved')
+          PY
+
+      - name: Commit generated trust pages
+        run: |
+          if git diff --quiet -- methode-de-test comment-nous-comparons transparence-affiliation a-propos; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add methode-de-test comment-nous-comparons transparence-affiliation a-propos
+          git commit -m "content: apply transparent trust pages"
+          git push

@@ -1,0 +1,69 @@
+name: Validate model workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "model-workflow.config.yaml"
+      - "validate_model_skill_stack.py"
+      - "validate_model_run_evidence.py"
+      - ".agents/skills/model-*/**"
+      - ".agents/skills/model-skill-stack.json"
+      - ".agents/skills/search-intent/**"
+      - ".agents/skills/content-audit/**"
+      - ".agents/skills/content-refresh/**"
+      - ".agents/skills/affiliate-value/**"
+      - ".agents/skills/fact-check/**"
+      - ".agents/skills/evidence-based-reviews/**"
+      - ".agents/skills/content-brief-authoring/**"
+      - ".agents/skills/content-and-copy/**"
+      - ".agents/skills/internal-linking-audit/**"
+      - ".agents/skills/humanizer/**"
+      - ".agents/skills/general-writing/**"
+      - ".agents/skills/anti-ai-slop/**"
+      - ".agents/skills/seo-technical/**"
+      - ".agents/skills/seo-best-practices/**"
+      - ".agents/skills/editorial-qa/**"
+      - ".content/models/**"
+      - "modeles/**"
+      - "_generate_model_overrides.py"
+      - ".github/workflows/validate-model-workflow.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "model-workflow.config.yaml"
+      - "validate_model_skill_stack.py"
+      - "validate_model_run_evidence.py"
+      - ".agents/skills/model-*/**"
+      - ".agents/skills/model-skill-stack.json"
+      - ".content/models/**"
+      - "modeles/**"
+      - "_generate_model_overrides.py"
+      - ".github/workflows/validate-model-workflow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-stack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate model shared/custom governance
+        run: python validate_model_skill_stack.py
+
+  validate-run-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate model inventory and existing run evidence
+        run: python validate_model_run_evidence.py

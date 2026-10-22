@@ -1,0 +1,123 @@
+project:
+  name: "bloc-notes-numeriques.fr"
+  domain: "https://bloc-notes-numeriques.fr"
+  language: "fr"
+
+content:
+  scope:
+    - "/comparatifs/"
+  source_of_truth:
+    - "comparison_bespoke_output.py"
+    - "comparison_bespoke_priority_20260909.py"
+    - "comparison_bespoke_remaining_20260909.py"
+    - "comparison_content.py"
+    - ".content/comparisons/*.json"
+  generated_output: "comparatifs/*/index.html"
+  content_type: "affiliate-comparison"
+  mode: "auto"
+
+quality:
+  quality_reference: "/guides/prix-bloc-notes-numerique/"
+  draft_robots: "noindex,follow"
+  published_robots: "index,follow"
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_internal_link_quotas: true
+  prohibit_comparison_type_templates: true
+  require_cluster_structure_review: true
+
+comparison:
+  require_explicit_decision_logic: true
+  require_criteria_before_recommendation: true
+  require_reasonable_candidate_scope: true
+  require_major_exclusion_reason_when_decision_relevant: true
+  scoring_optional: true
+  weighting_optional: true
+  hard_gates_optional: true
+  total_solution_cost_only_when_decision_relevant: true
+  exhaustive_product_universe_required: false
+  equivalence_engine_required: false
+  affiliate_commission_must_not_affect_ranking: true
+  comparison_type_defines_structure: false
+  allowed_types:
+    - BEST_OVERALL
+    - USE_CASE
+    - BUDGET
+    - FEATURE_SPECIFIC
+    - HEAD_TO_HEAD
+
+evidence:
+  prefer_primary_sources_for_hard_facts: true
+  review_skill: ".agents/skills/evidence-based-reviews/SKILL.md"
+  prohibit_model_memory_gap_filling: true
+  prohibit_fake_hands_on: true
+  editorial_judgment_is_not_a_measurement: true
+  independent_or_user_evidence_required_for_experience_claims: true
+
+workflow:
+  comparisons_dir: ".content/comparisons"
+  reviews_dir: ".content/reviews"
+  content_workflow: ".agents/skills/comparison-content-workflow/SKILL.md"
+  analysis_workflow: ".agents/skills/comparison-analysis-workflow/SKILL.md"
+  bespoke_content_sources:
+    - "comparison_bespoke_output.py"
+    - "comparison_bespoke_priority_20260909.py"
+    - "comparison_bespoke_remaining_20260909.py"
+  legacy_renderer: "comparison_content.py"
+  final_review_mode: "PUBLISH_REVIEW"
+  apply_script: "apply_comparison_content.py"
+  indexation_script: "apply_comparison_indexation.py"
+  indexation_manifest: "comparison_publication.py"
+  metadata_script: "generate_comparison_metadata.py"
+  machine_validator: "validate_comparisons.py"
+  require_analysis_pass_before_human_validation: true
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false
+  require_explicit_route_manifest_for_indexation: true
+
+upstream_skill_chain:
+  - "seo-content-audit | rampstackco/claude-skills"
+  - "seo-keyword | rampstackco/claude-skills"
+  - "jobs-to-be-done | wondelai/skills"
+  - "evidence-based-reviews | rampstackco/claude-skills"
+  - "content-brief-authoring | rampstackco/claude-skills"
+  - "content-and-copy | rampstackco/claude-skills"
+  - "seo-onpage | rampstackco/claude-skills"
+  - "general-writing | msimchowitz/writing-skills"
+  - "humanizer | external skill"
+  - "anti-ai-slop | external skill"
+
+editorial_chain:
+  - comparison_analysis_audit_for_existing_page
+  - seo_keyword_intent_and_cluster
+  - jobs_to_be_done_when_relevant
+  - seo_content_audit_preserve_existing_value
+  - evidence_based_reviews_and_fact_check
+  - original_affiliate_value
+  - comparison_scope_criteria_and_recommendation_logic
+  - content_brief_authoring
+  - content_and_copy
+  - post_draft_fact_check
+  - humanizer_and_general_writing
+  - anti_ai_slop
+  - seo_onpage_and_technical
+  - editorial_qa
+  - machine_validation
+  - comparison_analysis_publish_review
+  - human_validation
+  - explicit_indexation_approval
+
+quality_gate:
+  require_sources_for_factual_claims: true
+  require_limitations_for_recommended_products: true
+  require_noindex_in_draft: true
+  require_manifest_for_indexed_pages: true
+  prohibit_fake_test_language: true
+  prohibit_editor_facing_metadiscourse: true
+  prohibit_merchant_rewrite_without_original_value: true
+  prohibit_high_severity_ai_slop: true
+  prohibit_unresolved_cannibalization: true
+  prohibit_unjustified_structural_cloning: true
+  prohibit_affiliate_influence_on_ranking: true
+  prohibit_mandatory_fake_precision: true

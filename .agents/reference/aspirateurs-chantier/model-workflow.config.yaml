@@ -1,0 +1,170 @@
+project:
+  name: "aspirateurs-chantier.fr"
+  domain: "https://aspirateurs-chantier.fr"
+  language: "fr"
+
+content:
+  scope:
+    - "/modeles/"
+  source_of_truth:
+    editorial_method: ".agents/skills/model-content-workflow/SKILL.md"
+    analysis_method: ".agents/skills/model-analysis-workflow/SKILL.md"
+    tier1_evidence: ".content/models/model-evidence.json"
+    run_evidence: ".content/models/runs/<slug>.json"
+    legacy_renderer: "_generate_model_overrides.py"
+  rendered_output:
+    - "modeles/"
+  mode: "recovery"
+
+phase:
+  name: "phase_1_governance_only"
+  modify_existing_model_content: false
+  migrate_renderer_now: false
+  legacy_renderer_may_grant_editorial_pass: false
+  legacy_renderer_may_define_final_editorial_structure: false
+
+skill_stack:
+  manifest: ".agents/skills/model-skill-stack.json"
+  validator: "validate_model_skill_stack.py"
+  ratio_basis: "workflow_responsibilities"
+  target_shared_ratio_min: 0.80
+  target_custom_ratio_max: 0.20
+  require_stack_validation_before_model_work: true
+  require_external_provenance_for_shared_skills: true
+  custom_workflows:
+    - "model-content-workflow"
+    - "model-analysis-workflow"
+
+execution_evidence:
+  directory: ".content/models/runs"
+  validator: "validate_model_run_evidence.py"
+  contract_version: 2
+  required_before_publish_review_pass: true
+  allow_na_only_with_reason: true
+  require_reader_decision: true
+  require_affiliate_independent_value: true
+  require_evidence_derived_outline: true
+  prohibit_generator_from_fabricating_run_evidence: true
+  derive_valid_slugs_from: ".content/models/model-evidence.json"
+
+routing:
+  primary_page_type: "MODEL"
+  page_type_defines_structure: false
+  model_pages_live_under: "/modeles/<slug>/"
+  boundaries:
+    MODEL: "one exact reference and its purchase/fit decision"
+    COMPARISON: "choice between multiple references"
+    BRAND_HUB: "range and ecosystem"
+    USAGE: "job, material or work context"
+    GUIDE: "concept or method"
+
+evidence:
+  tier1_seed: ".content/models/model-evidence.json"
+  prefer_primary_sources: true
+  statuses:
+    - VERIFIED
+    - SUPPORTED
+    - INFERRED
+    - UNKNOWN
+    - OUTDATED
+    - CONTRADICTED
+  prohibit_model_memory_gap_filling: true
+  prohibit_fake_hands_on: true
+  require_contradictions_to_be_preserved: true
+  tier1_seed_is_not_editorial_outline: true
+  tier1_seed_is_not_review_verdict: true
+
+vacuum_model_domain_checks:
+  custom_scope_only: true
+  verify_when_relevant:
+    - exact_reference_variant_generation
+    - product_status
+    - dust_class_L_M_H
+    - filter_vs_safety_class
+    - airflow_measurement_context
+    - vacuum_pressure_measurement_context
+    - tank_gross_net_water_volume
+    - automatic_or_manual_filter_cleaning
+    - tool_triggered_start
+    - antistatic_system
+    - wet_dry_role
+    - battery_platform_compatibility
+    - tool_hose_and_consumables_compatibility
+    - weight_mobility_tradeoff
+  prohibit_safety_class_inference_from_filter_or_power: true
+  prohibit_unqualified_cross_manufacturer_metric_comparison: true
+  prohibit_cross_variant_spec_leakage: true
+
+quality:
+  draft_robots: "index, follow"
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_internal_link_quotas: true
+  prohibit_page_type_templates: true
+  require_cluster_structure_review: true
+  require_role_boundary_review: true
+  preserve_site_design_system: true
+  current_renderer_structure_is_not_editorial_reference: true
+
+internal_linking:
+  policy: "contextual_only"
+  useful_destinations_when_relevant:
+    - "/modeles/"
+    - "/comparatifs/"
+    - "/guides/"
+    - "/usages/"
+    - "/marques/"
+
+presentation:
+  preserve_existing_components:
+    - "answer-box"
+    - "table-wrap"
+    - "related-box"
+    - "content-sidebar"
+    - "toc-list"
+  toc_policy: "reflect_actual_headings"
+  table_policy: "use_only_when_decisionally_useful"
+  visual_consistency_does_not_define_editorial_structure: true
+
+workflow:
+  content_workflow: ".agents/skills/model-content-workflow/SKILL.md"
+  analysis_workflow: ".agents/skills/model-analysis-workflow/SKILL.md"
+  final_review_mode: "PUBLISH_REVIEW"
+  skill_stack_validator: "validate_model_skill_stack.py"
+  run_evidence_validator: "validate_model_run_evidence.py"
+  require_analysis_pass_before_human_validation: true
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false
+
+editorial_chain:
+  shared:
+    - search_intent
+    - content_audit
+    - content_refresh_when_needed
+    - fact_check_pre_draft
+    - evidence_based_reviews_when_needed
+    - affiliate_value
+    - content_brief_authoring
+    - content_and_copy
+    - fact_check_post_draft
+    - humanizer
+    - general_writing
+    - anti_ai_slop
+    - internal_linking_audit
+    - seo_technical_and_best_practices
+    - editorial_qa
+  custom:
+    - vacuum_model_domain_review
+    - model_analysis_publish_review
+
+quality_gate:
+  require_sources_for_material_factual_claims: true
+  require_limitations_when_decision_relevant: true
+  require_noindex_in_draft: false
+  require_run_evidence_for_ready_status: true
+  prohibit_fake_test_language: true
+  prohibit_merchant_rewrite_without_original_value: true
+  prohibit_high_severity_ai_slop: true
+  prohibit_unresolved_cannibalization: true
+  prohibit_unjustified_structural_cloning: true

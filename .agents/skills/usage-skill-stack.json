@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "purpose": "usage workflow shared-vs-custom governance",
+  "governance": {
+    "ratio_basis": "workflow_responsibilities",
+    "target_shared_ratio_min": 0.8,
+    "target_custom_ratio_max": 0.2,
+    "require_external_provenance_for_shared_skills": true,
+    "shared_responsibilities": [
+      "content_audit",
+      "search_intent",
+      "jobs_to_be_done",
+      "content_refresh_when_needed",
+      "fact_check_pre_draft",
+      "evidence_based_reviews_when_needed",
+      "affiliate_value",
+      "content_brief_authoring",
+      "evidence_bound_writing",
+      "fact_check_post_draft",
+      "humanizer_and_general_writing",
+      "anti_ai_slop",
+      "internal_linking_audit",
+      "seo_onpage_technical_and_best_practices",
+      "editorial_qa"
+    ],
+    "custom_responsibilities": [
+      "vacuum_usage_job_constraints_and_claim_safety",
+      "usage_cluster_boundaries_orchestration_and_publish_gate"
+    ]
+  },
+  "shared": [
+    {"name":"content-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"1316a54fbd73849d3a68b3ea04f36f1fd48ade6c","upstream":"MarcW88/italiaanse-percolator"},
+    {"name":"search-intent","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"c1f347fbbfbad33b7abbde4e6b86e087bc919aff","upstream":"MarcW88/italiaanse-percolator"},
+    {"name":"jobs-to-be-done","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"b1c1932e0b0279d3060583bafbd2263420a4c2a7","upstream":"wondelai/skills"},
+    {"name":"content-refresh","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"8bad3c8958bdfd452dda9adbd61d2214026c4fc1","upstream":"MarcW88/italiaanse-percolator"},
+    {"name":"evidence-based-reviews","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"fbca80971748a44876afdd94c915ddce6cfd8f2a","upstream":"rampstackco/claude-skills/skills/evidence-based-reviews"},
+    {"name":"fact-check","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6e0b591fc55cd8075960f7525e3045576bde4d89"},
+    {"name":"affiliate-value","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"03c140e8077238d2aa8ba9e371265aea4182aff3"},
+    {"name":"content-brief-authoring","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"861de637874253aa2302d1ad43fb20b9b01572cf","upstream":"rampstackco/claude-skills"},
+    {"name":"content-and-copy","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6fbe38f95618d6462c95f19967fa7f66235546c8","upstream":"rampstackco/claude-skills"},
+    {"name":"humanizer","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"accad07f498f5f57e0b6460e74591d057bd96b2b"},
+    {"name":"general-writing","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"9ae8219798fcc0565f891cd4bd650e911903ca27","upstream":"msimchowitz/writing-skills"},
+    {"name":"anti-ai-slop","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"a0ae97dc8814bf450847eb2b7653ab64fbdf0ee0"},
+    {"name":"seo-onpage","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"7df9f0c63c5b6433ff808157667e71b56ccd2dd5","upstream":"rampstackco/claude-skills"},
+    {"name":"seo-technical","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"74efb8d4209b2b3119cd9fe7e208394c5360e0a4"},
+    {"name":"seo-best-practices","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"19f1fa2da56ec71ecf1b2df9854397ac50ccbc24"},
+    {"name":"seo-drift","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"5935d01a4d9a5c284d29c32e0a21df18edb03268"},
+    {"name":"internal-linking-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"98d75a089bb2d0c143ca5f824533abbdda333b8e"},
+    {"name":"editorial-qa","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"f4aacedf5380b40054105bfd15feed060f8438a9"}
+  ],
+  "custom": [
+    {"name":"usage-analysis-workflow","scope":"aspirateurs-chantier.fr usage-cluster boundaries, vacuum-specific job/safety checks and publish decision only"},
+    {"name":"usage-content-workflow","scope":"aspirateurs-chantier.fr usage orchestration plus vacuum-specific task/friction/constraint mapping only"}
+  ]
+}

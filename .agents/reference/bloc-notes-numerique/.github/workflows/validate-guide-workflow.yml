@@ -1,0 +1,74 @@
+name: Validate guide content workflow
+
+on:
+  push:
+    paths:
+      - 'AGENTS.md'
+      - '.github/workflows/validate-guide-workflow.yml'
+      - '.agents/skills/guide-analysis-workflow/**'
+      - '.agents/skills/guide-content-workflow/**'
+      - '.agents/skills/seo-content-audit/**'
+      - '.agents/skills/seo-keyword/**'
+      - '.agents/skills/search-intent/**'
+      - '.agents/skills/content-refresh/**'
+      - '.agents/skills/fact-check/**'
+      - '.agents/skills/evidence-based-reviews/**'
+      - '.agents/skills/affiliate-value/**'
+      - '.agents/skills/content-brief-authoring/**'
+      - '.agents/skills/content-and-copy/**'
+      - '.agents/skills/internal-linking-audit/**'
+      - '.agents/skills/humanizer/**'
+      - '.agents/skills/general-writing/**'
+      - '.agents/skills/anti-ai-slop/**'
+      - '.agents/skills/seo-onpage/**'
+      - '.agents/skills/seo-technical/**'
+      - '.agents/skills/editorial-qa/**'
+      - 'validate_guide_quality.py'
+      - 'publication_indexation.py'
+      - 'apply_section_indexation.py'
+      - 'guides/**'
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - '.github/workflows/validate-guide-workflow.yml'
+      - '.agents/skills/guide-analysis-workflow/**'
+      - '.agents/skills/guide-content-workflow/**'
+      - '.agents/skills/seo-content-audit/**'
+      - '.agents/skills/seo-keyword/**'
+      - '.agents/skills/search-intent/**'
+      - '.agents/skills/content-refresh/**'
+      - '.agents/skills/fact-check/**'
+      - '.agents/skills/evidence-based-reviews/**'
+      - '.agents/skills/affiliate-value/**'
+      - '.agents/skills/content-brief-authoring/**'
+      - '.agents/skills/content-and-copy/**'
+      - '.agents/skills/internal-linking-audit/**'
+      - '.agents/skills/humanizer/**'
+      - '.agents/skills/general-writing/**'
+      - '.agents/skills/anti-ai-slop/**'
+      - '.agents/skills/seo-onpage/**'
+      - '.agents/skills/seo-technical/**'
+      - '.agents/skills/editorial-qa/**'
+      - 'validate_guide_quality.py'
+      - 'publication_indexation.py'
+      - 'apply_section_indexation.py'
+      - 'guides/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply approved Guide indexation
+        run: python apply_section_indexation.py guides
+
+      - name: Validate Guide machine blockers
+        run: python validate_guide_quality.py

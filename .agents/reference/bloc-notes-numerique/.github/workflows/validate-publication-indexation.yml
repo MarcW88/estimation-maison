@@ -1,0 +1,50 @@
+name: Validate publication indexation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'comparatifs/**'
+      - 'marques/**'
+      - 'usages/**'
+      - 'guides/**'
+      - 'bons-plans/**'
+      - 'comparison_publication.py'
+      - 'brand_publication.py'
+      - 'publication_indexation.py'
+      - 'apply_section_indexation.py'
+      - 'validate_publication_indexation.py'
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - '.github/workflows/validate-publication-indexation.yml'
+  pull_request:
+    paths:
+      - 'comparatifs/**'
+      - 'marques/**'
+      - 'usages/**'
+      - 'guides/**'
+      - 'bons-plans/**'
+      - 'comparison_publication.py'
+      - 'brand_publication.py'
+      - 'publication_indexation.py'
+      - 'apply_section_indexation.py'
+      - 'validate_publication_indexation.py'
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - '.github/workflows/validate-publication-indexation.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate all approved publication routes
+        run: python validate_publication_indexation.py

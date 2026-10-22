@@ -1,0 +1,53 @@
+name: Validate product and affiliate workflow
+
+on:
+  pull_request:
+    paths:
+      - '.content/products/**'
+      - 'product_cards.py'
+      - 'apply_product_cards.py'
+      - 'validate_product_cards.py'
+      - 'apply_inline_affiliate_links.py'
+      - 'validate_inline_affiliate_links.py'
+      - 'assets/product-cards.css'
+      - 'assets/inline-affiliate.css'
+      - 'assets/product-affiliate.js'
+      - '.github/workflows/*product*'
+      - '.github/workflows/maintain-inline-affiliate-links.yml'
+      - '.github/workflows/generate-comparatifs-content.yml'
+      - '.github/workflows/generate-usage-content.yml'
+      - '.github/workflows/generate-guides-content.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile workflow scripts
+        run: python -m py_compile product_cards.py apply_product_cards.py validate_product_cards.py apply_inline_affiliate_links.py validate_inline_affiliate_links.py
+      - name: Apply guarded modules in workspace
+        run: python apply_product_cards.py all
+      - name: Apply exact-model CTAs in workspace
+        run: python apply_inline_affiliate_links.py
+      - name: Validate generated placements
+        run: |
+          python validate_product_cards.py all
+          python validate_inline_affiliate_links.py
+      - name: Preserve live indexation state
+        run: |
+          for f in comparatifs/*/index.html usages/*/index.html guides/*/index.html modeles/*/index.html; do
+            grep -Eq '<meta name="robots" content="index, ?follow">' "$f"
+          done
+      - name: Idempotence check
+        run: |
+          git diff > /tmp/first.diff
+          python apply_product_cards.py all >/tmp/products.log
+          python apply_inline_affiliate_links.py >/tmp/inline.log
+          git diff > /tmp/second.diff
+          cmp -s /tmp/first.diff /tmp/second.diff || (echo 'Product workflow is not idempotent' && exit 1)
+      - name: Whitespace check
+        run: git diff --check

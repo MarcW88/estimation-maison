@@ -1,0 +1,48 @@
+name: Validate guide workflow
+
+on:
+  pull_request:
+    branches: [main]
+    paths: &guide_paths
+      - ".agents/skills/guide-analysis-workflow/**"
+      - ".agents/skills/guide-content-workflow/**"
+      - ".agents/skills/guide-skill-stack.json"
+      - "guide-workflow.config.yaml"
+      - "validate_guide_workflow.py"
+      - "validate_guide_quality.py"
+      - ".content/guides/**"
+      - "_generate_guide_content.py"
+      - "_generate_guides.py"
+      - "_guide_classes_lmh_pilot.py"
+      - "_materialize_guides_v2.py"
+      - "_normalize_guide_answers.py"
+      - "guides/**"
+      - ".github/workflows/validate-guide-workflow.yml"
+  push:
+    branches: [main]
+    paths: *guide_paths
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Guide validators and materializer
+        run: python -m py_compile validate_guide_workflow.py validate_guide_quality.py _materialize_guides_v2.py _generate_guide_content.py
+
+      - name: Validate Guide 80/20 governance and run evidence
+        run: python validate_guide_workflow.py
+
+      - name: Validate machine-detectable Guide blockers
+        run: python validate_guide_quality.py
+
+      - name: Whitespace check
+        run: git diff --check

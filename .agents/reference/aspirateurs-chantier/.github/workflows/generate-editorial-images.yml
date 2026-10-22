@@ -1,0 +1,111 @@
+name: Generate approved editorial images with BFL
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.content/image-requests/**'
+      - 'scripts/generate_bfl_images.py'
+      - '.agents/skills/editorial-image-planner/**'
+      - '.github/workflows/generate-editorial-images.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '.content/image-requests/**'
+      - 'index.html'
+      - 'guides/**/index.html'
+      - 'usages/**/index.html'
+      - 'comparatifs/**/index.html'
+      - 'marques/**/index.html'
+      - 'modeles/**/index.html'
+      - 'accessoires/**/index.html'
+      - 'scripts/generate_bfl_images.py'
+      - '.github/workflows/generate-editorial-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bfl-editorial-images
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      work_needed: ${{ steps.inspect.outputs.work_needed }}
+      pending_count: ${{ steps.inspect.outputs.pending_count }}
+      reinsert_count: ${{ steps.inspect.outputs.reinsert_count }}
+    steps:
+      - name: Checkout current ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile image generator
+        run: python -m py_compile scripts/generate_bfl_images.py
+
+      - name: Validate image requests and detect work
+        id: inspect
+        shell: bash
+        run: |
+          python scripts/generate_bfl_images.py \
+            --check-only \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Summary
+        run: |
+          echo "Pending generations: ${{ steps.inspect.outputs.pending_count }}"
+          echo "Existing images to reinsert: ${{ steps.inspect.outputs.reinsert_count }}"
+          echo "BFL generation/insertion needed: ${{ steps.inspect.outputs.work_needed }}"
+
+  generate:
+    needs: plan
+    if: github.event_name != 'pull_request' && needs.plan.outputs.work_needed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+          clean: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate or restore approved images
+        env:
+          # The repository secret is intentionally named BLF_API_KEY.
+          # The Python engine keeps the upstream BFL_API_KEY env convention.
+          BFL_API_KEY: ${{ secrets.BLF_API_KEY }}
+          BFL_API_URL: https://api.bfl.ai/v1/flux-2-pro-preview
+          BFL_TIMEOUT: '600'
+          BFL_POLL_INTERVAL: '1'
+        run: python scripts/generate_bfl_images.py
+
+      - name: Commit generated assets and page integration
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "chore(images): generate approved editorial images"
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push origin HEAD:"${{ github.ref_name }}"
+          fi

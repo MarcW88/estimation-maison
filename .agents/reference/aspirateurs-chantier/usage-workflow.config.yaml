@@ -1,0 +1,70 @@
+project:
+  name: "aspirateurs-chantier.fr"
+  domain: "https://aspirateurs-chantier.fr"
+  language: "fr"
+
+content:
+  scope:
+    - "/usages/"
+  records_dir: ".content/usages"
+  draft_robots: "index, follow"
+  require_human_validation_before_indexation: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false
+
+usage:
+  analysis_workflow: ".agents/skills/usage-analysis-workflow/SKILL.md"
+  content_workflow: ".agents/skills/usage-content-workflow/SKILL.md"
+  skill_stack: ".agents/skills/usage-skill-stack.json"
+  machine_validator: "validate_usage_workflow.py"
+  allowed_decisions:
+    - KEEP
+    - LIGHT_UPDATE
+    - DEEP_REWRITE
+    - MERGE
+    - NOINDEX
+  require_explicit_job: true
+  require_circumstances_before_criteria: true
+  require_criteria_linked_to_friction: true
+  require_counter_indications_when_relevant: true
+  prohibit_product_ranking: true
+  prohibit_fixed_usage_template: true
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_link_quotas: true
+
+cluster:
+  routes:
+    - "/usages/aspirateur-atelier/"
+    - "/usages/aspirateur-bois-sciure-copeaux/"
+    - "/usages/aspirateur-bricolage-renovation/"
+    - "/usages/aspirateur-gravats/"
+    - "/usages/aspirateur-platre/"
+    - "/usages/aspirateur-ponceuse/"
+    - "/usages/aspirateur-scie/"
+  compare_against:
+    - "/comparatifs/"
+    - "/guides/"
+    - "/marques/"
+
+vacuum_claim_safety:
+  class_lmh_must_be_explicitly_sourced: true
+  prohibit_inferring_dust_class_from_hepa_power_airflow_or_filter_cleaning: true
+  filter_class_does_not_equal_machine_certification: true
+  wet_dry_does_not_equal_hazardous_dust_certification: true
+  acd_does_not_equal_atex_zone_22: true
+  airflow_and_vacuum_pressure_require_measurement_context_for_cross_brand_comparison: true
+  battery_tool_hose_and_consumable_compatibility_must_be_verified_when_decision_relevant: true
+  distinguish_gross_net_and_water_capacity_when_used: true
+  high_risk_dust_requires_cautious_prescription_aware_language: true
+
+boundaries:
+  usage_question: "Dans ce travail précis, quelles contraintes et frictions changent le système d'aspiration à prévoir ?"
+  comparison_question: "Quels modèles choisir entre eux une fois ces contraintes connues ?"
+  guide_question: "Comment fonctionne ce critère, cette technologie, ce risque ou cette procédure ?"
+  brand_question: "Comment se structure la gamme ou l'écosystème d'une marque ?"
+
+publish_review:
+  exact_pass: "PASS — READY_FOR_HUMAN_VALIDATION"
+  exact_fail: "FAIL — KEEP_NOINDEX"
+  pass_does_not_authorize_indexation: true

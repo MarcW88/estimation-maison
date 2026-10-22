@@ -1,0 +1,44 @@
+name: Validate trust content workflow
+
+on:
+  push:
+    branches:
+      - main
+      - add-trust-content-workflow
+    paths:
+      - '.agents/skills/trust-content-workflow/**'
+      - '.content/trust/**'
+      - 'trust-workflow.config.yaml'
+      - 'validate_trust_workflow.py'
+      - 'methode-de-test/**'
+      - 'comment-nous-comparons/**'
+      - 'a-propos/**'
+      - 'contact/**'
+      - 'transparence-affiliation/**'
+      - 'mentions-legales/**'
+      - 'AGENTS.md'
+      - '.github/workflows/validate-trust-workflow.yml'
+  pull_request:
+    paths:
+      - '.agents/skills/trust-content-workflow/**'
+      - '.content/trust/**'
+      - 'trust-workflow.config.yaml'
+      - 'validate_trust_workflow.py'
+      - 'methode-de-test/**'
+      - 'comment-nous-comparons/**'
+      - 'a-propos/**'
+      - 'contact/**'
+      - 'transparence-affiliation/**'
+      - 'mentions-legales/**'
+      - 'AGENTS.md'
+
+jobs:
+  validate-trust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate trust records and claims
+        run: python validate_trust_workflow.py

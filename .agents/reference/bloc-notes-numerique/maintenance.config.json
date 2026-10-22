@@ -1,0 +1,47 @@
+{
+  "max_pages": 10,
+  "routes": {
+    "guides": {
+      "workflow": "guide",
+      "cadence_days": 90,
+      "validator": "validate_guide_quality.py"
+    },
+    "comparatifs": {
+      "workflow": "comparison",
+      "cadence_days": 30,
+      "validator": "validate_comparisons.py"
+    },
+    "marques": {
+      "workflow": "brand",
+      "cadence_days": 45,
+      "validator": "validate_brands.py"
+    },
+    "usages": {
+      "workflow": "usage",
+      "cadence_days": 90,
+      "validator": "validate_usage_workflow.py"
+    },
+    "bons-plans": {
+      "workflow": "deal",
+      "cadence_days": 14,
+      "validator": "validate_deal_workflow.py"
+    }
+  },
+  "overrides": {
+    "/guides/": {
+      "enabled": false
+    },
+    "/comparatifs/": {
+      "enabled": false
+    },
+    "/marques/": {
+      "enabled": false
+    },
+    "/usages/": {
+      "enabled": false
+    },
+    "/bons-plans/": {
+      "enabled": false
+    }
+  }
+}

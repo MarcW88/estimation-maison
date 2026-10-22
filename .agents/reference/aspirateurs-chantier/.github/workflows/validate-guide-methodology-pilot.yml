@@ -1,0 +1,51 @@
+name: Validate guide methodology pilot
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '_guide_classes_lmh_pilot.py'
+      - 'guides/classes-l-m-h/**'
+      - 'content-workflow.config.yaml'
+      - '.content/briefs/classes-l-m-h-methodology-pilot-2026-09-09.md'
+      - '.content/reviews/classes-l-m-h-methodology-pilot-2026-09-09.md'
+      - '.github/workflows/validate-guide-methodology-pilot.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '_guide_classes_lmh_pilot.py'
+      - 'guides/classes-l-m-h/**'
+      - 'content-workflow.config.yaml'
+      - '.github/workflows/validate-guide-methodology-pilot.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate guides canonically
+        run: |
+          python _generate_guides.py
+          python _guide_quality_supplements.py
+          python _normalize_guide_answers.py
+          python _guide_classes_lmh_pilot.py
+      - name: Validate target article
+        shell: bash
+        run: |
+          page=guides/classes-l-m-h/index.html
+          grep -q 'id="lecture-rapide"' "$page"
+          grep -q 'id="debit-classe-h"' "$page"
+          grep -q 'NOETUDE%2FC2026-013' "$page"
+          grep -q '<meta name="robots" content="index, follow">' "$page"
+          grep -q 'l’appareil complet' "$page"
+          ! grep -q 'de nombreux poussières' "$page"
+      - name: Require committed canonical render
+        run: git diff --exit-code -- guides/classes-l-m-h/index.html

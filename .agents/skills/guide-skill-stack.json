@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "purpose": "guide workflow shared-vs-custom governance",
+  "governance": {
+    "ratio_basis": "workflow_responsibilities",
+    "target_shared_ratio_min": 0.8,
+    "target_custom_ratio_max": 0.2,
+    "require_external_provenance_for_shared_skills": true,
+    "shared_responsibilities": [
+      "content_audit_and_consolidation",
+      "keyword_cluster_and_intent",
+      "search_intent",
+      "content_refresh_when_needed",
+      "fact_check_pre_draft",
+      "evidence_based_reviews_when_needed",
+      "affiliate_value",
+      "content_brief_authoring",
+      "evidence_bound_writing",
+      "fact_check_post_draft",
+      "humanizer_and_general_writing",
+      "anti_ai_slop",
+      "internal_linking_audit",
+      "seo_onpage_technical_and_best_practices",
+      "seo_drift_when_baseline_exists",
+      "editorial_qa"
+    ],
+    "custom_responsibilities": [
+      "vacuum_guide_integrity_and_claim_safety",
+      "guide_cluster_boundaries_orchestration_and_publish_gate"
+    ]
+  },
+  "shared": [
+    {"name":"seo-content-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"5528c4bef76f9f52f1c3c00e17aaa31f806d2d36","upstream":"rampstackco/claude-skills"},
+    {"name":"seo-keyword","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"97eb0de9d21b79802957a2e93ed89d9acdd13542","upstream":"rampstackco/claude-skills"},
+    {"name":"search-intent","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"c1f347fbbfbad33b7abbde4e6b86e087bc919aff","upstream":"MarcW88/italiaanse-percolator"},
+    {"name":"content-refresh","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"8bad3c8958bdfd452dda9adbd61d2214026c4fc1","upstream":"MarcW88/italiaanse-percolator"},
+    {"name":"fact-check","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6e0b591fc55cd8075960f7525e3045576bde4d89"},
+    {"name":"evidence-based-reviews","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"fbca80971748a44876afdd94c915ddce6cfd8f2a","upstream":"rampstackco/claude-skills/skills/evidence-based-reviews"},
+    {"name":"affiliate-value","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"03c140e8077238d2aa8ba9e371265aea4182aff3"},
+    {"name":"content-brief-authoring","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"861de637874253aa2302d1ad43fb20b9b01572cf","upstream":"rampstackco/claude-skills"},
+    {"name":"content-and-copy","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6fbe38f95618d6462c95f19967fa7f66235546c8","upstream":"rampstackco/claude-skills"},
+    {"name":"humanizer","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"accad07f498f5f57e0b6460e74591d057bd96b2b"},
+    {"name":"general-writing","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"9ae8219798fcc0565f891cd4bd650e911903ca27","upstream":"msimchowitz/writing-skills"},
+    {"name":"anti-ai-slop","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"a0ae97dc8814bf450847eb2b7653ab64fbdf0ee0"},
+    {"name":"internal-linking-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"98d75a089bb2d0c143ca5f824533abbdda333b8e"},
+    {"name":"seo-onpage","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"7df9f0c63c5b6433ff808157667e71b56ccd2dd5","upstream":"rampstackco/claude-skills"},
+    {"name":"seo-technical","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"74efb8d4209b2b3119cd9fe7e208394c5360e0a4"},
+    {"name":"seo-best-practices","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"19f1fa2da56ec71ecf1b2df9854397ac50ccbc24"},
+    {"name":"seo-drift","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"5935d01a4d9a5c284d29c32e0a21df18edb03268"},
+    {"name":"editorial-qa","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"f4aacedf5380b40054105bfd15feed060f8438a9"}
+  ],
+  "custom": [
+    {"name":"guide-analysis-workflow","scope":"aspirateurs-chantier.fr guide-cluster boundaries, vacuum-domain integrity and publish decision only"},
+    {"name":"guide-content-workflow","scope":"aspirateurs-chantier.fr guide orchestration, vacuum-domain integrity and source-of-truth integration only"}
+  ]
+}

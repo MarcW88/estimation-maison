@@ -1,0 +1,30 @@
+name: Validate content maintenance orchestration
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/maintenance_orchestrator.py'
+      - 'maintenance.config.json'
+      - 'tests/test_maintenance.py'
+      - '.content/maintenance/**'
+      - '.github/workflows/*content-maintenance.yml'
+  pull_request:
+    paths:
+      - 'scripts/maintenance_orchestrator.py'
+      - 'maintenance.config.json'
+      - 'tests/test_maintenance.py'
+      - '.content/maintenance/**'
+      - '.github/workflows/*content-maintenance.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p 'test_maintenance*.py'
+      - run: python scripts/maintenance_orchestrator.py prepare --max-pages 10
+      - run: git diff --check

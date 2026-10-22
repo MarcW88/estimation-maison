@@ -1,0 +1,72 @@
+project:
+  name: "aspirateurs-chantier"
+  domain: "https://aspirateurs-chantier.fr"
+  language: "fr"
+
+content:
+  content_scope:
+    - "/guides/"
+    - "/comparatifs/"
+    - "/marques/"
+    - "/modeles/"
+    - "/usages/"
+    - "/accessoires/"
+  content_type: "affiliate"
+  mode: "auto"
+  source_of_truth: "_generate.py"
+  guide_source_of_truth:
+    - "_generate_guides.py"
+    - "_guide_quality_supplements.py"
+    - "_normalize_guide_answers.py"
+    - "_guide_classes_lmh_pilot.py"
+  generation_order:
+    - "python _generate.py"
+    - "python _generate_guides.py"
+    - "python _guide_quality_supplements.py"
+    - "python _normalize_guide_answers.py"
+    - "python _guide_classes_lmh_pilot.py"
+
+quality:
+  quality_reference: "/guides/comment-choisir-aspirateur-de-chantier/"
+  minimum_standard: "reference-floor"
+  avoid_wordcount_padding: true
+
+seo:
+  semantic_source: []
+  preserve_existing_ranked_content: true
+
+internal_linking:
+  commercial_paths:
+    - "/comparatifs/"
+    - "/modeles/"
+    - "/marques/"
+  informational_paths:
+    - "/guides/"
+    - "/usages/"
+  minimum_contextual_links: 4
+  minimum_unique_targets: 3
+
+workflow:
+  briefs_dir: ".content/briefs"
+  reviews_dir: ".content/reviews"
+  draft_robots: "index,follow"
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+
+quality_gate:
+  default_min_words: 900
+  minimum_h2_substantive: 5
+  minimum_section_words: 70
+  minimum_prose_around_table: 50
+  minimum_source_links: 3
+  fail_on_single_short_paragraph_section: true
+  single_paragraph_min_words: 130
+
+fact_check:
+  prefer_primary_sources: true
+  statuses:
+    - CONFIRMED
+    - PARTIAL
+    - UNVERIFIED
+    - CONTRADICTED
+    - OUTDATED

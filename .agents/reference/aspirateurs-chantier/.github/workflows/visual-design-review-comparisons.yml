@@ -1,0 +1,74 @@
+# Final comparison rollout visual QA — 2026-09-11
+name: Visual design review — comparisons
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "comparatifs/**"
+      - "style.css"
+      - "comparison-pages.css"
+      - "comparison-pages.js"
+      - "_apply_comparison_design.py"
+      - "_generate_comparison_content.py"
+      - "DESIGN.md"
+      - ".content/design-reviews/comparison-pages-2026-09-09.md"
+      - ".agents/skills/site-design-review/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/visual-design-review-comparisons.yml"
+  push:
+    branches: [main]
+    paths:
+      - "comparatifs/**"
+      - "style.css"
+      - "comparison-pages.css"
+      - "comparison-pages.js"
+      - "_apply_comparison_design.py"
+      - "_generate_comparison_content.py"
+      - "DESIGN.md"
+      - ".content/design-reviews/comparison-pages-2026-09-09.md"
+      - ".agents/skills/site-design-review/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/visual-design-review-comparisons.yml"
+
+jobs:
+  visual-comparisons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install chromium
+
+      - name: Capture comparison pages
+        run: >-
+          node .agents/skills/site-design-review/scripts/run-visual-review.mjs
+          --scope comparisons
+          --output .artifacts/design-review/comparisons
+
+      - name: Validate visual regressions
+        run: >-
+          node .agents/skills/site-design-review/scripts/validate-comparison-visual-report.mjs
+          .artifacts/design-review/comparisons/report.json
+
+      - name: Upload comparison visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: comparison-design-review
+          path: .artifacts/design-review/comparisons/
+          if-no-files-found: warn
+          retention-days: 14

@@ -1,0 +1,98 @@
+name: Validate comparison workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "validate_comparison_skill_stack.py"
+      - "validate_comparison_run_evidence.py"
+      - "enforce_comparison_review_state.py"
+      - "comparison-workflow.config.yaml"
+      - ".agents/skills/comparison-*/**"
+      - "_validate_comparatifs.py"
+      - "_validate_comparison_rollout.py"
+      - "_generate_comparison_content.py"
+      - "_materialize_comparison_v2.py"
+      - "_generate_comparison_overrides.py"
+      - "_generate_professional_comparison_override.py"
+      - "_polish_comparison_rollout.py"
+      - "apply_product_cards.py"
+      - "validate_product_cards.py"
+      - ".content/products/**"
+      - ".content/comparisons/**"
+      - "comparatifs/**"
+      - ".github/workflows/validate-comparison-skill-stack.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "validate_comparison_skill_stack.py"
+      - "validate_comparison_run_evidence.py"
+      - "enforce_comparison_review_state.py"
+      - "comparison-workflow.config.yaml"
+      - ".agents/skills/comparison-*/**"
+      - "_validate_comparatifs.py"
+      - "_validate_comparison_rollout.py"
+      - "_generate_comparison_content.py"
+      - "_materialize_comparison_v2.py"
+      - "_generate_comparison_overrides.py"
+      - "_generate_professional_comparison_override.py"
+      - "_polish_comparison_rollout.py"
+      - "apply_product_cards.py"
+      - "validate_product_cards.py"
+      - ".content/products/**"
+      - ".content/comparisons/**"
+      - "comparatifs/**"
+      - ".github/workflows/validate-comparison-skill-stack.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate 80/20 governance and shared-skill provenance
+        run: python validate_comparison_skill_stack.py
+
+      - name: Compile comparison generators and validators
+        run: |
+          python -m py_compile _generate_comparison_content.py
+          python -m py_compile _materialize_comparison_v2.py
+          python -m py_compile _generate_professional_comparison_override.py
+          python -m py_compile _generate_comparison_overrides.py
+          python -m py_compile _polish_comparison_rollout.py
+          python -m py_compile enforce_comparison_review_state.py
+          python -m py_compile validate_comparison_run_evidence.py
+          python -m py_compile _validate_comparison_rollout.py
+          python -m py_compile apply_product_cards.py validate_product_cards.py
+
+      - name: Regenerate evidence-gated comparison drafts
+        run: |
+          python _generate_comparison_content.py
+          if [ -f .content/products/placements.json ]; then
+            python apply_product_cards.py comparisons
+            python validate_product_cards.py comparisons
+          fi
+
+      - name: Validate run-evidence consistency
+        run: python validate_comparison_run_evidence.py
+
+      - name: Validate comparison data files
+        run: |
+          for f in .content/comparisons/*.json; do
+            python .agents/skills/comparison-content-workflow/scripts/validate_comparison_data.py "$f"
+          done
+
+      - name: Require committed canonical artifacts
+        run: git diff --exit-code -- comparatifs .content/comparisons
+
+      - name: Whitespace check
+        run: git diff --check

@@ -1,0 +1,45 @@
+name: Prepare monthly content maintenance (chat)
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: Maximum pages to prepare
+        default: '10'
+        type: string
+      urls:
+        description: Optional comma-separated paths (otherwise select due pages)
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: content-maintenance-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test orchestration
+        run: python -m unittest discover -s tests -p 'test_maintenance*.py'
+      - name: Select pages and route existing skills
+        env:
+          MAX_PAGES: ${{ inputs.max_pages }}
+          REVIEW_URLS: ${{ inputs.urls }}
+        run: python scripts/maintenance_orchestrator.py prepare --max-pages "$MAX_PAGES" --urls "$REVIEW_URLS"
+      - name: Publish work summary
+        run: cat .artifacts/maintenance/handoff.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: content-maintenance-${{ github.run_id }}
+          path: .artifacts/maintenance/
+          retention-days: 90
+          if-no-files-found: error

@@ -1,0 +1,64 @@
+project:
+  name: "example-site"
+  domain: "https://example.com"
+  language: "fr"
+
+content:
+  scope:
+    - "/marques/"
+  source_of_truth: "_generate.py"
+  mode: "auto"  # auto | recovery | new_content
+
+quality:
+  quality_reference: "/marques/reference/"
+  draft_robots: "noindex,follow"
+
+routing:
+  page_types:
+    - BRAND_HUB
+    - PRODUCT
+    - REVIEW
+    - SERVICE
+    - ACCESSORY_HUB
+    - ALTERNATIVES
+
+entities:
+  require_entity_map: true
+  require_current_range: true
+  require_ecosystem_map: true
+  require_brand_positioning: true
+
+evidence:
+  prefer_primary_sources: true
+  statuses:
+    - VERIFIED
+    - SUPPORTED
+    - INFERRED
+    - UNKNOWN
+    - OUTDATED
+    - CONTRADICTED
+
+internal_linking:
+  required_paths:
+    - "/comparatifs/"
+    - "/guides/"
+    - "/usages/"
+  minimum_contextual_links: 6
+  minimum_unique_targets: 5
+  require_product_link_on_brand_hub: true
+  require_comparison_link_when_relevant: true
+
+workflow:
+  brands_dir: ".content/brands"
+  briefs_dir: ".content/briefs"
+  reviews_dir: ".content/reviews"
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+
+quality_gate:
+  minimum_h2_brand_hub: 7
+  minimum_h2_product: 6
+  minimum_sources: 3
+  require_limit_section: true
+  require_choose_avoid: true
+  require_noindex_in_draft: true

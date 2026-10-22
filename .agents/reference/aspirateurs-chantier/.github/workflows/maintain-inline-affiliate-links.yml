@@ -1,0 +1,66 @@
+name: Maintain exact-model Amazon affiliate links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'modeles/**'
+      - '.content/products/**'
+      - 'apply_inline_affiliate_links.py'
+      - 'validate_inline_affiliate_links.py'
+      - 'assets/inline-affiliate.css'
+      - 'assets/product-cards.css'
+      - 'assets/product-affiliate.js'
+      - '.github/workflows/maintain-inline-affiliate-links.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: amazon-product-maintenance-main
+  cancel-in-progress: false
+
+jobs:
+  apply-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply exact-model CTAs
+        run: |
+          python -m py_compile apply_inline_affiliate_links.py validate_inline_affiliate_links.py
+          python apply_inline_affiliate_links.py
+
+      - name: Validate exact-model CTAs
+        run: python validate_inline_affiliate_links.py
+
+      - name: Preserve live indexation
+        run: |
+          for f in modeles/*/index.html; do
+            grep -Eq '<meta name="robots" content="index, ?follow">' "$f"
+          done
+
+      - name: Commit maintained CTAs
+        shell: bash
+        run: |
+          if git diff --quiet -- modeles; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modeles
+          git commit -m "affiliate: maintain verified model CTAs"
+          git pull --rebase origin main
+          if ! git push origin HEAD:main; then
+            echo "main moved during affiliate maintenance; rebasing once and retrying"
+            sleep 2
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

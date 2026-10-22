@@ -1,0 +1,48 @@
+name: Validate deal content workflow
+
+on:
+  pull_request:
+    paths:
+      - '.content/deals/**'
+      - '.agents/skills/deal-content-workflow/**'
+      - 'deal_content.py'
+      - 'apply_deal_content.py'
+      - 'validate_deal_workflow.py'
+      - 'publication_indexation.py'
+      - 'apply_section_indexation.py'
+      - 'deal-workflow.config.yaml'
+      - 'bons-plans/**'
+      - '_generate.py'
+  push:
+    branches:
+      - main
+    paths:
+      - '.content/deals/**'
+      - '.agents/skills/deal-content-workflow/**'
+      - 'deal_content.py'
+      - 'apply_deal_content.py'
+      - 'validate_deal_workflow.py'
+      - 'publication_indexation.py'
+      - 'apply_section_indexation.py'
+      - 'deal-workflow.config.yaml'
+      - 'bons-plans/**'
+      - '_generate.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile workflow scripts
+        run: python -m py_compile deal_content.py apply_deal_content.py validate_deal_workflow.py publication_indexation.py apply_section_indexation.py
+      - name: Rebuild expected deal state
+        run: |
+          python apply_deal_content.py
+          python apply_section_indexation.py deals
+      - name: Validate records and generated pages
+        run: python validate_deal_workflow.py
+      - name: Check generator idempotence
+        run: git diff --exit-code -- _generate.py AGENTS.md bons-plans sitemap.xml robots.txt

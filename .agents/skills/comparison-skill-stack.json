@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "purpose": "comparison workflow shared-vs-custom governance",
+  "governance": {
+    "ratio_basis": "workflow_responsibilities",
+    "target_shared_ratio_min": 0.8,
+    "target_custom_ratio_max": 0.2,
+    "require_external_provenance_for_shared_skills": true,
+    "require_run_evidence_before_publish_review_pass": true,
+    "shared_responsibilities": [
+      "seo_keyword_and_intent",
+      "jobs_to_be_done_when_relevant",
+      "seo_content_audit",
+      "fact_check_pre_draft",
+      "evidence_based_reviews",
+      "affiliate_value",
+      "content_brief_authoring",
+      "evidence_bound_writing",
+      "fact_check_post_draft",
+      "humanizer_and_general_writing",
+      "anti_ai_slop",
+      "seo_onpage_and_technical",
+      "internal_linking_audit",
+      "editorial_qa"
+    ],
+    "custom_responsibilities": [
+      "vacuum_comparison_scope_criteria_and_claim_safety",
+      "comparison_cluster_orchestration_and_publish_gate"
+    ]
+  },
+  "shared": [
+    {"name":"seo-content-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"5528c4bef76f9f52f1c3c00e17aaa31f806d2d36","upstream":"rampstackco/claude-skills"},
+    {"name":"seo-keyword","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"97eb0de9d21b79802957a2e93ed89d9acdd13542","upstream":"rampstackco/claude-skills"},
+    {"name":"jobs-to-be-done","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"b1c1932e0b0279d3060583bafbd2263420a4c2a7","upstream":"wondelai/skills"},
+    {"name":"evidence-based-reviews","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"fbca80971748a44876afdd94c915ddce6cfd8f2a","upstream":"rampstackco/claude-skills/skills/evidence-based-reviews"},
+    {"name":"fact-check","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6e0b591fc55cd8075960f7525e3045576bde4d89"},
+    {"name":"affiliate-value","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"03c140e8077238d2aa8ba9e371265aea4182aff3"},
+    {"name":"content-brief-authoring","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"861de637874253aa2302d1ad43fb20b9b01572cf","upstream":"https://github.com/rampstackco/claude-skills/tree/main/skills/content-brief-authoring"},
+    {"name":"content-and-copy","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"6fbe38f95618d6462c95f19967fa7f66235546c8","upstream":"https://github.com/rampstackco/claude-skills/tree/main/skills/content-and-copy"},
+    {"name":"humanizer","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"accad07f498f5f57e0b6460e74591d057bd96b2b"},
+    {"name":"general-writing","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"9ae8219798fcc0565f891cd4bd650e911903ca27","upstream":"msimchowitz/writing-skills"},
+    {"name":"anti-ai-slop","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"a0ae97dc8814bf450847eb2b7653ab64fbdf0ee0"},
+    {"name":"seo-onpage","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"7df9f0c63c5b6433ff808157667e71b56ccd2dd5","upstream":"rampstackco/claude-skills"},
+    {"name":"seo-technical","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"74efb8d4209b2b3119cd9fe7e208394c5360e0a4"},
+    {"name":"internal-linking-audit","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"98d75a089bb2d0c143ca5f824533abbdda333b8e"},
+    {"name":"editorial-qa","source_repo":"MarcW88/bloc-notes-numerique","source_sha":"f4aacedf5380b40054105bfd15feed060f8438a9"}
+  ],
+  "custom": [
+    {"name":"comparison-analysis-workflow","scope":"aspirateurs-chantier.fr comparison cluster boundaries, vacuum claim safety and publish decision only"},
+    {"name":"comparison-content-workflow","scope":"aspirateurs-chantier.fr orchestration plus vacuum-specific scope/criteria/recommendation constraints only"}
+  ]
+}

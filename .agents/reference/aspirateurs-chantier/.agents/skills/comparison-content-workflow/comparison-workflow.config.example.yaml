@@ -1,0 +1,45 @@
+project:
+  name: "example-site"
+  domain: "https://example.com"
+  language: "fr"
+
+content:
+  scope:
+    - "/comparatifs/"
+  content_type: "affiliate-comparison"
+  mode: "auto"
+
+quality:
+  draft_robots: "noindex, follow"
+  prohibit_word_count_quotas: true
+  prohibit_heading_count_quotas: true
+  prohibit_internal_link_quotas: true
+  prohibit_comparison_type_templates: true
+  require_cluster_structure_review: true
+
+comparison:
+  require_explicit_decision_logic: true
+  require_criteria_before_recommendation: true
+  require_reasonable_candidate_scope: true
+  scoring_optional: true
+  weighting_optional: true
+  hard_gates_optional: true
+  total_solution_cost_only_when_decision_relevant: true
+  exhaustive_product_universe_required: false
+  equivalence_engine_required: false
+  affiliate_commission_must_not_affect_ranking: true
+
+evidence:
+  prefer_primary_sources_for_hard_facts: true
+  prohibit_model_memory_gap_filling: true
+  prohibit_fake_hands_on: true
+  editorial_judgment_is_not_a_measurement: true
+
+workflow:
+  comparisons_dir: ".content/comparisons"
+  briefs_dir: ".content/briefs"
+  reviews_dir: ".content/reviews"
+  final_review_mode: "PUBLISH_REVIEW"
+  require_human_validation_before_publish: true
+  allow_automatic_merge: false
+  allow_automatic_indexation: false

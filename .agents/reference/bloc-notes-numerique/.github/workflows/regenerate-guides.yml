@@ -1,0 +1,148 @@
+name: Regenerate and quality-check guide cluster
+
+on:
+  push:
+    branches:
+      - main
+      - raise-guide-quality
+    paths:
+      - '_generate.py'
+      - 'guide_content_extra.py'
+      - 'guide_content_quality_choice.py'
+      - 'guide_content_quality_tech.py'
+      - 'guide_content_quality_cloud.py'
+      - 'guide_content_quality_workflows.py'
+      - 'guide_content_bespoke.py'
+      - 'validate_guide_quality.py'
+      - '.github/workflows/regenerate-guides.yml'
+      - '.content/briefs/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate-guides:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Wire existing guide content modules into generator
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('_generate.py')
+          text = path.read_text(encoding='utf-8')
+
+          anchor = "from guide_content_extra import GUIDE_CONTENT_EXTRA\nGUIDE_CONTENT.update(GUIDE_CONTENT_EXTRA)\n"
+          quality = anchor + """
+
+          from guide_content_quality_choice import GUIDE_CONTENT_QUALITY_CHOICE
+          from guide_content_quality_tech import GUIDE_CONTENT_QUALITY_TECH
+          from guide_content_quality_cloud import GUIDE_CONTENT_QUALITY_CLOUD
+          from guide_content_quality_workflows import GUIDE_CONTENT_QUALITY_WORKFLOWS
+          GUIDE_CONTENT.update(GUIDE_CONTENT_QUALITY_CHOICE)
+          GUIDE_CONTENT.update(GUIDE_CONTENT_QUALITY_TECH)
+          GUIDE_CONTENT.update(GUIDE_CONTENT_QUALITY_CLOUD)
+          GUIDE_CONTENT.update(GUIDE_CONTENT_QUALITY_WORKFLOWS)
+          """
+          if 'GUIDE_CONTENT_QUALITY_CHOICE' not in text:
+              if anchor not in text:
+                  raise SystemExit('Could not find GUIDE_CONTENT_EXTRA anchor')
+              text = text.replace(anchor, quality, 1)
+
+          bespoke_anchor = "GUIDE_CONTENT.update(GUIDE_CONTENT_QUALITY_WORKFLOWS)\n"
+          bespoke = bespoke_anchor + """
+          from guide_content_bespoke import GUIDE_CONTENT_BESPOKE
+          GUIDE_CONTENT.update(GUIDE_CONTENT_BESPOKE)
+          """
+          if 'GUIDE_CONTENT_BESPOKE' not in text:
+              if bespoke_anchor not in text:
+                  raise SystemExit('Could not find guide quality override anchor')
+              text = text.replace(bespoke_anchor, bespoke, 1)
+
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Regenerate site pages
+        run: python _generate.py
+
+      - name: Apply bespoke guide verification metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          audited_slugs = [
+              'ocr-manuscrit',
+              'bloc-notes-numerique-google-drive',
+              'bloc-notes-numerique-onedrive',
+              'bloc-notes-numerique-dropbox',
+              'convertir-notes-manuscrites-en-texte',
+          ]
+          for slug in audited_slugs:
+              page = Path('guides') / slug / 'index.html'
+              text = page.read_text(encoding='utf-8')
+              text = text.replace('Vérifié le 8 septembre 2026', 'Vérifié le 9 septembre 2026', 1)
+              page.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Apply approved Guide product modules
+        run: python apply_product_cards.py guides
+
+      - name: Validate internal links in guide bodies
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          root = Path('.')
+          failures=[]
+          for page in sorted((root/'guides').glob('*/index.html')):
+              html=page.read_text(encoding='utf-8')
+              m=re.search(r'<article\b[^>]*class="[^"]*content-main[^"]*"[^>]*>(.*?)</article>', html, re.S|re.I)
+              if not m:
+                  failures.append(f'{page}: article content-main absent')
+                  continue
+              article=m.group(1)
+              for href in re.findall(r'href="(/[^"]+)"', article):
+                  if href.startswith('//') or '#' in href or '?' in href:
+                      continue
+                  target=root/href.lstrip('/')
+                  if target.is_dir():
+                      target=target/'index.html'
+                  if not target.exists():
+                      failures.append(f'{page}: broken contextual link {href}')
+          if failures:
+              print('\n'.join(failures))
+              raise SystemExit(1)
+          print('PASS: contextual internal targets exist')
+          PY
+
+      - name: Apply approved Guide indexation
+        run: python apply_section_indexation.py guides
+
+      - name: Validate Guide product modules
+        run: python validate_product_cards.py guides
+
+      - name: Validate machine-detectable guide blockers
+        run: python validate_guide_quality.py
+
+      - name: Commit regenerated guide batch
+        run: |
+          git config user.name "Marc Williame"
+          git config user.email "146358493+MarcW88@users.noreply.github.com"
+          git add _generate.py guides/ sitemap.xml robots.txt
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "content: regenerate guides"
+            git push origin HEAD:${{ github.ref_name }}
+          fi

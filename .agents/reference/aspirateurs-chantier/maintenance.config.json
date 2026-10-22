@@ -1,0 +1,48 @@
+{
+  "max_pages": 10,
+  "routes": {
+    "guides": {
+      "workflow": "guide",
+      "cadence_days": 90,
+      "validator": "validate_guide_workflow.py"
+    },
+    "comparatifs": {
+      "workflow": "comparison",
+      "cadence_days": 30,
+      "validator": "validate_comparison_skill_stack.py"
+    },
+    "marques": {
+      "workflow": "brand",
+      "cadence_days": 45,
+      "validator": "validate_brand_skill_stack.py"
+    },
+    "usages": {
+      "workflow": "usage",
+      "cadence_days": 90,
+      "validator": "validate_usage_workflow.py"
+    },
+    "modeles": {
+      "workflow": "model",
+      "cadence_days": 45,
+      "validator": "validate_model_skill_stack.py",
+      "audit_only": true
+    }
+  },
+  "overrides": {
+    "/guides/": {
+      "enabled": false
+    },
+    "/comparatifs/": {
+      "enabled": false
+    },
+    "/marques/": {
+      "enabled": false
+    },
+    "/usages/": {
+      "enabled": false
+    },
+    "/modeles/": {
+      "enabled": false
+    }
+  }
+}
